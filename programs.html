@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Programs - Academic Pathways</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="programs.css">
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <a href="index.html" class="back-btn" style="position: relative; z-index: 10; display: inline-block; padding: 12px 24px; margin: 20px 24px 0; background: rgba(0, 217, 255, 0.1); color: #00d9ff; text-decoration: none; border: 1px solid #00d9ff; border-radius: 6px; font-size: 0.95rem;">← Back to Home</a>
+    <!-- Animated Star Field Background -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Parallax Layer -->
+    <div class="parallax-layer" id="parallaxLayer"></div>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <span class="site-mark">AP</span>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <span class="nav-separator">·</span>
+                <a href="programs.html" class="nav-link active">Programs</a>
+                <span class="nav-separator">·</span>
+                <a href="english.html" class="nav-link">English</a>
+                <span class="nav-separator">·</span>
+                <a href="education.html" class="nav-link">Education</a>
+                <span class="nav-separator">·</span>
+                <a href="university-tips.html" class="nav-link">University Tips</a>
+                <span class="nav-separator">·</span>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1 class="page-title">International Programs</h1>
+            <p class="page-subtitle">Explore global programs, competitions, and research pathways worldwide</p>
+        </section>
+
+        <!-- Level Selection Grid -->
+        <section class="level-selection">
+            <div class="level-grid">
+
+                <!-- Top-Tier Programs -->
+                <a href="programs-top-tier.html" class="level-card" data-level="top">
+                    <div class="level-icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="20" r="3" class="star star-bright"/>
+                            <circle cx="25" cy="35" r="2" class="star"/>
+                            <circle cx="55" cy="35" r="2" class="star"/>
+                            <circle cx="20" cy="55" r="2.5" class="star"/>
+                            <circle cx="40" cy="50" r="2.5" class="star"/>
+                            <circle cx="60" cy="55" r="2.5" class="star"/>
+                            <line x1="40" y1="20" x2="25" y2="35" class="constellation-line"/>
+                            <line x1="40" y1="20" x2="55" y2="35" class="constellation-line"/>
+                            <line x1="25" y1="35" x2="20" y2="55" class="constellation-line"/>
+                            <line x1="25" y1="35" x2="40" y2="50" class="constellation-line"/>
+                            <line x1="55" y1="35" x2="40" y2="50" class="constellation-line"/>
+                            <line x1="55" y1="35" x2="60" y2="55" class="constellation-line"/>
+                        </svg>
+                    </div>
+                    <h2 class="level-title">Top-Tier Programs</h2>
+                    <p class="level-description">Highly selective global opportunities like YYGS, YYAS, ISEF, and top research programs</p>
+                    <div class="level-count">~35 programs</div>
+                </a>
+
+                <!-- Achievable Programs -->
+                <a href="programs-achievable.html" class="level-card" data-level="achievable">
+                    <div class="level-icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="3" class="star star-bright"/>
+                            <circle cx="20" cy="30" r="2" class="star"/>
+                            <circle cx="60" cy="30" r="2" class="star"/>
+                            <circle cx="20" cy="50" r="2" class="star"/>
+                            <circle cx="60" cy="50" r="2" class="star"/>
+                            <line x1="40" y1="40" x2="20" y2="30" class="constellation-line"/>
+                            <line x1="40" y1="40" x2="60" y2="30" class="constellation-line"/>
+                            <line x1="40" y1="40" x2="20" y2="50" class="constellation-line"/>
+                            <line x1="40" y1="40" x2="60" y2="50" class="constellation-line"/>
+                        </svg>
+                    </div>
+                    <h2 class="level-title">Achievable Programs</h2>
+                    <p class="level-description">Strong international programs and competitions with attainable admissions</p>
+                    <div class="level-count">~40 programs</div>
+                </a>
+
+                <!-- Accessible Programs -->
+                <a href="programs-accessible.html" class="level-card" data-level="accessible">
+                    <div class="level-icon">
+                        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="30" r="3" class="star star-bright"/>
+                            <circle cx="25" cy="45" r="2.5" class="star"/>
+                            <circle cx="40" cy="45" r="2.5" class="star"/>
+                            <circle cx="55" cy="45" r="2.5" class="star"/>
+                            <circle cx="32.5" cy="60" r="2" class="star"/>
+                            <circle cx="47.5" cy="60" r="2" class="star"/>
+                            <line x1="40" y1="30" x2="25" y2="45" class="constellation-line"/>
+                            <line x1="40" y1="30" x2="40" y2="45" class="constellation-line"/>
+                            <line x1="40" y1="30" x2="55" y2="45" class="constellation-line"/>
+                            <line x1="25" y1="45" x2="32.5" y2="60" class="constellation-line"/>
+                            <line x1="40" y1="45" x2="32.5" y2="60" class="constellation-line"/>
+                            <line x1="40" y1="45" x2="47.5" y2="60" class="constellation-line"/>
+                            <line x1="55" y1="45" x2="47.5" y2="60" class="constellation-line"/>
+                        </svg>
+                    </div>
+                    <h2 class="level-title">Accessible Programs</h2>
+                    <p class="level-description">Free online courses, open competitions, and beginner-friendly resources</p>
+                    <div class="level-count">~40 programs</div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">Directed by Mostafa Elgendy</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

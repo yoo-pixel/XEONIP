@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essays Hub - English Mastery</title>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.5), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.4), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+        
+        nav {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            font-size: 0.95rem;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #7c9dd6;
+        }
+        
+        .intro {
+            text-align: center;
+            margin: 30px 0 40px;
+        }
+        
+        .intro h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+        
+        .intro p {
+            color: #c9d4eb;
+            max-width: 800px;
+            margin: 8px auto;
+            line-height: 1.6;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(124, 157, 214, 0.25);
+            border-radius: 16px;
+            padding: 24px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(124, 157, 214, 0.6);
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .icon {
+            font-size: 22px;
+        }
+        
+        .card p {
+            color: #c9d4eb;
+            line-height: 1.6;
+        }
+        
+        .cta {
+            display: inline-block;
+            margin-top: 14px;
+            color: #8fb7ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="english.html" class="back-btn">← Back to English</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="english.html">English</a>
+            <a href="vocabulary-portal.html">Vocabulary</a>
+        </nav>
+
+        <section class="intro">
+            <h1>Essay Writing Hub</h1>
+            <p>Essays decide scholarships, programs, and university offers. A strong essay shows your thinking, not just your grades.</p>
+            <p>This hub separates tips from references so you can learn the method first, then study examples and trusted sources.</p>
+            <p>Choose one page below and start building a clear, honest essay that fits STEM applications.</p>
+        </section>
+
+        <section class="cards">
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">✍️</div>
+                    <h2>Essay Tips</h2>
+                </div>
+                <p>Complete guide to essay writing: structure, openings, examples, mistakes, and a step-by-step process.</p>
+                <a class="cta" href="essay-tips.html">Open Essay Tips →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">📚</div>
+                    <h2>References</h2>
+                </div>
+                <p>Trusted books, writing centers, and admissions resources. Learn ethically by studying, not copying.</p>
+                <a class="cta" href="essay-references.html">Open References →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">🏆</div>
+                    <h2>Essay Summary: Motivation</h2>
+                </div>
+                <p>Summary and analysis of an essay about enthusiasm for learning and academic hunger.</p>
+                <a class="cta" href="essay-bacon-alarm-clock.html">Read Summary →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">📐</div>
+                    <h2>Essay Summary: Math Passion</h2>
+                </div>
+                <p>Summary and analysis of an essay about persistence, growth, and love of mathematics.</p>
+                <a class="cta" href="essay-math-science-passion.html">Read Summary →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">🌍</div>
+                    <h2>Essay Summary: Spanish Love</h2>
+                </div>
+                <p>Summary and analysis of an essay about language, identity, and cultural connection.</p>
+                <a class="cta" href="essay-spanish-love.html">Read Summary →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">🎓</div>
+                    <h2>Essay Summary: Honors Program</h2>
+                </div>
+                <p>Summary and analysis of an essay about a rigorous summer program and personal growth.</p>
+                <a class="cta" href="essay-governors-honors.html">Read Summary →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">🤝</div>
+                    <h2>Essay Summary: Biracial Identity</h2>
+                </div>
+                <p>Summary and analysis of an essay about identity, perception, and belonging.</p>
+                <a class="cta" href="essay-biracial-identity.html">Read Summary →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">🔢</div>
+                    <h2>Essay Summary: Numbers & Self</h2>
+                </div>
+                <p>Summary and analysis of an essay about testing, labels, and authentic identity.</p>
+                <a class="cta" href="essay-test-center-identity.html">Read Summary →</a>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <div class="icon">🧩</div>
+                    <h2>Essay Summary: Name & Identity</h2>
+                </div>
+                <p>Summary and analysis of an essay about a unique name and self-definition.</p>
+                <a class="cta" href="essay-name-identity.html">Read Summary →</a>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

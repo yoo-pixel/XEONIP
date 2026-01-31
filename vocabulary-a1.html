@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1 Level Vocabulary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-bg: #0f1419;
+            --secondary-bg: #1a202c;
+            --card-bg: rgba(30, 41, 59, 0.8);
+            --text-primary: #e2e8f0;
+            --text-secondary: #cbd5e1;
+            --border-color: rgba(100, 116, 139, 0.3);
+            --accent: #60a5fa;
+            --a1-color: #22c55e;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);
+            border-radius: 12px;
+            border: 2px solid var(--a1-color);
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--a1-color), #16a34a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .level-badge {
+            display: inline-block;
+            background: var(--a1-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .nav-link {
+            padding: 0.7rem 1.5rem;
+            background: var(--card-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+        
+        .category-section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 12px;
+            border-left: 4px solid var(--a1-color);
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+        }
+        
+        .category-info h2 {
+            color: var(--a1-color);
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-stats {
+            display: flex;
+            gap: 1rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .words-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .word-card {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .word-card:hover {
+            background: rgba(34, 197, 94, 0.15);
+            transform: translateY(-2px);
+            border-color: var(--a1-color);
+        }
+        
+        .word-english {
+            font-weight: 600;
+            color: var(--accent);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .word-arabic {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            direction: rtl;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .words-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <span class="level-badge">Beginner Level</span>
+            <h1>📚 A1 Vocabulary</h1>
+            <p style="color: var(--text-secondary); font-size: 1.1rem;">Essential words for absolute beginners</p>
+            <div class="nav-links">
+                <a href="vocabulary-a1.html" class="nav-link" style="background: var(--a1-color); color: white;">A1 Level</a>
+                <a href="vocabulary-a2.html" class="nav-link">A2 Level</a>
+                <a href="vocabulary-b1.html" class="nav-link">B1 Level</a>
+            </div>
+        </header>
+
+        <!-- Numbers & Time -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🔢</div>
+                <div class="category-info">
+                    <h2>Numbers & Time</h2>
+                    <div class="category-stats">
+                        <span>📊 30 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">one</div>
+                    <div class="word-arabic">واحد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">two</div>
+                    <div class="word-arabic">اثنان</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">three</div>
+                    <div class="word-arabic">ثلاثة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">four</div>
+                    <div class="word-arabic">أربعة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">five</div>
+                    <div class="word-arabic">خمسة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">six</div>
+                    <div class="word-arabic">ستة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">seven</div>
+                    <div class="word-arabic">سبعة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">eight</div>
+                    <div class="word-arabic">ثمانية</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">nine</div>
+                    <div class="word-arabic">تسعة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">ten</div>
+                    <div class="word-arabic">عشرة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">twenty</div>
+                    <div class="word-arabic">عشرون</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">thirty</div>
+                    <div class="word-arabic">ثلاثون</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hundred</div>
+                    <div class="word-arabic">مئة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">thousand</div>
+                    <div class="word-arabic">ألف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">first</div>
+                    <div class="word-arabic">أول</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">second</div>
+                    <div class="word-arabic">ثاني</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">time</div>
+                    <div class="word-arabic">وقت</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hour</div>
+                    <div class="word-arabic">ساعة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">minute</div>
+                    <div class="word-arabic">دقيقة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">day</div>
+                    <div class="word-arabic">يوم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">week</div>
+                    <div class="word-arabic">أسبوع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">month</div>
+                    <div class="word-arabic">شهر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">year</div>
+                    <div class="word-arabic">سنة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">today</div>
+                    <div class="word-arabic">اليوم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">yesterday</div>
+                    <div class="word-arabic">أمس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">tomorrow</div>
+                    <div class="word-arabic">غداً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">morning</div>
+                    <div class="word-arabic">صباح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">afternoon</div>
+                    <div class="word-arabic">بعد الظهر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">evening</div>
+                    <div class="word-arabic">مساء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">night</div>
+                    <div class="word-arabic">ليل</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Greetings & Basic Phrases -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">👋</div>
+                <div class="category-info">
+                    <h2>Greetings & Basic Phrases</h2>
+                    <div class="category-stats">
+                        <span>📊 25 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">hello</div>
+                    <div class="word-arabic">مرحباً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">goodbye</div>
+                    <div class="word-arabic">وداعاً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">please</div>
+                    <div class="word-arabic">من فضلك</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">thank you</div>
+                    <div class="word-arabic">شكراً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">yes</div>
+                    <div class="word-arabic">نعم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">no</div>
+                    <div class="word-arabic">لا</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sorry</div>
+                    <div class="word-arabic">آسف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">excuse me</div>
+                    <div class="word-arabic">عفواً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">welcome</div>
+                    <div class="word-arabic">أهلاً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">good morning</div>
+                    <div class="word-arabic">صباح الخير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">good evening</div>
+                    <div class="word-arabic">مساء الخير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">good night</div>
+                    <div class="word-arabic">تصبح على خير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">how</div>
+                    <div class="word-arabic">كيف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">what</div>
+                    <div class="word-arabic">ماذا</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">when</div>
+                    <div class="word-arabic">متى</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">where</div>
+                    <div class="word-arabic">أين</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">who</div>
+                    <div class="word-arabic">من</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">why</div>
+                    <div class="word-arabic">لماذا</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">which</div>
+                    <div class="word-arabic">أي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">okay</div>
+                    <div class="word-arabic">حسناً</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fine</div>
+                    <div class="word-arabic">بخير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">name</div>
+                    <div class="word-arabic">اسم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">nice</div>
+                    <div class="word-arabic">جميل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">meet</div>
+                    <div class="word-arabic">يقابل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">see</div>
+                    <div class="word-arabic">يرى</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">👨‍👩‍👧‍👦</div>
+                <div class="category-info">
+                    <h2>Family</h2>
+                    <div class="category-stats">
+                        <span>📊 15 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">family</div>
+                    <div class="word-arabic">عائلة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">mother</div>
+                    <div class="word-arabic">أم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">father</div>
+                    <div class="word-arabic">أب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">parents</div>
+                    <div class="word-arabic">والدين</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">brother</div>
+                    <div class="word-arabic">أخ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sister</div>
+                    <div class="word-arabic">أخت</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">son</div>
+                    <div class="word-arabic">ابن</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">daughter</div>
+                    <div class="word-arabic">ابنة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">husband</div>
+                    <div class="word-arabic">زوج</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">wife</div>
+                    <div class="word-arabic">زوجة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">child</div>
+                    <div class="word-arabic">طفل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">grandfather</div>
+                    <div class="word-arabic">جد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">grandmother</div>
+                    <div class="word-arabic">جدة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">uncle</div>
+                    <div class="word-arabic">عم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">aunt</div>
+                    <div class="word-arabic">عمة</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Body Parts -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🧍</div>
+                <div class="category-info">
+                    <h2>Body Parts</h2>
+                    <div class="category-stats">
+                        <span>📊 20 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">head</div>
+                    <div class="word-arabic">رأس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hair</div>
+                    <div class="word-arabic">شعر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">face</div>
+                    <div class="word-arabic">وجه</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">eye</div>
+                    <div class="word-arabic">عين</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">ear</div>
+                    <div class="word-arabic">أذن</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">nose</div>
+                    <div class="word-arabic">أنف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">mouth</div>
+                    <div class="word-arabic">فم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">tooth</div>
+                    <div class="word-arabic">سن</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">neck</div>
+                    <div class="word-arabic">رقبة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">shoulder</div>
+                    <div class="word-arabic">كتف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">arm</div>
+                    <div class="word-arabic">ذراع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hand</div>
+                    <div class="word-arabic">يد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">finger</div>
+                    <div class="word-arabic">إصبع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">back</div>
+                    <div class="word-arabic">ظهر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">stomach</div>
+                    <div class="word-arabic">معدة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">leg</div>
+                    <div class="word-arabic">ساق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">foot</div>
+                    <div class="word-arabic">قدم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">body</div>
+                    <div class="word-arabic">جسم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">heart</div>
+                    <div class="word-arabic">قلب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">skin</div>
+                    <div class="word-arabic">جلد</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colors -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🎨</div>
+                <div class="category-info">
+                    <h2>Colors</h2>
+                    <div class="category-stats">
+                        <span>📊 12 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">red</div>
+                    <div class="word-arabic">أحمر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">blue</div>
+                    <div class="word-arabic">أزرق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">green</div>
+                    <div class="word-arabic">أخضر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">yellow</div>
+                    <div class="word-arabic">أصفر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">black</div>
+                    <div class="word-arabic">أسود</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">white</div>
+                    <div class="word-arabic">أبيض</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">brown</div>
+                    <div class="word-arabic">بني</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">orange</div>
+                    <div class="word-arabic">برتقالي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">pink</div>
+                    <div class="word-arabic">وردي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">purple</div>
+                    <div class="word-arabic">بنفسجي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">gray</div>
+                    <div class="word-arabic">رمادي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">color</div>
+                    <div class="word-arabic">لون</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Food & Drinks -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🍔</div>
+                <div class="category-info">
+                    <h2>Food & Drinks</h2>
+                    <div class="category-stats">
+                        <span>📊 40 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">food</div>
+                    <div class="word-arabic">طعام</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">drink</div>
+                    <div class="word-arabic">شراب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">water</div>
+                    <div class="word-arabic">ماء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">milk</div>
+                    <div class="word-arabic">حليب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">coffee</div>
+                    <div class="word-arabic">قهوة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">tea</div>
+                    <div class="word-arabic">شاي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">juice</div>
+                    <div class="word-arabic">عصير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bread</div>
+                    <div class="word-arabic">خبز</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">rice</div>
+                    <div class="word-arabic">أرز</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">meat</div>
+                    <div class="word-arabic">لحم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">chicken</div>
+                    <div class="word-arabic">دجاج</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fish</div>
+                    <div class="word-arabic">سمك</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">egg</div>
+                    <div class="word-arabic">بيضة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cheese</div>
+                    <div class="word-arabic">جبن</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">butter</div>
+                    <div class="word-arabic">زبدة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sugar</div>
+                    <div class="word-arabic">سكر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">salt</div>
+                    <div class="word-arabic">ملح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fruit</div>
+                    <div class="word-arabic">فاكهة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">apple</div>
+                    <div class="word-arabic">تفاحة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">banana</div>
+                    <div class="word-arabic">موز</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">orange</div>
+                    <div class="word-arabic">برتقالة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">vegetable</div>
+                    <div class="word-arabic">خضروات</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">tomato</div>
+                    <div class="word-arabic">طماطم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">potato</div>
+                    <div class="word-arabic">بطاطس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">carrot</div>
+                    <div class="word-arabic">جزر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">onion</div>
+                    <div class="word-arabic">بصل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">salad</div>
+                    <div class="word-arabic">سلطة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">soup</div>
+                    <div class="word-arabic">حساء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sandwich</div>
+                    <div class="word-arabic">شطيرة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">pizza</div>
+                    <div class="word-arabic">بيتزا</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cake</div>
+                    <div class="word-arabic">كعكة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">chocolate</div>
+                    <div class="word-arabic">شوكولاتة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">ice cream</div>
+                    <div class="word-arabic">آيس كريم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">breakfast</div>
+                    <div class="word-arabic">إفطار</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">lunch</div>
+                    <div class="word-arabic">غداء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">dinner</div>
+                    <div class="word-arabic">عشاء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">eat</div>
+                    <div class="word-arabic">يأكل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">drink</div>
+                    <div class="word-arabic">يشرب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hungry</div>
+                    <div class="word-arabic">جائع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">thirsty</div>
+                    <div class="word-arabic">عطشان</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Verbs -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">⚡</div>
+                <div class="category-info">
+                    <h2>Basic Verbs</h2>
+                    <div class="category-stats">
+                        <span>📊 35 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">be</div>
+                    <div class="word-arabic">يكون</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">have</div>
+                    <div class="word-arabic">يملك</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">do</div>
+                    <div class="word-arabic">يفعل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">go</div>
+                    <div class="word-arabic">يذهب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">come</div>
+                    <div class="word-arabic">يأتي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">make</div>
+                    <div class="word-arabic">يصنع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">get</div>
+                    <div class="word-arabic">يحصل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">take</div>
+                    <div class="word-arabic">يأخذ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">give</div>
+                    <div class="word-arabic">يعطي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">know</div>
+                    <div class="word-arabic">يعرف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">think</div>
+                    <div class="word-arabic">يفكر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">see</div>
+                    <div class="word-arabic">يرى</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">look</div>
+                    <div class="word-arabic">ينظر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">want</div>
+                    <div class="word-arabic">يريد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">need</div>
+                    <div class="word-arabic">يحتاج</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">like</div>
+                    <div class="word-arabic">يحب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">love</div>
+                    <div class="word-arabic">يعشق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">work</div>
+                    <div class="word-arabic">يعمل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">live</div>
+                    <div class="word-arabic">يعيش</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">play</div>
+                    <div class="word-arabic">يلعب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">read</div>
+                    <div class="word-arabic">يقرأ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">write</div>
+                    <div class="word-arabic">يكتب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">speak</div>
+                    <div class="word-arabic">يتحدث</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">listen</div>
+                    <div class="word-arabic">يستمع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">understand</div>
+                    <div class="word-arabic">يفهم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">help</div>
+                    <div class="word-arabic">يساعد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">open</div>
+                    <div class="word-arabic">يفتح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">close</div>
+                    <div class="word-arabic">يغلق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">start</div>
+                    <div class="word-arabic">يبدأ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">stop</div>
+                    <div class="word-arabic">يتوقف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">walk</div>
+                    <div class="word-arabic">يمشي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">run</div>
+                    <div class="word-arabic">يجري</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sit</div>
+                    <div class="word-arabic">يجلس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">stand</div>
+                    <div class="word-arabic">يقف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sleep</div>
+                    <div class="word-arabic">ينام</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Places -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🏢</div>
+                <div class="category-info">
+                    <h2>Places</h2>
+                    <div class="category-stats">
+                        <span>📊 25 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">home</div>
+                    <div class="word-arabic">منزل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">house</div>
+                    <div class="word-arabic">بيت</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">school</div>
+                    <div class="word-arabic">مدرسة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">office</div>
+                    <div class="word-arabic">مكتب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hospital</div>
+                    <div class="word-arabic">مستشفى</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bank</div>
+                    <div class="word-arabic">بنك</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hotel</div>
+                    <div class="word-arabic">فندق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">restaurant</div>
+                    <div class="word-arabic">مطعم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">store</div>
+                    <div class="word-arabic">متجر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">shop</div>
+                    <div class="word-arabic">محل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">market</div>
+                    <div class="word-arabic">سوق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">park</div>
+                    <div class="word-arabic">حديقة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">library</div>
+                    <div class="word-arabic">مكتبة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cinema</div>
+                    <div class="word-arabic">سينما</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">museum</div>
+                    <div class="word-arabic">متحف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">airport</div>
+                    <div class="word-arabic">مطار</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">station</div>
+                    <div class="word-arabic">محطة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">street</div>
+                    <div class="word-arabic">شارع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">road</div>
+                    <div class="word-arabic">طريق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">city</div>
+                    <div class="word-arabic">مدينة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">town</div>
+                    <div class="word-arabic">بلدة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">country</div>
+                    <div class="word-arabic">بلد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">place</div>
+                    <div class="word-arabic">مكان</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">room</div>
+                    <div class="word-arabic">غرفة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">kitchen</div>
+                    <div class="word-arabic">مطبخ</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adjectives -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">✨</div>
+                <div class="category-info">
+                    <h2>Basic Adjectives</h2>
+                    <div class="category-stats">
+                        <span>📊 30 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">good</div>
+                    <div class="word-arabic">جيد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bad</div>
+                    <div class="word-arabic">سيء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">big</div>
+                    <div class="word-arabic">كبير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">small</div>
+                    <div class="word-arabic">صغير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">new</div>
+                    <div class="word-arabic">جديد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">old</div>
+                    <div class="word-arabic">قديم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">young</div>
+                    <div class="word-arabic">شاب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">hot</div>
+                    <div class="word-arabic">حار</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cold</div>
+                    <div class="word-arabic">بارد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">happy</div>
+                    <div class="word-arabic">سعيد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sad</div>
+                    <div class="word-arabic">حزين</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">easy</div>
+                    <div class="word-arabic">سهل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">difficult</div>
+                    <div class="word-arabic">صعب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">long</div>
+                    <div class="word-arabic">طويل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">short</div>
+                    <div class="word-arabic">قصير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">tall</div>
+                    <div class="word-arabic">طويل القامة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fast</div>
+                    <div class="word-arabic">سريع</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">slow</div>
+                    <div class="word-arabic">بطيء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">clean</div>
+                    <div class="word-arabic">نظيف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">dirty</div>
+                    <div class="word-arabic">وسخ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">beautiful</div>
+                    <div class="word-arabic">جميل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">ugly</div>
+                    <div class="word-arabic">قبيح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cheap</div>
+                    <div class="word-arabic">رخيص</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">expensive</div>
+                    <div class="word-arabic">غالي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">full</div>
+                    <div class="word-arabic">ممتلئ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">empty</div>
+                    <div class="word-arabic">فارغ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">right</div>
+                    <div class="word-arabic">صحيح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">wrong</div>
+                    <div class="word-arabic">خاطئ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">strong</div>
+                    <div class="word-arabic">قوي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">weak</div>
+                    <div class="word-arabic">ضعيف</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Objects -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">📦</div>
+                <div class="category-info">
+                    <h2>Common Objects</h2>
+                    <div class="category-stats">
+                        <span>📊 25 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">book</div>
+                    <div class="word-arabic">كتاب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">pen</div>
+                    <div class="word-arabic">قلم</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">paper</div>
+                    <div class="word-arabic">ورقة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">phone</div>
+                    <div class="word-arabic">هاتف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">computer</div>
+                    <div class="word-arabic">حاسوب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">table</div>
+                    <div class="word-arabic">طاولة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">chair</div>
+                    <div class="word-arabic">كرسي</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">door</div>
+                    <div class="word-arabic">باب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">window</div>
+                    <div class="word-arabic">نافذة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bed</div>
+                    <div class="word-arabic">سرير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bag</div>
+                    <div class="word-arabic">حقيبة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">box</div>
+                    <div class="word-arabic">صندوق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bottle</div>
+                    <div class="word-arabic">زجاجة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cup</div>
+                    <div class="word-arabic">كوب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">glass</div>
+                    <div class="word-arabic">كأس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">plate</div>
+                    <div class="word-arabic">طبق</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">spoon</div>
+                    <div class="word-arabic">ملعقة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">knife</div>
+                    <div class="word-arabic">سكين</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fork</div>
+                    <div class="word-arabic">شوكة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">key</div>
+                    <div class="word-arabic">مفتاح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">car</div>
+                    <div class="word-arabic">سيارة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bus</div>
+                    <div class="word-arabic">حافلة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bicycle</div>
+                    <div class="word-arabic">دراجة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">watch</div>
+                    <div class="word-arabic">ساعة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">money</div>
+                    <div class="word-arabic">نقود</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animals -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🐾</div>
+                <div class="category-info">
+                    <h2>Animals</h2>
+                    <div class="category-stats">
+                        <span>📊 15 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">animal</div>
+                    <div class="word-arabic">حيوان</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">dog</div>
+                    <div class="word-arabic">كلب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cat</div>
+                    <div class="word-arabic">قطة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">bird</div>
+                    <div class="word-arabic">طائر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fish</div>
+                    <div class="word-arabic">سمكة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">horse</div>
+                    <div class="word-arabic">حصان</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cow</div>
+                    <div class="word-arabic">بقرة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sheep</div>
+                    <div class="word-arabic">خروف</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">pig</div>
+                    <div class="word-arabic">خنزير</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">chicken</div>
+                    <div class="word-arabic">دجاجة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">duck</div>
+                    <div class="word-arabic">بطة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">lion</div>
+                    <div class="word-arabic">أسد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">elephant</div>
+                    <div class="word-arabic">فيل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">monkey</div>
+                    <div class="word-arabic">قرد</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">rabbit</div>
+                    <div class="word-arabic">أرنب</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Weather & Nature -->
+        <section class="category-section">
+            <div class="category-header">
+                <div class="category-icon">🌤️</div>
+                <div class="category-info">
+                    <h2>Weather & Nature</h2>
+                    <div class="category-stats">
+                        <span>📊 20 words</span>
+                    </div>
+                </div>
+            </div>
+            <div class="words-grid">
+                <div class="word-card">
+                    <div class="word-english">weather</div>
+                    <div class="word-arabic">طقس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sun</div>
+                    <div class="word-arabic">شمس</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">moon</div>
+                    <div class="word-arabic">قمر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">star</div>
+                    <div class="word-arabic">نجمة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sky</div>
+                    <div class="word-arabic">سماء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">cloud</div>
+                    <div class="word-arabic">سحابة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">rain</div>
+                    <div class="word-arabic">مطر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">snow</div>
+                    <div class="word-arabic">ثلج</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">wind</div>
+                    <div class="word-arabic">رياح</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">tree</div>
+                    <div class="word-arabic">شجرة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">flower</div>
+                    <div class="word-arabic">زهرة</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">grass</div>
+                    <div class="word-arabic">عشب</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">mountain</div>
+                    <div class="word-arabic">جبل</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">river</div>
+                    <div class="word-arabic">نهر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">sea</div>
+                    <div class="word-arabic">بحر</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">beach</div>
+                    <div class="word-arabic">شاطئ</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">water</div>
+                    <div class="word-arabic">ماء</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">fire</div>
+                    <div class="word-arabic">نار</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">earth</div>
+                    <div class="word-arabic">أرض</div>
+                </div>
+                <div class="word-card">
+                    <div class="word-english">air</div>
+                    <div class="word-arabic">هواء</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

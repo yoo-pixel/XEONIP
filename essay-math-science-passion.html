@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Summary: Math Passion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.5), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.6), transparent), radial-gradient(1px 1px at 70% 70%, rgba(200, 220, 240, 0.4), transparent);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.25;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem 0 2rem;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #00d9ff;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #e8edf7;
+            text-align: center;
+        }
+        
+        .essay-meta {
+            text-align: center;
+            color: #a9b9d3;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .divider {
+            height: 1px;
+            margin: 2rem auto 2.5rem;
+            width: 70%;
+            background: linear-gradient(90deg, transparent 0%, rgba(0, 217, 255, 0.35) 50%, transparent 100%);
+            box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+        }
+        
+        .essay-card {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+        }
+        
+        .essay-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #e0e6f5;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .essay-content {
+            color: #c7d2e7;
+            line-height: 2;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        
+        .essay-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .analysis-section {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+        }
+        
+        .analysis-section h2 {
+            font-size: 1.8rem;
+            color: #e0e6f5;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+            padding-bottom: 1rem;
+        }
+        
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .point-box {
+            background: rgba(10, 14, 32, 0.5);
+            border-left: 3px solid #00d9ff;
+            padding: 1.2rem;
+            border-radius: 8px;
+        }
+        
+        .point-box strong {
+            color: #00d9ff;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .point-box p {
+            color: #c7d2e7;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .writing-tips {
+            background: rgba(76, 255, 0, 0.08);
+            border-left: 4px solid #4cff00;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+        
+        .writing-tips h3 {
+            color: #4cff00;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .writing-tips ul {
+            color: #c7d2e7;
+            line-height: 1.8;
+            padding-left: 1.5rem;
+        }
+        
+        .writing-tips li {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .essay-card {
+                padding: 1.5rem;
+            }
+            .essay-content {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="essays.html" class="back-btn">← Back to Essays</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="english.html">English</a>
+            <a href="education.html">Education</a>
+            <a href="university-tips.html">University Tips</a>
+        </nav>
+
+        <h1>Essay Summary: Math Passion</h1>
+        <p class="essay-meta">Original summary and analysis (non-copyrighted)</p>
+        <div class="divider"></div>
+
+        <div class="essay-card">
+            <div class="essay-title">Summary: Persistence in Mathematics</div>
+            <div class="essay-content">
+                <p><strong>Summary (original):</strong> The narrator describes a long-standing love of math and science, contrasting it with less exciting subjects. A childhood question about the usefulness of math becomes a turning point once calculus reveals
+                    real-world applications.</p>
+                <p>The essay shows that math is creative problem solving, not rote work. The writer highlights how proofs and classic ideas make difficult tasks simpler and more elegant.</p>
+                <p>Despite early struggles and being placed in a lower-level class, the student takes ownership: finding help, studying hard, and choosing a more challenging calculus path. The effort leads to success and reinforces persistence as a core
+                    trait.</p>
+                <p class="note"><strong>Note:</strong> This page provides a summary and analysis only, not the original text.</p>
+            </div>
+        </div>
+
+        <div class="analysis-section">
+            <h2>Why This Essay Works</h2>
+            <div class="key-points">
+                <div class="point-box">
+                    <strong>✓ Clear Passion</strong>
+                    <p>The writer’s fascination with math is consistent and specific.</p>
+                </div>
+                <div class="point-box">
+                    <strong>✓ Growth Story</strong>
+                    <p>Admits early struggles and shows how effort led to improvement.</p>
+                </div>
+                <div class="point-box">
+                    <strong>✓ Concrete Examples</strong>
+                    <p>Uses concrete academic challenges and choices to show initiative.</p>
+                </div>
+                <div class="point-box">
+                    <strong>✓ Persistence</strong>
+                    <p>Demonstrates resilience through tutoring, practice, and advanced coursework.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="writing-tips">
+            <h3>📝 Writing Lessons</h3>
+            <ul>
+                <li>Connect passion to specific academic moments.</li>
+                <li>Show setbacks and the actions taken to overcome them.</li>
+                <li>Highlight decisions that prove ambition and curiosity.</li>
+                <li>Balance personal voice with concrete evidence.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

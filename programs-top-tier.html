@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-Tier International Programs - Academic Pathways</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="programs.css">
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <!-- Animated Star Field Background -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Parallax Layer -->
+    <div class="parallax-layer" id="parallaxLayer"></div>
+
+    <!-- Top Navigation -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <span class="site-mark">AP</span>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <span class="nav-separator">·</span>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <span class="nav-separator">·</span>
+                <a href="english.html" class="nav-link">English</a>
+                <span class="nav-separator">·</span>
+                <a href="education.html" class="nav-link">Education</a>
+                <span class="nav-separator">·</span>
+                <a href="university-tips.html" class="nav-link">University Tips</a>
+                <span class="nav-separator">·</span>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <div class="nav-container">
+            <div class="breadcrumb">
+                <a href="programs.html" class="breadcrumb-link">Programs</a>
+                <span class="breadcrumb-separator">→</span>
+            </div>
+            <div class="level-nav">
+                <a href="programs-top-tier.html" class="level-link active">Top-Tier</a>
+                <span class="nav-separator">|</span>
+                <a href="programs-achievable.html" class="level-link">Achievable</a>
+                <span class="nav-separator">|</span>
+                <a href="programs-accessible.html" class="level-link">Accessible</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <h1 class="page-title">Top-Tier International Programs</h1>
+            <p class="page-subtitle">Highly selective global programs, olympiads, and research opportunities</p>
+        </section>
+
+        <!-- Programs Content -->
+        <div class="programs-layout">
+
+            <!-- Filter Panel -->
+            <aside class="filter-panel" id="filterPanel">
+                <div class="filter-header">
+                    <h3>Filters</h3>
+                    <button class="filter-clear" id="clearFilters">Clear all</button>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-title">Program Type</h4>
+                    <label class="filter-option">
+                        <input type="checkbox" name="type" value="competition">
+                        <span>Competition</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="type" value="summer">
+                        <span>Summer Program</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="type" value="research">
+                        <span>Research</span>
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-title">Cost</h4>
+                    <label class="filter-option">
+                        <input type="checkbox" name="cost" value="free">
+                        <span>Free</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="cost" value="paid-aid">
+                        <span>Paid (Aid Available)</span>
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-title">Location</h4>
+                    <label class="filter-option">
+                        <input type="checkbox" name="location" value="online">
+                        <span>Online</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="location" value="on-campus">
+                        <span>On-Campus</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="location" value="international">
+                        <span>International</span>
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h4 class="filter-title">Field</h4>
+                    <label class="filter-option">
+                        <input type="checkbox" name="field" value="stem">
+                        <span>STEM</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="field" value="humanities">
+                        <span>Humanities</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" name="field" value="interdisciplinary">
+                        <span>Interdisciplinary</span>
+                    </label>
+                </div>
+            </aside>
+
+            <!-- Programs List -->
+            <main class="programs-content">
+
+                <!-- Mobile Filter Toggle -->
+                <button class="filter-toggle" id="filterToggle">
+                    <span>Filters</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor">
+                        <path d="M2 4h12M4 8h8M6 12h4" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+
+                <div class="programs-grid" id="programsGrid">
+                    <!-- Programs will be inserted here by JavaScript -->
+                </div>
+
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">Directed by Mostafa Elgendy</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Program Detail Modal -->
+    <div class="modal-overlay" id="programModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M18 6L6 18M6 6l12 12" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Program details will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="programs-data.js"></script>
+    <script src="programs-level.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,825 @@
+
+        <!-- Auto-generated categories from database -->
+        <section id="categorized-vocabulary">
+            <h2 style="text-align: center; font-size: 1.8rem; margin-bottom: 2rem; color: #dbe7f9;">
+                📚 Vocabulary by Category
+            </h2>
+            
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    📚 Actions
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">God (God)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">abandon (abandon)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adolescent (adolescent)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adopt (adopt)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ago (منذ)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">answer (answer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ask (سأل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">basket (basket)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">become (become)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">budget (ميزانية)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">category (فئة)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">come (جاء)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">comedy (كوميديا)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">country (country)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">do (do)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">document (document)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dog (dog)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">domestic (domestic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dominant (dominant)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dominate (dominate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">double (double)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">doubt (doubt)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">down (down)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">downtown (downtown)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dozen (dozen)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">entry (entry)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">essay (essay)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">feel (feel)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">feeling (feeling)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">forget (forget)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">freedom (freedom)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">get (get)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">give (give)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">given (given)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">go (go)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">goal (goal)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">gold (gold)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">golden (golden)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">golf (golf)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">good (good)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">governor (governor)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hear (hear)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hearing (hearing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">help (help)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">helpful (helpful)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">income (income)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">industry (industry)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">intellectual (intellectual)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">intelligence (intelligence)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">know (know)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">make (make)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">maker (maker)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">makeup (makeup)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">mask (mask)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">mistake (mistake)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">need (need)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">negotiate (negotiate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">negotiation (negotiation)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ongoing (ongoing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">outcome (outcome)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">overcome (overcome)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">poetry (poetry)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">satellite (satellite)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">say (say)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">see (see)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">seed (seed)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">seek (seek)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">seem (seem)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">shadow (shadow)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">stake (stake)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">take (take)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">target (target)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">task (task)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">tell (tell)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">think (think)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">thinking (thinking)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">together (together)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">tremendous (tremendous)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">try (try)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">undergo (undergo)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">unknown (unknown)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">want (want)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">welcome (welcome)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">wisdom (wisdom)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🎓 Arts
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">actor (actor)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">advertising (advertising)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">apart (apart)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">apartment (apartment)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">art (فن)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">article (article)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">artist (artist)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">artistic (artistic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">chart (رسم)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dance (dance)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">department (department)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">drama (drama)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dramatic (dramatic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dramatically (dramatically)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">draw (draw)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">earth (earth)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">factor (factor)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">factory (factory)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">film (film)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">headquarters (headquarters)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">heart (heart)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">housing (housing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">increasing (increasing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">increasingly (increasingly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">movie (movie)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">music (music)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">musical (musical)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">musician (musician)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">paint (paint)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">painter (painter)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">painting (painting)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">part (part)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">participant (participant)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">participate (participate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">participation (participation)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">particular (particular)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">particularly (particularly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">partly (partly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">partner (partner)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">partnership (partnership)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">party (party)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">quarter (quarter)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">quarterback (quarterback)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">show (show)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">shower (shower)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sing (sing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">singer (singer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">single (single)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">smart (smart)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">song (song)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">start (start)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">surprising (surprising)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">surprisingly (surprisingly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">theater (theater)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">withdraw (withdraw)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🏆 Business
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">accompany (accompany)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">bank (بنك)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">business (عمل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">company (company)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">contract (contract)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">customer (customer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">finance (finance)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">loss (loss)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">market (market)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">marketing (marketing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">money (money)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">price (price)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">product (product)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">production (production)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">profit (profit)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sales (sales)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">service (service)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">trade (trade)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🎨 Education
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">acknowledge (acknowledge)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">book (كتاب)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">class (فئة)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">classic (كلاسيكي)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">classroom (فصل دراسي)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">college (كلية)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">education (education)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">educational (educational)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">examination (examination)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">examine (examine)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">example (example)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">knowledge (knowledge)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">learn (learn)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">learning (learning)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">school (school)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">student (student)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">study (study)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">teacher (teacher)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">university (university)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🌍 Emotions
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">angry (angry)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">enjoy (enjoy)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">fear (fear)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">glad (glad)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">glove (glove)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hope (hope)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">joy (joy)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">love (love)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lovely (lovely)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lover (lover)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">proud (proud)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sad (sad)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sorry (sorry)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🍽 Fashion
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">address (address)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">belt (حزام)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">clothes (ملابس)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">clothing (الملابس)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">coat (معطف)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">color (لون)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dress (dress)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">fabric (fabric)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hat (hat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hate (hate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lifestyle (lifestyle)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">shirt (shirt)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">shoe (shoe)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">somewhat (somewhat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">style (style)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">swear (swear)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">that (that)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">wear (wear)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">what (what)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">whatever (whatever)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    ️ Food
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">beat (ضرب)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">beneath (beneath)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">bread (خبز)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">breath (نفس)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">breathe (تنفس)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cake (كعكة)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cheese (جبن)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cook (cook)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cookie (cookie)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cooking (cooking)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">create (create)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">creation (creation)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">creative (creative)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">creature (creature)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">death (death)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">defeat (defeat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">drink (drink)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">eat (eat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">feature (feature)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">food (food)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">fruit (fruit)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">great (great)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">greatest (greatest)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">heat (heat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">leather (leather)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">meal (meal)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">meat (meat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">milk (milk)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">repeat (repeat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">repeatedly (repeatedly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">rice (rice)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sweet (sweet)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">threat (threat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">threaten (threaten)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">treat (treat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">treatment (treatment)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">treaty (treaty)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">vegetable (vegetable)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🏥 Government
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Congress (Congress)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Senate (Senate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">award (award)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">aware (aware)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">awareness (awareness)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">congressional (congressional)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">court (court)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">devote (devote)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">election (election)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">forward (forward)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">government (government)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">illegal (illegal)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">law (law)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lawn (lawn)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lawsuit (lawsuit)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lawyer (lawyer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">legal (legal)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">military (military)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">police (police)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">political (political)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">politically (politically)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">politician (politician)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">president (president)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">presidential (presidential)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">selection (selection)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">toward (toward)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">towards (towards)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">vote (vote)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">voter (voter)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">war (war)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">warm (warm)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">warn (warn)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">warning (warning)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    💼 Health
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">anybody (anybody)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">body (جسم)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">care (رعاية)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">career (مسيرة)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">careful (careful)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">carefully (carefully)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">disease (disease)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">doctor (doctor)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">everybody (everybody)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">health (health)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">healthy (healthy)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hospital (hospital)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">medical (medical)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">nobody (nobody)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">nurse (nurse)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">patient (patient)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">scared (scared)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sick (sick)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">somebody (somebody)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">therapy (therapy)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🚗 Home Family
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">bathroom (bathroom)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">bed (سرير)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">bedroom (bedroom)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">chair (كرسي)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">comfortable (comfortable)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">comparison (comparison)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">daughter (daughter)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">door (door)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">home (home)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">homeless (homeless)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">house (house)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">household (household)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">kitchen (kitchen)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lesson (lesson)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">prison (prison)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">prisoner (prisoner)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">reason (reason)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">reasonable (reasonable)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">room (room)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">son (son)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">stable (stable)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">table (table)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">tablespoon (tablespoon)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">wall (wall)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    ⚽ Nature
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">animal (حيوان)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">brain (دماغ)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">driver (driver)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">forest (forest)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">grain (grain)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lake (lake)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">mountain (mountain)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">nature (nature)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ocean (ocean)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">plant (plant)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">rain (rain)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">river (river)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sea (sea)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">search (search)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">season (season)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">seat (seat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sky (sky)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">snow (snow)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">street (street)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">train (train)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">training (training)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">tree (tree)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">weather (weather)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🎵 Other
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">AIDS (AIDS)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">AM (AM)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">African (African)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">African-American (African-American)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">American (American)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Arab (Arab)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Asian (Asian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Bible (Bible)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">British (British)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">CEO (CEO)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Canadian (Canadian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Catholic (Catholic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Chinese (Chinese)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Christian (Christian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Christmas (Christmas)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">DNA (DNA)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Democrat (Democrat)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">English (English)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">European (European)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">French (French)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">I (I)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Indian (Indian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Iraqi (Iraqi)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Irish (Irish)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Islamic (Islamic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Israeli (Israeli)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Italian (Italian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Japanese (Japanese)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Jew (Jew)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Jewish (Jewish)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Latin (Latin)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Mexican (Mexican)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Mr (Mr)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Mrs (Mrs)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Ms (Ms)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Muslim (Muslim)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Olympic (Olympic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">PC (PC)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">PM (PM)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Palestinian (Palestinian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Republican (Republican)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Russian (Russian)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Soviet (Soviet)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Spanish (Spanish)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Supreme (Supreme)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">TV (TV)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">United (United)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">a (ا)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ability (ability)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">able (قادر)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">abortion (abortion)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">about (عن)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">above (above)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">absence (absence)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">absolute (absolute)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">absolutely (absolutely)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">absorb (absorb)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">abuse (abuse)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">academic (academic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">accept (accept)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">access (access)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">accident (accident)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">accomplish (accomplish)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">according (according)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">account (account)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">accurate (accurate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">accuse (accuse)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">achieve (achieve)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">achievement (achievement)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">acid (حمضي)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">acquire (acquire)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">across (across)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">act (فعل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">action (action)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">active (active)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">activist (activist)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">activity (activity)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">actress (actress)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">actual (actual)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">actually (actually)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ad (ad)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adapt (adapt)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">add (أضاف)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">addition (addition)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">additional (additional)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adequate (adequate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adjust (adjust)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adjustment (adjustment)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">administration (administration)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">administrator (administrator)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">admire (admire)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">admission (admission)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">admit (admit)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adult (adult)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">advance (advance)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">advanced (advanced)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">advantage (advantage)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">adventure (adventure)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">advice (advice)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">advise (advise)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🌲 People
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">German (German)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">baby (رضيع)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">boyfriend (boyfriend)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">brother (أخ)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">chairman (chairman)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">child (طفل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">childhood (childhood)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">command (أمر)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">commander (قائد)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">demand (demand)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">family (family)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">father (father)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">friend (friend)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">friendly (friendly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">friendship (friendship)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">gentleman (gentleman)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">girlfriend (girlfriend)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">grandfather (grandfather)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">grandmother (grandmother)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">human (human)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">man (man)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">manage (manage)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">management (management)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">manager (manager)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">manner (manner)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">manufacturer (manufacturer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">manufacturing (manufacturing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">many (many)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">mother (mother)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">parent (parent)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">people (people)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">performance (performance)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">permanent (permanent)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">person (person)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">personal (personal)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">personality (personality)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">personally (personally)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">personnel (personnel)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">romantic (romantic)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sister (sister)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">spokesman (spokesman)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">woman (woman)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    👥 Qualities
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">bad (سيء)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">badly (badly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">beautiful (beautiful)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">big (كبير)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">breakfast (breakfast)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">clean (نظيف)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cold (بارد)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">dirty (dirty)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">fast (fast)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hot (hot)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">photo (photo)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">photograph (photograph)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">photographer (photographer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">shot (shot)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">slow (slow)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">slowly (slowly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">small (small)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">soft (soft)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">strong (strong)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">strongly (strongly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">stupid (stupid)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ugly (ugly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">weak (weak)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    🏠 Science
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">cell (خلية)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">element (element)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">elementary (elementary)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">energy (energy)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">excellent (excellent)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">experiment (experiment)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">medicine (medicine)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">research (research)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">researcher (researcher)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">science (science)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">theory (theory)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    👔 Sports
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">athlete (athlete)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ball (كرة)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">baseball (baseball)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">basketball (basketball)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">close (قريب)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">closely (بقرب)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">closer (closer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">coach (مدرب)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">display (display)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">drawing (drawing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">embrace (embrace)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">exercise (exercise)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">following (following)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">football (football)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">game (game)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">growing (growing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lose (lose)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">match (match)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">play (play)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">player (player)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">race (race)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">run (run)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">running (running)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sport (sport)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">swing (swing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">team (team)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">trace (trace)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">transportation (transportation)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">twin (twin)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">win (win)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">wind (wind)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">window (window)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">wine (wine)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">wing (wing)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">winner (winner)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">winter (winter)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    😊 Technology
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">Internet (Internet)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">apparent (apparent)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">apparently (apparently)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appeal (appeal)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appear (appear)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appearance (appearance)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">apple (apple)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">application (application)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">apply (apply)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appoint (appoint)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appointment (appointment)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appreciate (appreciate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">approach (approach)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">appropriate (appropriate)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">approval (approval)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">approve (approve)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">approximately (approximately)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">code (رمز)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">computer (computer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">data (data)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">device (device)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">digital (digital)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">disappear (disappear)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">file (file)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">happen (happen)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">happy (happy)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hard (hard)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hardly (hardly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">network (network)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">observer (observer)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">online (online)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">process (process)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">profile (profile)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">program (program)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">software (software)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">system (system)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">technical (technical)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">technique (technique)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">technology (technology)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">virus (virus)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    ⏰ Time
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">after (after)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">afternoon (afternoon)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">before (قبل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">birthday (birthday)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">day (day)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">evening (evening)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">everyday (everyday)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">holiday (holiday)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hour (hour)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">lifetime (lifetime)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">minute (minute)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">month (month)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">morning (morning)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">night (night)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">now (now)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">nowhere (nowhere)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">second (second)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">sometimes (sometimes)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">strengthen (strengthen)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">then (then)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">time (time)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">today (today)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">tomorrow (tomorrow)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">tonight (tonight)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">week (week)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">weekend (weekend)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">weekly (weekly)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">year (year)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">yesterday (yesterday)</span>
+                </div>
+            </section>
+
+
+            <section style="background: rgba(17, 22, 44, 0.7); border: 1px solid rgba(124, 157, 214, 0.15); border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; backdrop-filter: blur(10px);">
+                <h3 style="color: #dbe7f9; font-size: 1.3rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                    📚 Travel
+                </h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.8rem;">
+                                        <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">abroad (abroad)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">airport (airport)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">broad (واسع)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">car (car)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">carbon (carbon)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">card (بطاقة)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">carrier (ناقل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">carry (حمل)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">hotel (hotel)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">journey (journey)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">plane (plane)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">planet (planet)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">road (road)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">strip (strip)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">ticket (ticket)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">travel (travel)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">trip (trip)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">visit (visit)</span>
+                    <span style="color: #c3cee0; padding: 0.5rem; font-size: 0.9rem;">visitor (visitor)</span>
+                </div>
+            </section>
+
+        </section>

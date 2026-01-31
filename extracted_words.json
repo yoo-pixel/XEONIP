@@ -1,0 +1,3607 @@
+{
+  "total_words": 900,
+  "total_categories": 0,
+  "words": [
+    {
+      "english": "belief",
+      "arabic": "اعتقاد"
+    },
+    {
+      "english": "concept",
+      "arabic": "مفهوم"
+    },
+    {
+      "english": "explanation",
+      "arabic": "تفسير"
+    },
+    {
+      "english": "idea",
+      "arabic": "فكرة"
+    },
+    {
+      "english": "ideal",
+      "arabic": "مثالي"
+    },
+    {
+      "english": "meaning",
+      "arabic": "معنى"
+    },
+    {
+      "english": "mind",
+      "arabic": "يمانع"
+    },
+    {
+      "english": "opinion",
+      "arabic": "رأي"
+    },
+    {
+      "english": "plan",
+      "arabic": "يخطط"
+    },
+    {
+      "english": "planning",
+      "arabic": "تخطيط"
+    },
+    {
+      "english": "principle",
+      "arabic": "مبدأ"
+    },
+    {
+      "english": "purpose",
+      "arabic": "غرض"
+    },
+    {
+      "english": "remind",
+      "arabic": "يذكر"
+    },
+    {
+      "english": "thought",
+      "arabic": "فكرة"
+    },
+    {
+      "english": "value",
+      "arabic": "قيمة"
+    },
+    {
+      "english": "God",
+      "arabic": "الله"
+    },
+    {
+      "english": "abandon",
+      "arabic": "يتخلى عن"
+    },
+    {
+      "english": "adolescent",
+      "arabic": "مراهق"
+    },
+    {
+      "english": "adopt",
+      "arabic": "يتبنى"
+    },
+    {
+      "english": "ago",
+      "arabic": "منذ"
+    },
+    {
+      "english": "answer",
+      "arabic": "جواب"
+    },
+    {
+      "english": "ask",
+      "arabic": "سأل"
+    },
+    {
+      "english": "basket",
+      "arabic": "سلة"
+    },
+    {
+      "english": "become",
+      "arabic": "يصبح"
+    },
+    {
+      "english": "budget",
+      "arabic": "ميزانية"
+    },
+    {
+      "english": "category",
+      "arabic": "فئة"
+    },
+    {
+      "english": "come",
+      "arabic": "جاء"
+    },
+    {
+      "english": "comedy",
+      "arabic": "كوميديا"
+    },
+    {
+      "english": "country",
+      "arabic": "بلد"
+    },
+    {
+      "english": "do",
+      "arabic": "يفعل"
+    },
+    {
+      "english": "document",
+      "arabic": "وثيقة"
+    },
+    {
+      "english": "dog",
+      "arabic": "كلب"
+    },
+    {
+      "english": "domestic",
+      "arabic": "منزلي"
+    },
+    {
+      "english": "dominant",
+      "arabic": "مهيمن"
+    },
+    {
+      "english": "dominate",
+      "arabic": "يهيمن"
+    },
+    {
+      "english": "double",
+      "arabic": "مزدوج"
+    },
+    {
+      "english": "doubt",
+      "arabic": "شك"
+    },
+    {
+      "english": "down",
+      "arabic": "أسفل"
+    },
+    {
+      "english": "downtown",
+      "arabic": "وسط المدينة"
+    },
+    {
+      "english": "dozen",
+      "arabic": "دزينة"
+    },
+    {
+      "english": "entry",
+      "arabic": "دخول"
+    },
+    {
+      "english": "essay",
+      "arabic": "مقال"
+    },
+    {
+      "english": "feel",
+      "arabic": "يشعر"
+    },
+    {
+      "english": "feeling",
+      "arabic": "شعور"
+    },
+    {
+      "english": "forget",
+      "arabic": "ينسى"
+    },
+    {
+      "english": "freedom",
+      "arabic": "حرية"
+    },
+    {
+      "english": "get",
+      "arabic": "يحصل"
+    },
+    {
+      "english": "give",
+      "arabic": "يعطي"
+    },
+    {
+      "english": "given",
+      "arabic": "معطى"
+    },
+    {
+      "english": "go",
+      "arabic": "يذهب"
+    },
+    {
+      "english": "goal",
+      "arabic": "هدف"
+    },
+    {
+      "english": "gold",
+      "arabic": "ذهبي"
+    },
+    {
+      "english": "golden",
+      "arabic": "ذهبي"
+    },
+    {
+      "english": "golf",
+      "arabic": "غولف"
+    },
+    {
+      "english": "good",
+      "arabic": "جيد"
+    },
+    {
+      "english": "governor",
+      "arabic": "حاكم"
+    },
+    {
+      "english": "hear",
+      "arabic": "يسمع"
+    },
+    {
+      "english": "hearing",
+      "arabic": "جلسة استماع"
+    },
+    {
+      "english": "help",
+      "arabic": "يساعد"
+    },
+    {
+      "english": "helpful",
+      "arabic": "مفيد"
+    },
+    {
+      "english": "income",
+      "arabic": "دخل"
+    },
+    {
+      "english": "industry",
+      "arabic": "صناعة"
+    },
+    {
+      "english": "intellectual",
+      "arabic": "فكري"
+    },
+    {
+      "english": "intelligence",
+      "arabic": "ذكاء"
+    },
+    {
+      "english": "know",
+      "arabic": "يعرف"
+    },
+    {
+      "english": "make",
+      "arabic": "يصنع"
+    },
+    {
+      "english": "maker",
+      "arabic": "صانع"
+    },
+    {
+      "english": "makeup",
+      "arabic": "مكياج"
+    },
+    {
+      "english": "mask",
+      "arabic": "قناع"
+    },
+    {
+      "english": "mistake",
+      "arabic": "خطأ"
+    },
+    {
+      "english": "need",
+      "arabic": "يحتاج"
+    },
+    {
+      "english": "negotiate",
+      "arabic": "يفاوض"
+    },
+    {
+      "english": "negotiation",
+      "arabic": "تفاوض"
+    },
+    {
+      "english": "ongoing",
+      "arabic": "مستمر"
+    },
+    {
+      "english": "outcome",
+      "arabic": "نتيجة"
+    },
+    {
+      "english": "overcome",
+      "arabic": "يتغلب"
+    },
+    {
+      "english": "poetry",
+      "arabic": "شعر"
+    },
+    {
+      "english": "satellite",
+      "arabic": "قمر صناعي"
+    },
+    {
+      "english": "say",
+      "arabic": "يقول"
+    },
+    {
+      "english": "see",
+      "arabic": "يرى"
+    },
+    {
+      "english": "seed",
+      "arabic": "بذرة"
+    },
+    {
+      "english": "seek",
+      "arabic": "يبحث"
+    },
+    {
+      "english": "seem",
+      "arabic": "يبدو"
+    },
+    {
+      "english": "shadow",
+      "arabic": "ظل"
+    },
+    {
+      "english": "stake",
+      "arabic": "حصة"
+    },
+    {
+      "english": "take",
+      "arabic": "يأخذ"
+    },
+    {
+      "english": "target",
+      "arabic": "هدف"
+    },
+    {
+      "english": "task",
+      "arabic": "مهمة"
+    },
+    {
+      "english": "tell",
+      "arabic": "يخبر"
+    },
+    {
+      "english": "think",
+      "arabic": "يفكر"
+    },
+    {
+      "english": "thinking",
+      "arabic": "تفكير"
+    },
+    {
+      "english": "together",
+      "arabic": "معاً"
+    },
+    {
+      "english": "tremendous",
+      "arabic": "هائل"
+    },
+    {
+      "english": "try",
+      "arabic": "يحاول"
+    },
+    {
+      "english": "undergo",
+      "arabic": "يخضع لـ"
+    },
+    {
+      "english": "unknown",
+      "arabic": "مجهول"
+    },
+    {
+      "english": "want",
+      "arabic": "يريد"
+    },
+    {
+      "english": "welcome",
+      "arabic": "ترحيب"
+    },
+    {
+      "english": "wisdom",
+      "arabic": "حكمة"
+    },
+    {
+      "english": "adjust",
+      "arabic": "يعدل"
+    },
+    {
+      "english": "adjustment",
+      "arabic": "تعديل"
+    },
+    {
+      "english": "also",
+      "arabic": "أيضا"
+    },
+    {
+      "english": "always",
+      "arabic": "دائماً"
+    },
+    {
+      "english": "delivery",
+      "arabic": "توصيل"
+    },
+    {
+      "english": "discovery",
+      "arabic": "اكتشاف"
+    },
+    {
+      "english": "every",
+      "arabic": "كل"
+    },
+    {
+      "english": "everyone",
+      "arabic": "الجميع"
+    },
+    {
+      "english": "everything",
+      "arabic": "كل شيء"
+    },
+    {
+      "english": "how",
+      "arabic": "كيف"
+    },
+    {
+      "english": "just",
+      "arabic": "فقط"
+    },
+    {
+      "english": "justice",
+      "arabic": "عدالة"
+    },
+    {
+      "english": "justify",
+      "arabic": "يبرر"
+    },
+    {
+      "english": "never",
+      "arabic": "أبداً"
+    },
+    {
+      "english": "nevertheless",
+      "arabic": "مع ذلك"
+    },
+    {
+      "english": "often",
+      "arabic": "غالباً"
+    },
+    {
+      "english": "only",
+      "arabic": "فقط"
+    },
+    {
+      "english": "quite",
+      "arabic": "تماماً"
+    },
+    {
+      "english": "really",
+      "arabic": "حقاً"
+    },
+    {
+      "english": "recovery",
+      "arabic": "تعافي"
+    },
+    {
+      "english": "too",
+      "arabic": "أيضاً"
+    },
+    {
+      "english": "very",
+      "arabic": "جداً"
+    },
+    {
+      "english": "well",
+      "arabic": "جيداً"
+    },
+    {
+      "english": "actor",
+      "arabic": "ممثل"
+    },
+    {
+      "english": "advertising",
+      "arabic": "إعلان"
+    },
+    {
+      "english": "apart",
+      "arabic": "منفصل"
+    },
+    {
+      "english": "apartment",
+      "arabic": "شقة"
+    },
+    {
+      "english": "art",
+      "arabic": "فن"
+    },
+    {
+      "english": "article",
+      "arabic": "مقال"
+    },
+    {
+      "english": "artist",
+      "arabic": "فنان"
+    },
+    {
+      "english": "artistic",
+      "arabic": "فني"
+    },
+    {
+      "english": "chart",
+      "arabic": "رسم"
+    },
+    {
+      "english": "dance",
+      "arabic": "رقص"
+    },
+    {
+      "english": "department",
+      "arabic": "قسم"
+    },
+    {
+      "english": "drama",
+      "arabic": "دراما"
+    },
+    {
+      "english": "dramatic",
+      "arabic": "درامي"
+    },
+    {
+      "english": "dramatically",
+      "arabic": "بشكل كبير"
+    },
+    {
+      "english": "draw",
+      "arabic": "تعادل"
+    },
+    {
+      "english": "earth",
+      "arabic": "أرض"
+    },
+    {
+      "english": "factor",
+      "arabic": "عامل"
+    },
+    {
+      "english": "factory",
+      "arabic": "مصنع"
+    },
+    {
+      "english": "film",
+      "arabic": "فيلم"
+    },
+    {
+      "english": "headquarters",
+      "arabic": "مقر"
+    },
+    {
+      "english": "heart",
+      "arabic": "قلب"
+    },
+    {
+      "english": "housing",
+      "arabic": "إسكان"
+    },
+    {
+      "english": "increasing",
+      "arabic": "متزايد"
+    },
+    {
+      "english": "increasingly",
+      "arabic": "على نحو متزايد"
+    },
+    {
+      "english": "movie",
+      "arabic": "فيلم"
+    },
+    {
+      "english": "music",
+      "arabic": "موسيقى"
+    },
+    {
+      "english": "musical",
+      "arabic": "موسيقي"
+    },
+    {
+      "english": "musician",
+      "arabic": "موسيقي"
+    },
+    {
+      "english": "paint",
+      "arabic": "يرسم"
+    },
+    {
+      "english": "painter",
+      "arabic": "رسام"
+    },
+    {
+      "english": "painting",
+      "arabic": "لوحة"
+    },
+    {
+      "english": "part",
+      "arabic": "جزء"
+    },
+    {
+      "english": "participant",
+      "arabic": "مشارك"
+    },
+    {
+      "english": "participate",
+      "arabic": "يشارك"
+    },
+    {
+      "english": "participation",
+      "arabic": "مشاركة"
+    },
+    {
+      "english": "particular",
+      "arabic": "معين"
+    },
+    {
+      "english": "particularly",
+      "arabic": "خاصةً"
+    },
+    {
+      "english": "partly",
+      "arabic": "جزئيًا"
+    },
+    {
+      "english": "partner",
+      "arabic": "شريك"
+    },
+    {
+      "english": "partnership",
+      "arabic": "شراكة"
+    },
+    {
+      "english": "party",
+      "arabic": "حزب"
+    },
+    {
+      "english": "quarter",
+      "arabic": "ربع"
+    },
+    {
+      "english": "quarterback",
+      "arabic": "لاعب وسط"
+    },
+    {
+      "english": "show",
+      "arabic": "عرض"
+    },
+    {
+      "english": "shower",
+      "arabic": "دُش"
+    },
+    {
+      "english": "sing",
+      "arabic": "يغني"
+    },
+    {
+      "english": "singer",
+      "arabic": "مغني"
+    },
+    {
+      "english": "single",
+      "arabic": "واحد"
+    },
+    {
+      "english": "smart",
+      "arabic": "ذكي"
+    },
+    {
+      "english": "song",
+      "arabic": "أغنية"
+    },
+    {
+      "english": "start",
+      "arabic": "يبدأ"
+    },
+    {
+      "english": "surprising",
+      "arabic": "مفاجئ"
+    },
+    {
+      "english": "surprisingly",
+      "arabic": "بشكل مفاجئ"
+    },
+    {
+      "english": "theater",
+      "arabic": "مسرح"
+    },
+    {
+      "english": "withdraw",
+      "arabic": "ينسحب"
+    },
+    {
+      "english": "bridge",
+      "arabic": "جسر"
+    },
+    {
+      "english": "building",
+      "arabic": "مبنى"
+    },
+    {
+      "english": "ceiling",
+      "arabic": "سقف"
+    },
+    {
+      "english": "construction",
+      "arabic": "بناء"
+    },
+    {
+      "english": "entrance",
+      "arabic": "مدخل"
+    },
+    {
+      "english": "floor",
+      "arabic": "أرضية"
+    },
+    {
+      "english": "gate",
+      "arabic": "بوابة"
+    },
+    {
+      "english": "investigate",
+      "arabic": "يحقق"
+    },
+    {
+      "english": "proof",
+      "arabic": "دليل"
+    },
+    {
+      "english": "roof",
+      "arabic": "سطح"
+    },
+    {
+      "english": "structure",
+      "arabic": "هيكل"
+    },
+    {
+      "english": "tower",
+      "arabic": "برج"
+    },
+    {
+      "english": "accompany",
+      "arabic": "يرافق"
+    },
+    {
+      "english": "bank",
+      "arabic": "بنك"
+    },
+    {
+      "english": "business",
+      "arabic": "عمل"
+    },
+    {
+      "english": "company",
+      "arabic": "شركة"
+    },
+    {
+      "english": "contract",
+      "arabic": "عقد"
+    },
+    {
+      "english": "customer",
+      "arabic": "زبون"
+    },
+    {
+      "english": "finance",
+      "arabic": "مالية"
+    },
+    {
+      "english": "loss",
+      "arabic": "خسارة"
+    },
+    {
+      "english": "market",
+      "arabic": "سوق"
+    },
+    {
+      "english": "marketing",
+      "arabic": "تسويق"
+    },
+    {
+      "english": "money",
+      "arabic": "مال"
+    },
+    {
+      "english": "price",
+      "arabic": "سعر"
+    },
+    {
+      "english": "product",
+      "arabic": "منتج"
+    },
+    {
+      "english": "production",
+      "arabic": "إنتاج"
+    },
+    {
+      "english": "profit",
+      "arabic": "ربح"
+    },
+    {
+      "english": "sales",
+      "arabic": "مبيعات"
+    },
+    {
+      "english": "service",
+      "arabic": "خدمة"
+    },
+    {
+      "english": "trade",
+      "arabic": "تجارة"
+    },
+    {
+      "english": "around",
+      "arabic": "حول"
+    },
+    {
+      "english": "background",
+      "arabic": "خلفية"
+    },
+    {
+      "english": "black",
+      "arabic": "أسود"
+    },
+    {
+      "english": "blue",
+      "arabic": "أزرق"
+    },
+    {
+      "english": "brown",
+      "arabic": "بني"
+    },
+    {
+      "english": "circle",
+      "arabic": "دائرة"
+    },
+    {
+      "english": "flat",
+      "arabic": "مسطح"
+    },
+    {
+      "english": "green",
+      "arabic": "أخضر"
+    },
+    {
+      "english": "ground",
+      "arabic": "أرض"
+    },
+    {
+      "english": "inflation",
+      "arabic": "تضخم"
+    },
+    {
+      "english": "red",
+      "arabic": "أحمر"
+    },
+    {
+      "english": "round",
+      "arabic": "دائري"
+    },
+    {
+      "english": "shape",
+      "arabic": "شكل"
+    },
+    {
+      "english": "square",
+      "arabic": "مربع"
+    },
+    {
+      "english": "surround",
+      "arabic": "يحيط"
+    },
+    {
+      "english": "white",
+      "arabic": "أبيض"
+    },
+    {
+      "english": "yellow",
+      "arabic": "أصفر"
+    },
+    {
+      "english": "Republican",
+      "arabic": "جمهوري"
+    },
+    {
+      "english": "able",
+      "arabic": "قادر"
+    },
+    {
+      "english": "available",
+      "arabic": "متاح"
+    },
+    {
+      "english": "cable",
+      "arabic": "كابل"
+    },
+    {
+      "english": "capable",
+      "arabic": "قادر"
+    },
+    {
+      "english": "considerable",
+      "arabic": "كبير"
+    },
+    {
+      "english": "different",
+      "arabic": "مختلف"
+    },
+    {
+      "english": "differently",
+      "arabic": "بشكل مختلف"
+    },
+    {
+      "english": "enable",
+      "arabic": "يمكّن"
+    },
+    {
+      "english": "general",
+      "arabic": "عام"
+    },
+    {
+      "english": "generally",
+      "arabic": "عمومًا"
+    },
+    {
+      "english": "high",
+      "arabic": "عالي"
+    },
+    {
+      "english": "highlight",
+      "arabic": "تسليط الضوء"
+    },
+    {
+      "english": "highly",
+      "arabic": "للغاية"
+    },
+    {
+      "english": "highway",
+      "arabic": "طريق سريع"
+    },
+    {
+      "english": "important",
+      "arabic": "مهم"
+    },
+    {
+      "english": "large",
+      "arabic": "كبير"
+    },
+    {
+      "english": "largely",
+      "arabic": "إلى حد كبير"
+    },
+    {
+      "english": "new",
+      "arabic": "جديد"
+    },
+    {
+      "english": "old",
+      "arabic": "قديم"
+    },
+    {
+      "english": "own",
+      "arabic": "يملك"
+    },
+    {
+      "english": "public",
+      "arabic": "عام"
+    },
+    {
+      "english": "publication",
+      "arabic": "نشر"
+    },
+    {
+      "english": "publicly",
+      "arabic": "علنًا"
+    },
+    {
+      "english": "remarkable",
+      "arabic": "ملحوظ"
+    },
+    {
+      "english": "same",
+      "arabic": "نفس"
+    },
+    {
+      "english": "unable",
+      "arabic": "غير قادر"
+    },
+    {
+      "english": "valuable",
+      "arabic": "ثمين"
+    },
+    {
+      "english": "variable",
+      "arabic": "متغير"
+    },
+    {
+      "english": "vulnerable",
+      "arabic": "ضعيف"
+    },
+    {
+      "english": "be",
+      "arabic": "يكون"
+    },
+    {
+      "english": "find",
+      "arabic": "يجد"
+    },
+    {
+      "english": "finding",
+      "arabic": "نتيجة"
+    },
+    {
+      "english": "have",
+      "arabic": "يملك"
+    },
+    {
+      "english": "look",
+      "arabic": "ينظر"
+    },
+    {
+      "english": "overlook",
+      "arabic": "يتجاهل"
+    },
+    {
+      "english": "use",
+      "arabic": "يستخدم"
+    },
+    {
+      "english": "communication",
+      "arabic": "اتصال"
+    },
+    {
+      "english": "conversation",
+      "arabic": "محادثة"
+    },
+    {
+      "english": "dialogue",
+      "arabic": "حوار"
+    },
+    {
+      "english": "e-mail",
+      "arabic": "بريد إلكتروني"
+    },
+    {
+      "english": "immediate",
+      "arabic": "فوري"
+    },
+    {
+      "english": "immediately",
+      "arabic": "فورًا"
+    },
+    {
+      "english": "language",
+      "arabic": "لغة"
+    },
+    {
+      "english": "letter",
+      "arabic": "حرف"
+    },
+    {
+      "english": "mail",
+      "arabic": "بريد"
+    },
+    {
+      "english": "media",
+      "arabic": "وسائل الإعلام"
+    },
+    {
+      "english": "message",
+      "arabic": "رسالة"
+    },
+    {
+      "english": "publish",
+      "arabic": "ينشر"
+    },
+    {
+      "english": "publisher",
+      "arabic": "ناشر"
+    },
+    {
+      "english": "speech",
+      "arabic": "خطاب"
+    },
+    {
+      "english": "telephone",
+      "arabic": "هاتف"
+    },
+    {
+      "english": "acknowledge",
+      "arabic": "يقر"
+    },
+    {
+      "english": "book",
+      "arabic": "كتاب"
+    },
+    {
+      "english": "class",
+      "arabic": "فئة"
+    },
+    {
+      "english": "classic",
+      "arabic": "كلاسيكي"
+    },
+    {
+      "english": "classroom",
+      "arabic": "فصل دراسي"
+    },
+    {
+      "english": "college",
+      "arabic": "كلية"
+    },
+    {
+      "english": "education",
+      "arabic": "تعليم"
+    },
+    {
+      "english": "educational",
+      "arabic": "تعليمي"
+    },
+    {
+      "english": "examination",
+      "arabic": "فحص"
+    },
+    {
+      "english": "examine",
+      "arabic": "يفحص"
+    },
+    {
+      "english": "example",
+      "arabic": "مثال"
+    },
+    {
+      "english": "knowledge",
+      "arabic": "معرفة"
+    },
+    {
+      "english": "learn",
+      "arabic": "يتعلم"
+    },
+    {
+      "english": "learning",
+      "arabic": "تعلّم"
+    },
+    {
+      "english": "school",
+      "arabic": "مدرسة"
+    },
+    {
+      "english": "student",
+      "arabic": "طالب"
+    },
+    {
+      "english": "study",
+      "arabic": "يدرس"
+    },
+    {
+      "english": "teacher",
+      "arabic": "معلم"
+    },
+    {
+      "english": "university",
+      "arabic": "جامعة"
+    },
+    {
+      "english": "angry",
+      "arabic": "غاضب"
+    },
+    {
+      "english": "enjoy",
+      "arabic": "يستمتع"
+    },
+    {
+      "english": "fear",
+      "arabic": "خوف"
+    },
+    {
+      "english": "glad",
+      "arabic": "سعيد"
+    },
+    {
+      "english": "glove",
+      "arabic": "قفاز"
+    },
+    {
+      "english": "hope",
+      "arabic": "يأمل"
+    },
+    {
+      "english": "joy",
+      "arabic": "فرح"
+    },
+    {
+      "english": "love",
+      "arabic": "يحب"
+    },
+    {
+      "english": "lovely",
+      "arabic": "جميل"
+    },
+    {
+      "english": "lover",
+      "arabic": "عاشق"
+    },
+    {
+      "english": "proud",
+      "arabic": "فخور"
+    },
+    {
+      "english": "sad",
+      "arabic": "حزين"
+    },
+    {
+      "english": "sorry",
+      "arabic": "آسف"
+    },
+    {
+      "english": "address",
+      "arabic": "عنوان"
+    },
+    {
+      "english": "belt",
+      "arabic": "حزام"
+    },
+    {
+      "english": "clothes",
+      "arabic": "ملابس"
+    },
+    {
+      "english": "clothing",
+      "arabic": "الملابس"
+    },
+    {
+      "english": "coat",
+      "arabic": "معطف"
+    },
+    {
+      "english": "color",
+      "arabic": "لون"
+    },
+    {
+      "english": "dress",
+      "arabic": "فستان"
+    },
+    {
+      "english": "fabric",
+      "arabic": "قماش"
+    },
+    {
+      "english": "hat",
+      "arabic": "قبعة"
+    },
+    {
+      "english": "hate",
+      "arabic": "كره"
+    },
+    {
+      "english": "lifestyle",
+      "arabic": "أسلوب حياة"
+    },
+    {
+      "english": "shirt",
+      "arabic": "قميص"
+    },
+    {
+      "english": "shoe",
+      "arabic": "حذاء"
+    },
+    {
+      "english": "somewhat",
+      "arabic": "إلى حد ما"
+    },
+    {
+      "english": "style",
+      "arabic": "أسلوب"
+    },
+    {
+      "english": "swear",
+      "arabic": "يقسم"
+    },
+    {
+      "english": "that",
+      "arabic": "ذلك"
+    },
+    {
+      "english": "wear",
+      "arabic": "يرتدي"
+    },
+    {
+      "english": "what",
+      "arabic": "ماذا"
+    },
+    {
+      "english": "whatever",
+      "arabic": "أيًّا يكن"
+    },
+    {
+      "english": "beat",
+      "arabic": "ضرب"
+    },
+    {
+      "english": "beneath",
+      "arabic": "تحت"
+    },
+    {
+      "english": "bread",
+      "arabic": "خبز"
+    },
+    {
+      "english": "breath",
+      "arabic": "نفس"
+    },
+    {
+      "english": "breathe",
+      "arabic": "تنفس"
+    },
+    {
+      "english": "cake",
+      "arabic": "كعكة"
+    },
+    {
+      "english": "cheese",
+      "arabic": "جبن"
+    },
+    {
+      "english": "cook",
+      "arabic": "يطبخ"
+    },
+    {
+      "english": "cookie",
+      "arabic": "بسكويت"
+    },
+    {
+      "english": "cooking",
+      "arabic": "طبخ"
+    },
+    {
+      "english": "create",
+      "arabic": "يخلق"
+    },
+    {
+      "english": "creation",
+      "arabic": "إنشاء"
+    },
+    {
+      "english": "creative",
+      "arabic": "إبداعي"
+    },
+    {
+      "english": "creature",
+      "arabic": "مخلوق"
+    },
+    {
+      "english": "death",
+      "arabic": "موت"
+    },
+    {
+      "english": "defeat",
+      "arabic": "هزيمة"
+    },
+    {
+      "english": "drink",
+      "arabic": "مشروب"
+    },
+    {
+      "english": "eat",
+      "arabic": "يأكل"
+    },
+    {
+      "english": "feature",
+      "arabic": "ميزة"
+    },
+    {
+      "english": "food",
+      "arabic": "طعام"
+    },
+    {
+      "english": "fruit",
+      "arabic": "فاكهة"
+    },
+    {
+      "english": "great",
+      "arabic": "عظيم"
+    },
+    {
+      "english": "greatest",
+      "arabic": "الأعظم"
+    },
+    {
+      "english": "heat",
+      "arabic": "حرارة"
+    },
+    {
+      "english": "leather",
+      "arabic": "جلد"
+    },
+    {
+      "english": "meal",
+      "arabic": "وجبة"
+    },
+    {
+      "english": "meat",
+      "arabic": "لحم"
+    },
+    {
+      "english": "milk",
+      "arabic": "حليب"
+    },
+    {
+      "english": "repeat",
+      "arabic": "يكرر"
+    },
+    {
+      "english": "repeatedly",
+      "arabic": "مرارًا"
+    },
+    {
+      "english": "rice",
+      "arabic": "أرز"
+    },
+    {
+      "english": "sweet",
+      "arabic": "حلو"
+    },
+    {
+      "english": "threat",
+      "arabic": "تهديد"
+    },
+    {
+      "english": "threaten",
+      "arabic": "يهدد"
+    },
+    {
+      "english": "treat",
+      "arabic": "يعالج"
+    },
+    {
+      "english": "treatment",
+      "arabic": "علاج"
+    },
+    {
+      "english": "treaty",
+      "arabic": "معاهدة"
+    },
+    {
+      "english": "vegetable",
+      "arabic": "خضار"
+    },
+    {
+      "english": "Congress",
+      "arabic": "كونغرس"
+    },
+    {
+      "english": "Senate",
+      "arabic": "مجلس الشيوخ"
+    },
+    {
+      "english": "award",
+      "arabic": "جائزة"
+    },
+    {
+      "english": "aware",
+      "arabic": "واعٍ"
+    },
+    {
+      "english": "awareness",
+      "arabic": "وعي"
+    },
+    {
+      "english": "congressional",
+      "arabic": "خاص بالكونغرس"
+    },
+    {
+      "english": "court",
+      "arabic": "محكمة"
+    },
+    {
+      "english": "devote",
+      "arabic": "يكرس"
+    },
+    {
+      "english": "election",
+      "arabic": "انتخاب"
+    },
+    {
+      "english": "forward",
+      "arabic": "أمام"
+    },
+    {
+      "english": "government",
+      "arabic": "حكومة"
+    },
+    {
+      "english": "illegal",
+      "arabic": "غير قانوني"
+    },
+    {
+      "english": "law",
+      "arabic": "قانون"
+    },
+    {
+      "english": "lawn",
+      "arabic": "عشب"
+    },
+    {
+      "english": "lawsuit",
+      "arabic": "دعوى قضائية"
+    },
+    {
+      "english": "lawyer",
+      "arabic": "محامي"
+    },
+    {
+      "english": "legal",
+      "arabic": "قانوني"
+    },
+    {
+      "english": "military",
+      "arabic": "عسكري"
+    },
+    {
+      "english": "police",
+      "arabic": "شرطة"
+    },
+    {
+      "english": "political",
+      "arabic": "سياسي"
+    },
+    {
+      "english": "politically",
+      "arabic": "سياسيًا"
+    },
+    {
+      "english": "politician",
+      "arabic": "سياسي"
+    },
+    {
+      "english": "president",
+      "arabic": "رئيس"
+    },
+    {
+      "english": "presidential",
+      "arabic": "رئاسي"
+    },
+    {
+      "english": "selection",
+      "arabic": "اختيار"
+    },
+    {
+      "english": "toward",
+      "arabic": "نحو"
+    },
+    {
+      "english": "towards",
+      "arabic": "نحو"
+    },
+    {
+      "english": "vote",
+      "arabic": "تصويت"
+    },
+    {
+      "english": "voter",
+      "arabic": "ناخب"
+    },
+    {
+      "english": "war",
+      "arabic": "حرب"
+    },
+    {
+      "english": "warm",
+      "arabic": "دافئ"
+    },
+    {
+      "english": "warn",
+      "arabic": "يحذر"
+    },
+    {
+      "english": "warning",
+      "arabic": "تحذير"
+    },
+    {
+      "english": "a",
+      "arabic": "ا"
+    },
+    {
+      "english": "and",
+      "arabic": "و"
+    },
+    {
+      "english": "anywhere",
+      "arabic": "أي مكان"
+    },
+    {
+      "english": "but",
+      "arabic": "لكن"
+    },
+    {
+      "english": "elsewhere",
+      "arabic": "في مكان آخر"
+    },
+    {
+      "english": "everywhere",
+      "arabic": "في كل مكان"
+    },
+    {
+      "english": "if",
+      "arabic": "إذا"
+    },
+    {
+      "english": "or",
+      "arabic": "أو"
+    },
+    {
+      "english": "somewhere",
+      "arabic": "مكان ما"
+    },
+    {
+      "english": "the",
+      "arabic": "ال"
+    },
+    {
+      "english": "these",
+      "arabic": "هؤلاء"
+    },
+    {
+      "english": "this",
+      "arabic": "هذا"
+    },
+    {
+      "english": "those",
+      "arabic": "أولئك"
+    },
+    {
+      "english": "when",
+      "arabic": "عندما"
+    },
+    {
+      "english": "whenever",
+      "arabic": "كلما"
+    },
+    {
+      "english": "where",
+      "arabic": "أين"
+    },
+    {
+      "english": "whereas",
+      "arabic": "بينما"
+    },
+    {
+      "english": "which",
+      "arabic": "أي"
+    },
+    {
+      "english": "who",
+      "arabic": "من"
+    },
+    {
+      "english": "anybody",
+      "arabic": "أي شخص"
+    },
+    {
+      "english": "body",
+      "arabic": "جسم"
+    },
+    {
+      "english": "care",
+      "arabic": "رعاية"
+    },
+    {
+      "english": "career",
+      "arabic": "مسيرة"
+    },
+    {
+      "english": "careful",
+      "arabic": "حذر"
+    },
+    {
+      "english": "carefully",
+      "arabic": "بعناية"
+    },
+    {
+      "english": "disease",
+      "arabic": "مرض"
+    },
+    {
+      "english": "doctor",
+      "arabic": "طبيب"
+    },
+    {
+      "english": "everybody",
+      "arabic": "الجميع"
+    },
+    {
+      "english": "health",
+      "arabic": "صحة"
+    },
+    {
+      "english": "healthy",
+      "arabic": "صحي"
+    },
+    {
+      "english": "hospital",
+      "arabic": "مستشفى"
+    },
+    {
+      "english": "medical",
+      "arabic": "طبي"
+    },
+    {
+      "english": "nobody",
+      "arabic": "لا أحد"
+    },
+    {
+      "english": "nurse",
+      "arabic": "ممرض"
+    },
+    {
+      "english": "patient",
+      "arabic": "مريض"
+    },
+    {
+      "english": "scared",
+      "arabic": "خائف"
+    },
+    {
+      "english": "sick",
+      "arabic": "مريض"
+    },
+    {
+      "english": "somebody",
+      "arabic": "شخص ما"
+    },
+    {
+      "english": "therapy",
+      "arabic": "علاج"
+    },
+    {
+      "english": "bathroom",
+      "arabic": "حمام"
+    },
+    {
+      "english": "bed",
+      "arabic": "سرير"
+    },
+    {
+      "english": "bedroom",
+      "arabic": "غرفة نوم"
+    },
+    {
+      "english": "chair",
+      "arabic": "كرسي"
+    },
+    {
+      "english": "comfortable",
+      "arabic": "مرتاح"
+    },
+    {
+      "english": "comparison",
+      "arabic": "مقارنة"
+    },
+    {
+      "english": "daughter",
+      "arabic": "ابنة"
+    },
+    {
+      "english": "door",
+      "arabic": "باب"
+    },
+    {
+      "english": "home",
+      "arabic": "بيت"
+    },
+    {
+      "english": "homeless",
+      "arabic": "بلا مأوى"
+    },
+    {
+      "english": "house",
+      "arabic": "منزل"
+    },
+    {
+      "english": "household",
+      "arabic": "أسرة"
+    },
+    {
+      "english": "kitchen",
+      "arabic": "مطبخ"
+    },
+    {
+      "english": "lesson",
+      "arabic": "درس"
+    },
+    {
+      "english": "prison",
+      "arabic": "سجن"
+    },
+    {
+      "english": "prisoner",
+      "arabic": "سجين"
+    },
+    {
+      "english": "reason",
+      "arabic": "سبب"
+    },
+    {
+      "english": "reasonable",
+      "arabic": "معقول"
+    },
+    {
+      "english": "room",
+      "arabic": "غرفة"
+    },
+    {
+      "english": "son",
+      "arabic": "ابن"
+    },
+    {
+      "english": "stable",
+      "arabic": "مستقر"
+    },
+    {
+      "english": "table",
+      "arabic": "طاولة"
+    },
+    {
+      "english": "tablespoon",
+      "arabic": "ملعقة طعام"
+    },
+    {
+      "english": "wall",
+      "arabic": "جدار"
+    },
+    {
+      "english": "area",
+      "arabic": "منطقة"
+    },
+    {
+      "english": "capacity",
+      "arabic": "قدرة"
+    },
+    {
+      "english": "capital",
+      "arabic": "عاصمة"
+    },
+    {
+      "english": "city",
+      "arabic": "مدينة"
+    },
+    {
+      "english": "composition",
+      "arabic": "تركيب"
+    },
+    {
+      "english": "district",
+      "arabic": "حي"
+    },
+    {
+      "english": "electricity",
+      "arabic": "كهرباء"
+    },
+    {
+      "english": "location",
+      "arabic": "موقع"
+    },
+    {
+      "english": "neighborhood",
+      "arabic": "حي"
+    },
+    {
+      "english": "opposite",
+      "arabic": "معاكس"
+    },
+    {
+      "english": "opposition",
+      "arabic": "معارضة"
+    },
+    {
+      "english": "place",
+      "arabic": "مكان"
+    },
+    {
+      "english": "position",
+      "arabic": "موضع"
+    },
+    {
+      "english": "region",
+      "arabic": "منطقة"
+    },
+    {
+      "english": "regional",
+      "arabic": "إقليمي"
+    },
+    {
+      "english": "replace",
+      "arabic": "يستبدل"
+    },
+    {
+      "english": "site",
+      "arabic": "موقع"
+    },
+    {
+      "english": "town",
+      "arabic": "بلدة"
+    },
+    {
+      "english": "village",
+      "arabic": "قرية"
+    },
+    {
+      "english": "zone",
+      "arabic": "منطقة"
+    },
+    {
+      "english": "environment",
+      "arabic": "بيئة"
+    },
+    {
+      "english": "environmental",
+      "arabic": "بيئي"
+    },
+    {
+      "english": "glass",
+      "arabic": "كأس"
+    },
+    {
+      "english": "iron",
+      "arabic": "يكوي"
+    },
+    {
+      "english": "material",
+      "arabic": "مادة"
+    },
+    {
+      "english": "metal",
+      "arabic": "معدن"
+    },
+    {
+      "english": "newspaper",
+      "arabic": "جريدة"
+    },
+    {
+      "english": "paper",
+      "arabic": "ورق"
+    },
+    {
+      "english": "plastic",
+      "arabic": "بلاستيك"
+    },
+    {
+      "english": "steel",
+      "arabic": "فولاذ"
+    },
+    {
+      "english": "stone",
+      "arabic": "حجر"
+    },
+    {
+      "english": "substance",
+      "arabic": "مادة"
+    },
+    {
+      "english": "wood",
+      "arabic": "خشب"
+    },
+    {
+      "english": "wooden",
+      "arabic": "خشبي"
+    },
+    {
+      "english": "distance",
+      "arabic": "مسافة"
+    },
+    {
+      "english": "emphasize",
+      "arabic": "يؤكد"
+    },
+    {
+      "english": "length",
+      "arabic": "طول"
+    },
+    {
+      "english": "literally",
+      "arabic": "حرفيًا"
+    },
+    {
+      "english": "literary",
+      "arabic": "أدبي"
+    },
+    {
+      "english": "literature",
+      "arabic": "أدب"
+    },
+    {
+      "english": "measure",
+      "arabic": "يقيس"
+    },
+    {
+      "english": "measurement",
+      "arabic": "قياس"
+    },
+    {
+      "english": "meter",
+      "arabic": "متر"
+    },
+    {
+      "english": "size",
+      "arabic": "حجم"
+    },
+    {
+      "english": "animal",
+      "arabic": "حيوان"
+    },
+    {
+      "english": "brain",
+      "arabic": "دماغ"
+    },
+    {
+      "english": "driver",
+      "arabic": "سائق"
+    },
+    {
+      "english": "forest",
+      "arabic": "غابة"
+    },
+    {
+      "english": "grain",
+      "arabic": "حبة"
+    },
+    {
+      "english": "lake",
+      "arabic": "بحيرة"
+    },
+    {
+      "english": "mountain",
+      "arabic": "جبل"
+    },
+    {
+      "english": "nature",
+      "arabic": "طبيعة"
+    },
+    {
+      "english": "ocean",
+      "arabic": "محيط"
+    },
+    {
+      "english": "plant",
+      "arabic": "نبات"
+    },
+    {
+      "english": "rain",
+      "arabic": "مطر"
+    },
+    {
+      "english": "river",
+      "arabic": "نهر"
+    },
+    {
+      "english": "sea",
+      "arabic": "بحر"
+    },
+    {
+      "english": "search",
+      "arabic": "بحث"
+    },
+    {
+      "english": "season",
+      "arabic": "فصل"
+    },
+    {
+      "english": "seat",
+      "arabic": "مقعد"
+    },
+    {
+      "english": "sky",
+      "arabic": "سماء"
+    },
+    {
+      "english": "snow",
+      "arabic": "ثلج"
+    },
+    {
+      "english": "street",
+      "arabic": "شارع"
+    },
+    {
+      "english": "train",
+      "arabic": "قطار"
+    },
+    {
+      "english": "training",
+      "arabic": "تدريب"
+    },
+    {
+      "english": "tree",
+      "arabic": "شجرة"
+    },
+    {
+      "english": "weather",
+      "arabic": "طقس"
+    },
+    {
+      "english": "account",
+      "arabic": "حساب"
+    },
+    {
+      "english": "amount",
+      "arabic": "كمية"
+    },
+    {
+      "english": "count",
+      "arabic": "يعد"
+    },
+    {
+      "english": "counter",
+      "arabic": "عداد"
+    },
+    {
+      "english": "county",
+      "arabic": "مقاطعة"
+    },
+    {
+      "english": "couple",
+      "arabic": "زوجان"
+    },
+    {
+      "english": "eight",
+      "arabic": "ثمانية"
+    },
+    {
+      "english": "encounter",
+      "arabic": "يواجه"
+    },
+    {
+      "english": "first",
+      "arabic": "أول"
+    },
+    {
+      "english": "five",
+      "arabic": "خمسة"
+    },
+    {
+      "english": "four",
+      "arabic": "أربعة"
+    },
+    {
+      "english": "fourth",
+      "arabic": "الرابع"
+    },
+    {
+      "english": "height",
+      "arabic": "ارتفاع"
+    },
+    {
+      "english": "hundred",
+      "arabic": "مئة"
+    },
+    {
+      "english": "million",
+      "arabic": "مليون"
+    },
+    {
+      "english": "nine",
+      "arabic": "تسعة"
+    },
+    {
+      "english": "number",
+      "arabic": "رقم"
+    },
+    {
+      "english": "one",
+      "arabic": "واحد"
+    },
+    {
+      "english": "pair",
+      "arabic": "زوج"
+    },
+    {
+      "english": "seven",
+      "arabic": "سبعة"
+    },
+    {
+      "english": "six",
+      "arabic": "ستة"
+    },
+    {
+      "english": "ten",
+      "arabic": "عشرة"
+    },
+    {
+      "english": "third",
+      "arabic": "ثالث"
+    },
+    {
+      "english": "thousand",
+      "arabic": "ألف"
+    },
+    {
+      "english": "three",
+      "arabic": "ثلاثة"
+    },
+    {
+      "english": "two",
+      "arabic": "اثنان"
+    },
+    {
+      "english": "weight",
+      "arabic": "وزن"
+    },
+    {
+      "english": "AIDS",
+      "arabic": "الإيدز"
+    },
+    {
+      "english": "AM",
+      "arabic": "صباحًا"
+    },
+    {
+      "english": "African",
+      "arabic": "أفريقي"
+    },
+    {
+      "english": "African-American",
+      "arabic": "أمريكي من أصل أفريقي"
+    },
+    {
+      "english": "American",
+      "arabic": "أمريكي"
+    },
+    {
+      "english": "Arab",
+      "arabic": "عربي"
+    },
+    {
+      "english": "Asian",
+      "arabic": "آسيوي"
+    },
+    {
+      "english": "Bible",
+      "arabic": "الكتاب المقدس"
+    },
+    {
+      "english": "British",
+      "arabic": "بريطاني"
+    },
+    {
+      "english": "CEO",
+      "arabic": "الرئيس التنفيذي"
+    },
+    {
+      "english": "Canadian",
+      "arabic": "كندي"
+    },
+    {
+      "english": "Catholic",
+      "arabic": "كاثوليكي"
+    },
+    {
+      "english": "Chinese",
+      "arabic": "صيني"
+    },
+    {
+      "english": "Christian",
+      "arabic": "مسيحي"
+    },
+    {
+      "english": "Christmas",
+      "arabic": "عيد الميلاد"
+    },
+    {
+      "english": "DNA",
+      "arabic": "الحمض النووي"
+    },
+    {
+      "english": "Democrat",
+      "arabic": "ديمقراطي"
+    },
+    {
+      "english": "English",
+      "arabic": "إنجليزي"
+    },
+    {
+      "english": "European",
+      "arabic": "أوروبي"
+    },
+    {
+      "english": "French",
+      "arabic": "فرنسي"
+    },
+    {
+      "english": "I",
+      "arabic": "أنا"
+    },
+    {
+      "english": "Indian",
+      "arabic": "هندي"
+    },
+    {
+      "english": "Iraqi",
+      "arabic": "عراقي"
+    },
+    {
+      "english": "Irish",
+      "arabic": "أيرلندي"
+    },
+    {
+      "english": "Islamic",
+      "arabic": "إسلامي"
+    },
+    {
+      "english": "Israeli",
+      "arabic": "إسرائيلي"
+    },
+    {
+      "english": "Italian",
+      "arabic": "إيطالي"
+    },
+    {
+      "english": "Japanese",
+      "arabic": "ياباني"
+    },
+    {
+      "english": "Jew",
+      "arabic": "يهودي"
+    },
+    {
+      "english": "Jewish",
+      "arabic": "يهودي"
+    },
+    {
+      "english": "Latin",
+      "arabic": "لاتيني"
+    },
+    {
+      "english": "Mexican",
+      "arabic": "مكسيكي"
+    },
+    {
+      "english": "Mr",
+      "arabic": "السيد"
+    },
+    {
+      "english": "Mrs",
+      "arabic": "السيدة"
+    },
+    {
+      "english": "Ms",
+      "arabic": "السيدة (Ms)"
+    },
+    {
+      "english": "Muslim",
+      "arabic": "مسلم"
+    },
+    {
+      "english": "Olympic",
+      "arabic": "أولمبي"
+    },
+    {
+      "english": "PC",
+      "arabic": "حاسوب شخصي"
+    },
+    {
+      "english": "PM",
+      "arabic": "مساءً"
+    },
+    {
+      "english": "Palestinian",
+      "arabic": "فلسطيني"
+    },
+    {
+      "english": "Russian",
+      "arabic": "روسي"
+    },
+    {
+      "english": "Soviet",
+      "arabic": "سوفيتي"
+    },
+    {
+      "english": "Spanish",
+      "arabic": "إسباني"
+    },
+    {
+      "english": "Supreme",
+      "arabic": "أسمى"
+    },
+    {
+      "english": "TV",
+      "arabic": "تلفاز"
+    },
+    {
+      "english": "United",
+      "arabic": "متحد"
+    },
+    {
+      "english": "ability",
+      "arabic": "قدرة"
+    },
+    {
+      "english": "abortion",
+      "arabic": "إجهاض"
+    },
+    {
+      "english": "absence",
+      "arabic": "غياب"
+    },
+    {
+      "english": "absolute",
+      "arabic": "مطلق"
+    },
+    {
+      "english": "absolutely",
+      "arabic": "بالتأكيد"
+    },
+    {
+      "english": "absorb",
+      "arabic": "يمتص"
+    },
+    {
+      "english": "abuse",
+      "arabic": "إساءة"
+    },
+    {
+      "english": "academic",
+      "arabic": "أكاديمي"
+    },
+    {
+      "english": "accept",
+      "arabic": "يقبل"
+    },
+    {
+      "english": "access",
+      "arabic": "وصول"
+    },
+    {
+      "english": "accident",
+      "arabic": "حادث"
+    },
+    {
+      "english": "accomplish",
+      "arabic": "ينجز"
+    },
+    {
+      "english": "according",
+      "arabic": "وفقًا"
+    },
+    {
+      "english": "accurate",
+      "arabic": "دقيق"
+    },
+    {
+      "english": "accuse",
+      "arabic": "يتهم"
+    },
+    {
+      "english": "achieve",
+      "arabic": "يحقق"
+    },
+    {
+      "english": "achievement",
+      "arabic": "إنجاز"
+    },
+    {
+      "english": "acid",
+      "arabic": "حمضي"
+    },
+    {
+      "english": "acquire",
+      "arabic": "يكتسب"
+    },
+    {
+      "english": "across",
+      "arabic": "عبر"
+    },
+    {
+      "english": "act",
+      "arabic": "فعل"
+    },
+    {
+      "english": "action",
+      "arabic": "عمل"
+    },
+    {
+      "english": "active",
+      "arabic": "نشط"
+    },
+    {
+      "english": "activist",
+      "arabic": "ناشط"
+    },
+    {
+      "english": "activity",
+      "arabic": "نشاط"
+    },
+    {
+      "english": "actress",
+      "arabic": "ممثلة"
+    },
+    {
+      "english": "actual",
+      "arabic": "فعلي"
+    },
+    {
+      "english": "actually",
+      "arabic": "في الواقع"
+    },
+    {
+      "english": "ad",
+      "arabic": "إعلان"
+    },
+    {
+      "english": "adapt",
+      "arabic": "يتكيف"
+    },
+    {
+      "english": "add",
+      "arabic": "أضاف"
+    },
+    {
+      "english": "addition",
+      "arabic": "إضافة"
+    },
+    {
+      "english": "additional",
+      "arabic": "إضافي"
+    },
+    {
+      "english": "adequate",
+      "arabic": "كافٍ"
+    },
+    {
+      "english": "administration",
+      "arabic": "إدارة"
+    },
+    {
+      "english": "administrator",
+      "arabic": "مسؤول"
+    },
+    {
+      "english": "admire",
+      "arabic": "يعجب"
+    },
+    {
+      "english": "admission",
+      "arabic": "قبول"
+    },
+    {
+      "english": "admit",
+      "arabic": "يعترف"
+    },
+    {
+      "english": "adult",
+      "arabic": "بالغ"
+    },
+    {
+      "english": "advance",
+      "arabic": "تقدم"
+    },
+    {
+      "english": "advanced",
+      "arabic": "متقدم"
+    },
+    {
+      "english": "advantage",
+      "arabic": "ميزة"
+    },
+    {
+      "english": "adventure",
+      "arabic": "مغامرة"
+    },
+    {
+      "english": "advice",
+      "arabic": "نصيحة"
+    },
+    {
+      "english": "advise",
+      "arabic": "ينصح"
+    },
+    {
+      "english": "adviser",
+      "arabic": "مستشار"
+    },
+    {
+      "english": "advocate",
+      "arabic": "يؤيد"
+    },
+    {
+      "english": "affair",
+      "arabic": "شأن"
+    },
+    {
+      "english": "affect",
+      "arabic": "يؤثر"
+    },
+    {
+      "english": "afford",
+      "arabic": "يستطيع تحمل تكلفة"
+    },
+    {
+      "english": "afraid",
+      "arabic": "خائف"
+    },
+    {
+      "english": "again",
+      "arabic": "مرة أخرى"
+    },
+    {
+      "english": "against",
+      "arabic": "ضد"
+    },
+    {
+      "english": "German",
+      "arabic": "ألماني"
+    },
+    {
+      "english": "baby",
+      "arabic": "رضيع"
+    },
+    {
+      "english": "boyfriend",
+      "arabic": "حبيب"
+    },
+    {
+      "english": "brother",
+      "arabic": "أخ"
+    },
+    {
+      "english": "chairman",
+      "arabic": "رئيس مجلس الإدارة"
+    },
+    {
+      "english": "child",
+      "arabic": "طفل"
+    },
+    {
+      "english": "childhood",
+      "arabic": "طفولة"
+    },
+    {
+      "english": "command",
+      "arabic": "أمر"
+    },
+    {
+      "english": "commander",
+      "arabic": "قائد"
+    },
+    {
+      "english": "demand",
+      "arabic": "طلب"
+    },
+    {
+      "english": "family",
+      "arabic": "عائلة"
+    },
+    {
+      "english": "father",
+      "arabic": "أب"
+    },
+    {
+      "english": "friend",
+      "arabic": "صديق"
+    },
+    {
+      "english": "friendly",
+      "arabic": "ودود"
+    },
+    {
+      "english": "friendship",
+      "arabic": "صداقة"
+    },
+    {
+      "english": "gentleman",
+      "arabic": "رجل محترم"
+    },
+    {
+      "english": "girlfriend",
+      "arabic": "حبيبة"
+    },
+    {
+      "english": "grandfather",
+      "arabic": "جد"
+    },
+    {
+      "english": "grandmother",
+      "arabic": "جدة"
+    },
+    {
+      "english": "human",
+      "arabic": "بشري"
+    },
+    {
+      "english": "man",
+      "arabic": "رجل"
+    },
+    {
+      "english": "manage",
+      "arabic": "يدير"
+    },
+    {
+      "english": "management",
+      "arabic": "إدارة"
+    },
+    {
+      "english": "manager",
+      "arabic": "مدير"
+    },
+    {
+      "english": "manner",
+      "arabic": "طريقة"
+    },
+    {
+      "english": "manufacturer",
+      "arabic": "مصنع"
+    },
+    {
+      "english": "manufacturing",
+      "arabic": "تصنيع"
+    },
+    {
+      "english": "many",
+      "arabic": "كثير"
+    },
+    {
+      "english": "mother",
+      "arabic": "أم"
+    },
+    {
+      "english": "parent",
+      "arabic": "والد"
+    },
+    {
+      "english": "people",
+      "arabic": "ناس"
+    },
+    {
+      "english": "performance",
+      "arabic": "أداء"
+    },
+    {
+      "english": "permanent",
+      "arabic": "دائم"
+    },
+    {
+      "english": "person",
+      "arabic": "شخص"
+    },
+    {
+      "english": "personal",
+      "arabic": "شخصي"
+    },
+    {
+      "english": "personality",
+      "arabic": "شخصية"
+    },
+    {
+      "english": "personally",
+      "arabic": "شخصيًا"
+    },
+    {
+      "english": "personnel",
+      "arabic": "موظفون"
+    },
+    {
+      "english": "romantic",
+      "arabic": "رومانسي"
+    },
+    {
+      "english": "sister",
+      "arabic": "أخت"
+    },
+    {
+      "english": "spokesman",
+      "arabic": "متحدث رسمي"
+    },
+    {
+      "english": "woman",
+      "arabic": "امرأة"
+    },
+    {
+      "english": "about",
+      "arabic": "عن"
+    },
+    {
+      "english": "above",
+      "arabic": "فوق"
+    },
+    {
+      "english": "at",
+      "arabic": "في"
+    },
+    {
+      "english": "by",
+      "arabic": "بواسطة"
+    },
+    {
+      "english": "during",
+      "arabic": "أثناء"
+    },
+    {
+      "english": "for",
+      "arabic": "لـ"
+    },
+    {
+      "english": "from",
+      "arabic": "من"
+    },
+    {
+      "english": "in",
+      "arabic": "في"
+    },
+    {
+      "english": "into",
+      "arabic": "داخل"
+    },
+    {
+      "english": "of",
+      "arabic": "من"
+    },
+    {
+      "english": "on",
+      "arabic": "على"
+    },
+    {
+      "english": "through",
+      "arabic": "عبر"
+    },
+    {
+      "english": "throughout",
+      "arabic": "طوال"
+    },
+    {
+      "english": "to",
+      "arabic": "إلى"
+    },
+    {
+      "english": "with",
+      "arabic": "مع"
+    },
+    {
+      "english": "within",
+      "arabic": "ضمن"
+    },
+    {
+      "english": "without",
+      "arabic": "بدون"
+    },
+    {
+      "english": "he",
+      "arabic": "هو"
+    },
+    {
+      "english": "her",
+      "arabic": "لها"
+    },
+    {
+      "english": "him",
+      "arabic": "له"
+    },
+    {
+      "english": "his",
+      "arabic": "ملكه"
+    },
+    {
+      "english": "it",
+      "arabic": "هو/هي"
+    },
+    {
+      "english": "me",
+      "arabic": "لي"
+    },
+    {
+      "english": "my",
+      "arabic": "ملكي"
+    },
+    {
+      "english": "myself",
+      "arabic": "نفسي"
+    },
+    {
+      "english": "our",
+      "arabic": "ملكنا"
+    },
+    {
+      "english": "she",
+      "arabic": "هي"
+    },
+    {
+      "english": "their",
+      "arabic": "ملكهم"
+    },
+    {
+      "english": "they",
+      "arabic": "هم"
+    },
+    {
+      "english": "we",
+      "arabic": "نحن"
+    },
+    {
+      "english": "you",
+      "arabic": "أنت"
+    },
+    {
+      "english": "your",
+      "arabic": "ملكك"
+    },
+    {
+      "english": "yours",
+      "arabic": "لك"
+    },
+    {
+      "english": "yourself",
+      "arabic": "نفسك"
+    },
+    {
+      "english": "bad",
+      "arabic": "سيء"
+    },
+    {
+      "english": "badly",
+      "arabic": "بشدة"
+    },
+    {
+      "english": "beautiful",
+      "arabic": "جميل"
+    },
+    {
+      "english": "big",
+      "arabic": "كبير"
+    },
+    {
+      "english": "breakfast",
+      "arabic": "إفطار"
+    },
+    {
+      "english": "clean",
+      "arabic": "نظيف"
+    },
+    {
+      "english": "cold",
+      "arabic": "بارد"
+    },
+    {
+      "english": "dirty",
+      "arabic": "قذر"
+    },
+    {
+      "english": "fast",
+      "arabic": "سريع"
+    },
+    {
+      "english": "hot",
+      "arabic": "حار"
+    },
+    {
+      "english": "photo",
+      "arabic": "صورة"
+    },
+    {
+      "english": "photograph",
+      "arabic": "صورة فوتوغرافية"
+    },
+    {
+      "english": "photographer",
+      "arabic": "مصور"
+    },
+    {
+      "english": "shot",
+      "arabic": "طلقة"
+    },
+    {
+      "english": "slow",
+      "arabic": "بطيء"
+    },
+    {
+      "english": "slowly",
+      "arabic": "ببطء"
+    },
+    {
+      "english": "small",
+      "arabic": "صغير"
+    },
+    {
+      "english": "soft",
+      "arabic": "ناعم"
+    },
+    {
+      "english": "strong",
+      "arabic": "قوي"
+    },
+    {
+      "english": "strongly",
+      "arabic": "بقوة"
+    },
+    {
+      "english": "stupid",
+      "arabic": "غبي"
+    },
+    {
+      "english": "ugly",
+      "arabic": "قبيح"
+    },
+    {
+      "english": "weak",
+      "arabic": "ضعيف"
+    },
+    {
+      "english": "alliance",
+      "arabic": "تحالف"
+    },
+    {
+      "english": "associate",
+      "arabic": "يربط"
+    },
+    {
+      "english": "connection",
+      "arabic": "اتصال"
+    },
+    {
+      "english": "cooperation",
+      "arabic": "تعاون"
+    },
+    {
+      "english": "relation",
+      "arabic": "علاقة"
+    },
+    {
+      "english": "relationship",
+      "arabic": "علاقة"
+    },
+    {
+      "english": "cell",
+      "arabic": "خلية"
+    },
+    {
+      "english": "element",
+      "arabic": "عنصر"
+    },
+    {
+      "english": "elementary",
+      "arabic": "أساسي"
+    },
+    {
+      "english": "energy",
+      "arabic": "طاقة"
+    },
+    {
+      "english": "excellent",
+      "arabic": "ممتاز"
+    },
+    {
+      "english": "experiment",
+      "arabic": "تجربة"
+    },
+    {
+      "english": "medicine",
+      "arabic": "دواء"
+    },
+    {
+      "english": "research",
+      "arabic": "بحث"
+    },
+    {
+      "english": "researcher",
+      "arabic": "باحث"
+    },
+    {
+      "english": "science",
+      "arabic": "علم"
+    },
+    {
+      "english": "theory",
+      "arabic": "نظرية"
+    },
+    {
+      "english": "athlete",
+      "arabic": "رياضي"
+    },
+    {
+      "english": "ball",
+      "arabic": "كرة"
+    },
+    {
+      "english": "baseball",
+      "arabic": "بيسبول"
+    },
+    {
+      "english": "basketball",
+      "arabic": "كرة سلة"
+    },
+    {
+      "english": "close",
+      "arabic": "قريب"
+    },
+    {
+      "english": "closely",
+      "arabic": "بقرب"
+    },
+    {
+      "english": "closer",
+      "arabic": "أقرب"
+    },
+    {
+      "english": "coach",
+      "arabic": "مدرب"
+    },
+    {
+      "english": "display",
+      "arabic": "يعرض"
+    },
+    {
+      "english": "drawing",
+      "arabic": "رسم"
+    },
+    {
+      "english": "embrace",
+      "arabic": "يحتضن"
+    },
+    {
+      "english": "exercise",
+      "arabic": "تمرين"
+    },
+    {
+      "english": "following",
+      "arabic": "التالي"
+    },
+    {
+      "english": "football",
+      "arabic": "كرة قدم"
+    },
+    {
+      "english": "game",
+      "arabic": "لعبة"
+    },
+    {
+      "english": "growing",
+      "arabic": "متزايد"
+    },
+    {
+      "english": "lose",
+      "arabic": "يخسر"
+    },
+    {
+      "english": "match",
+      "arabic": "مباراة"
+    },
+    {
+      "english": "play",
+      "arabic": "مسرحية"
+    },
+    {
+      "english": "player",
+      "arabic": "لاعب"
+    },
+    {
+      "english": "race",
+      "arabic": "عرق"
+    },
+    {
+      "english": "run",
+      "arabic": "يركض"
+    },
+    {
+      "english": "running",
+      "arabic": "جري"
+    },
+    {
+      "english": "sport",
+      "arabic": "رياضة"
+    },
+    {
+      "english": "swing",
+      "arabic": "يتأرجح"
+    },
+    {
+      "english": "team",
+      "arabic": "فريق"
+    },
+    {
+      "english": "trace",
+      "arabic": "أثر"
+    },
+    {
+      "english": "transportation",
+      "arabic": "نقل"
+    },
+    {
+      "english": "twin",
+      "arabic": "توأم"
+    },
+    {
+      "english": "win",
+      "arabic": "يفوز"
+    },
+    {
+      "english": "wind",
+      "arabic": "ريح"
+    },
+    {
+      "english": "window",
+      "arabic": "نافذة"
+    },
+    {
+      "english": "wine",
+      "arabic": "نبيذ"
+    },
+    {
+      "english": "wing",
+      "arabic": "جناح"
+    },
+    {
+      "english": "winner",
+      "arabic": "فائز"
+    },
+    {
+      "english": "winter",
+      "arabic": "شتاء"
+    },
+    {
+      "english": "Internet",
+      "arabic": "إنترنت"
+    },
+    {
+      "english": "apparent",
+      "arabic": "واضح"
+    },
+    {
+      "english": "apparently",
+      "arabic": "على ما يبدو"
+    },
+    {
+      "english": "appeal",
+      "arabic": "نداء"
+    },
+    {
+      "english": "appear",
+      "arabic": "يظهر"
+    },
+    {
+      "english": "appearance",
+      "arabic": "مظهر"
+    },
+    {
+      "english": "apple",
+      "arabic": "تفاحة"
+    },
+    {
+      "english": "application",
+      "arabic": "طلب"
+    },
+    {
+      "english": "apply",
+      "arabic": "يطبق"
+    },
+    {
+      "english": "appoint",
+      "arabic": "يعين"
+    },
+    {
+      "english": "appointment",
+      "arabic": "موعد"
+    },
+    {
+      "english": "appreciate",
+      "arabic": "يقدر"
+    },
+    {
+      "english": "approach",
+      "arabic": "نهج"
+    },
+    {
+      "english": "appropriate",
+      "arabic": "مناسب"
+    },
+    {
+      "english": "approval",
+      "arabic": "موافقة"
+    },
+    {
+      "english": "approve",
+      "arabic": "يوافق"
+    },
+    {
+      "english": "approximately",
+      "arabic": "تقريبًا"
+    },
+    {
+      "english": "code",
+      "arabic": "رمز"
+    },
+    {
+      "english": "computer",
+      "arabic": "كمبيوتر"
+    },
+    {
+      "english": "data",
+      "arabic": "بيانات"
+    },
+    {
+      "english": "device",
+      "arabic": "جهاز"
+    },
+    {
+      "english": "digital",
+      "arabic": "رقمي"
+    },
+    {
+      "english": "disappear",
+      "arabic": "يختفي"
+    },
+    {
+      "english": "file",
+      "arabic": "ملف"
+    },
+    {
+      "english": "happen",
+      "arabic": "يحدث"
+    },
+    {
+      "english": "happy",
+      "arabic": "سعيد"
+    },
+    {
+      "english": "hard",
+      "arabic": "صعب"
+    },
+    {
+      "english": "hardly",
+      "arabic": "بالكاد"
+    },
+    {
+      "english": "network",
+      "arabic": "شبكة"
+    },
+    {
+      "english": "observer",
+      "arabic": "مراقب"
+    },
+    {
+      "english": "online",
+      "arabic": "عبر الإنترنت"
+    },
+    {
+      "english": "process",
+      "arabic": "عملية"
+    },
+    {
+      "english": "profile",
+      "arabic": "ملف شخصي"
+    },
+    {
+      "english": "program",
+      "arabic": "برنامج"
+    },
+    {
+      "english": "software",
+      "arabic": "برمجيات"
+    },
+    {
+      "english": "system",
+      "arabic": "نظام"
+    },
+    {
+      "english": "technical",
+      "arabic": "تقني"
+    },
+    {
+      "english": "technique",
+      "arabic": "تقنية"
+    },
+    {
+      "english": "technology",
+      "arabic": "تقنية"
+    },
+    {
+      "english": "virus",
+      "arabic": "فيروس"
+    },
+    {
+      "english": "after",
+      "arabic": "بعد"
+    },
+    {
+      "english": "afternoon",
+      "arabic": "بعد الظهر"
+    },
+    {
+      "english": "before",
+      "arabic": "قبل"
+    },
+    {
+      "english": "birthday",
+      "arabic": "عيد ميلاد"
+    },
+    {
+      "english": "day",
+      "arabic": "يوم"
+    },
+    {
+      "english": "evening",
+      "arabic": "مساء"
+    },
+    {
+      "english": "everyday",
+      "arabic": "يومي"
+    },
+    {
+      "english": "holiday",
+      "arabic": "عطلة"
+    },
+    {
+      "english": "hour",
+      "arabic": "ساعة"
+    },
+    {
+      "english": "lifetime",
+      "arabic": "حياة"
+    },
+    {
+      "english": "minute",
+      "arabic": "دقيقة"
+    },
+    {
+      "english": "month",
+      "arabic": "شهر"
+    },
+    {
+      "english": "morning",
+      "arabic": "صباح"
+    },
+    {
+      "english": "night",
+      "arabic": "ليل"
+    },
+    {
+      "english": "now",
+      "arabic": "الآن"
+    },
+    {
+      "english": "nowhere",
+      "arabic": "لا مكان"
+    },
+    {
+      "english": "second",
+      "arabic": "ثانية"
+    },
+    {
+      "english": "sometimes",
+      "arabic": "أحياناً"
+    },
+    {
+      "english": "strengthen",
+      "arabic": "يقوي"
+    },
+    {
+      "english": "then",
+      "arabic": "ثم"
+    },
+    {
+      "english": "time",
+      "arabic": "وقت"
+    },
+    {
+      "english": "today",
+      "arabic": "اليوم"
+    },
+    {
+      "english": "tomorrow",
+      "arabic": "غداً"
+    },
+    {
+      "english": "tonight",
+      "arabic": "الليلة"
+    },
+    {
+      "english": "week",
+      "arabic": "أسبوع"
+    },
+    {
+      "english": "weekend",
+      "arabic": "عطلة نهاية الأسبوع"
+    },
+    {
+      "english": "weekly",
+      "arabic": "أسبوعي"
+    },
+    {
+      "english": "year",
+      "arabic": "سنة"
+    },
+    {
+      "english": "yesterday",
+      "arabic": "أمس"
+    },
+    {
+      "english": "abroad",
+      "arabic": "في الخارج"
+    },
+    {
+      "english": "airport",
+      "arabic": "مطار"
+    },
+    {
+      "english": "broad",
+      "arabic": "واسع"
+    },
+    {
+      "english": "car",
+      "arabic": "سيارة"
+    },
+    {
+      "english": "carbon",
+      "arabic": "كربون"
+    },
+    {
+      "english": "card",
+      "arabic": "بطاقة"
+    },
+    {
+      "english": "carrier",
+      "arabic": "ناقل"
+    },
+    {
+      "english": "carry",
+      "arabic": "حمل"
+    },
+    {
+      "english": "hotel",
+      "arabic": "فندق"
+    },
+    {
+      "english": "journey",
+      "arabic": "رحلة"
+    },
+    {
+      "english": "plane",
+      "arabic": "طائرة"
+    },
+    {
+      "english": "planet",
+      "arabic": "كوكب"
+    },
+    {
+      "english": "road",
+      "arabic": "طريق"
+    },
+    {
+      "english": "strip",
+      "arabic": "ينزع"
+    },
+    {
+      "english": "ticket",
+      "arabic": "تذكرة"
+    },
+    {
+      "english": "travel",
+      "arabic": "سفر"
+    },
+    {
+      "english": "trip",
+      "arabic": "رحلة"
+    },
+    {
+      "english": "visit",
+      "arabic": "يزور"
+    },
+    {
+      "english": "visitor",
+      "arabic": "زائر"
+    },
+    {
+      "english": "climate",
+      "arabic": "مناخ"
+    },
+    {
+      "english": "cloud",
+      "arabic": "سحابة"
+    },
+    {
+      "english": "storm",
+      "arabic": "عاصفة"
+    },
+    {
+      "english": "temperature",
+      "arabic": "درجة حرارة"
+    }
+  ],
+  "categories": []
+}

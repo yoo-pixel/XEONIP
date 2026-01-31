@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar B2 Advanced</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.5), transparent), radial-gradient(1px 1px at 80% 18%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 30% 70%, rgba(190, 210, 235, 0.45), transparent), radial-gradient(1px 1px at 70% 75%, rgba(200, 220, 240, 0.35), transparent);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.2;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem 0 2.5rem;
+            border-bottom: 1px solid rgba(124, 157, 214, 0.2);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #7c9dd6;
+        }
+        
+        .intro {
+            text-align: center;
+            margin: 2.5rem 0 2rem;
+        }
+        
+        .intro h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: #e8edf7;
+        }
+        
+        .intro p {
+            max-width: 900px;
+            margin: 0.5rem auto;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #c7d2e7;
+        }
+        
+        .hero-image {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid rgba(124, 157, 214, 0.2);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+            margin: 1.5rem 0 2.5rem;
+            height: 280px;
+            object-fit: cover;
+        }
+        
+        .divider {
+            height: 1px;
+            margin: 2rem auto 2.5rem;
+            width: 70%;
+            background: linear-gradient(90deg, transparent 0%, rgba(124, 157, 214, 0.35) 50%, transparent 100%);
+            box-shadow: 0 0 12px rgba(124, 157, 214, 0.2);
+        }
+        
+        .section-title {
+            font-size: 1.6rem;
+            color: #e0e6f5;
+            margin: 2rem 0 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.4rem;
+        }
+        
+        .topic-card {
+            background: rgba(17, 22, 44, 0.68);
+            border: 1px solid rgba(124, 157, 214, 0.18);
+            border-radius: 14px;
+            padding: 1.4rem;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+        }
+        
+        .topic-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.7rem;
+            color: #d7e1f5;
+        }
+        
+        .topic-card p {
+            font-size: 0.98rem;
+            line-height: 1.6;
+            color: #c3cee0;
+            margin: 0.3rem 0;
+        }
+        
+        .tip {
+            color: #a9b9d3;
+            font-size: 0.95rem;
+        }
+        
+        .photo-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        .photo-row img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid rgba(124, 157, 214, 0.18);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .final-errors {
+            background: rgba(10, 14, 32, 0.55);
+            border-left: 3px solid rgba(124, 157, 214, 0.5);
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+        
+        .final-errors h3 {
+            margin-bottom: 0.8rem;
+            color: #e0e6f5;
+        }
+        
+        .final-errors p {
+            margin: 0.4rem 0;
+            color: #c3cee0;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="english-grammar.html" class="back-btn">← Back to Grammar Hub</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="english.html">English</a>
+            <a href="english-grammar-a1a2.html">A1–A2</a>
+            <a href="english-grammar-b1.html">B1 & B1+</a>
+        </nav>
+
+        <section class="intro">
+            <h1>B2 Grammar: Advanced Academic Use</h1>
+            <p>B2 grammar helps you write clear, confident essays and applications.</p>
+            <p>You will use advanced tenses, formal structures, and precise academic style.</p>
+            <p>Every topic includes mistakes, corrections, tips, and when not to use it.</p>
+        </section>
+
+        <img class="hero-image" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1400&h=900&fit=crop&auto=format&q=80" alt="Academic teamwork" />
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">B2: Future & Modals</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>Future continuous & future perfect</h3>
+                <p>Future continuous = in progress; future perfect = completed before a time.</p>
+                <p>❌ Common mistake: I will be finish by Friday.</p>
+                <p>✅ Correct: I will have finished by Friday.</p>
+                <p>🧠 Academic example: This time tomorrow, we will be presenting.</p>
+                <p class="tip">Tip: Use “by” with future perfect.</p>
+                <p class="tip">When not to use: Don’t use future continuous for completion.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Other future expressions</h3>
+                <p>Use be about to, be due to, be on the point of.</p>
+                <p>❌ Common mistake: We are due to meet at 3, but we go now.</p>
+                <p>✅ Correct: We are due to meet at 3.</p>
+                <p>🧠 Academic example: The class is about to start.</p>
+                <p class="tip">Tip: “Be due to” = scheduled.</p>
+                <p class="tip">When not to use: Don’t mix with another future verb.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Future in the past</h3>
+                <p>Use was/were going to or would for future from a past view.</p>
+                <p>❌ Common mistake: I was going to will apply.</p>
+                <p>✅ Correct: I was going to apply.</p>
+                <p>🧠 Academic example: We thought the lab would open in June.</p>
+                <p class="tip">Tip: Use in narratives about plans.</p>
+                <p class="tip">When not to use: Don’t add “will” after “was going to”.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Advanced modals (speculation & deduction)</h3>
+                <p>Use must/might/can’t to show strong or weak guesses.</p>
+                <p>❌ Common mistake: It must to be correct.</p>
+                <p>✅ Correct: It must be correct.</p>
+                <p>🧠 Academic example: The data can’t be accurate without controls.</p>
+                <p class="tip">Tip: Use “must” for strong deduction.</p>
+                <p class="tip">When not to use: Don’t use for proven facts.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">B2: Passive, Reporting, and Academic Style</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>Passive with two objects</h3>
+                <p>Either object can become the subject in passive voice.</p>
+                <p>❌ Common mistake: I was given the award by it.</p>
+                <p>✅ Correct: I was given the award by the committee.</p>
+                <p>🧠 Academic example: The students were given detailed feedback.</p>
+                <p class="tip">Tip: Choose the subject that is more important.</p>
+                <p class="tip">When not to use: Don’t use unclear agents.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Reporting & distancing</h3>
+                <p>Use “It is said that…” to distance your voice from a claim.</p>
+                <p>❌ Common mistake: People say that, and I think it true.</p>
+                <p>✅ Correct: It is said that the method works well.</p>
+                <p>🧠 Academic example: It is believed that stress affects memory.</p>
+                <p class="tip">Tip: Use in formal reports and literature reviews.</p>
+                <p class="tip">When not to use: Don’t use without a source.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Ellipsis & substitution</h3>
+                <p>Use do/so/one/ones to avoid repetition.</p>
+                <p>❌ Common mistake: I like this method and I like this method too.</p>
+                <p>✅ Correct: I like this method and I do too.</p>
+                <p>🧠 Academic example: Some students prefer online labs; others do not.</p>
+                <p class="tip">Tip: Use ellipsis to make writing concise.</p>
+                <p class="tip">When not to use: Don’t omit key meaning.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Generic pronouns</h3>
+                <p>Use “they” to refer to a person in general.</p>
+                <p>❌ Common mistake: If a student works hard, he will succeed.</p>
+                <p>✅ Correct: If a student works hard, they will succeed.</p>
+                <p>🧠 Academic example: When a learner is curious, they ask better questions.</p>
+                <p class="tip">Tip: “They” is accepted as neutral singular.</p>
+                <p class="tip">When not to use: Avoid switching pronouns in one paragraph.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Compound nouns</h3>
+                <p>Two nouns combine to make one idea.</p>
+                <p>❌ Common mistake: The results are in a data base.</p>
+                <p>✅ Correct: The results are in a database.</p>
+                <p>🧠 Academic example: We used a data logbook for observations.</p>
+                <p class="tip">Tip: Many compounds are written as one word.</p>
+                <p class="tip">When not to use: Don’t add extra spaces without checking.</p>
+            </div>
+        </div>
+
+        <div class="photo-row">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=800&fit=crop&auto=format&q=80" alt="Team research" />
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=800&fit=crop&auto=format&q=80" alt="Focused study" />
+            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=800&fit=crop&auto=format&q=80" alt="Academic planning" />
+        </div>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">B2: Advanced Structures</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>Inversion with negative adverbials</h3>
+                <p>Put auxiliary before subject for emphasis.</p>
+                <p>❌ Common mistake: Never I have seen such results.</p>
+                <p>✅ Correct: Never have I seen such results.</p>
+                <p>🧠 Academic example: Rarely do students collect data so carefully.</p>
+                <p class="tip">Tip: Use with never, rarely, seldom.</p>
+                <p class="tip">When not to use: Don’t overuse in essays.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Cleft sentences</h3>
+                <p>Use “It is/was…” to emphasize one part.</p>
+                <p>❌ Common mistake: It was the data explained the change.</p>
+                <p>✅ Correct: It was the data that explained the change.</p>
+                <p>🧠 Academic example: It was the final test that confirmed the theory.</p>
+                <p class="tip">Tip: Use to highlight key evidence.</p>
+                <p class="tip">When not to use: Don’t use too many cleft sentences.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Participle clauses</h3>
+                <p>Use -ing or -ed clauses to add extra information.</p>
+                <p>❌ Common mistake: While was testing, the device failed.</p>
+                <p>✅ Correct: While testing, the device failed.</p>
+                <p>🧠 Academic example: Having reviewed the sources, I wrote the summary.</p>
+                <p class="tip">Tip: The subject must be the same in both clauses.</p>
+                <p class="tip">When not to use: Don’t create dangling participles.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Discourse markers</h3>
+                <p>Use however, therefore, in addition to guide the reader.</p>
+                <p>❌ Common mistake: Moreover, but the results were weak.</p>
+                <p>✅ Correct: However, the results were weak.</p>
+                <p>🧠 Academic example: In addition, we repeated the experiment.</p>
+                <p class="tip">Tip: Use one marker per sentence.</p>
+                <p class="tip">When not to use: Don’t mix “but” with “however”.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">Common Student Errors</h2>
+        <div class="final-errors">
+            <h3>Fix these patterns</h3>
+            <p>❌ Arabic structure: I explained to him the project. → ✅ I explained the project to him.</p>
+            <p>❌ Overusing “I think”: I think this is good. I think it will work. → ✅ This method is strong and will likely work.</p>
+            <p>❌ Long sentences: I did the research and it was good and I learned a lot and I want to study this more. → ✅ I did the research, learned a lot, and want to study it further.</p>
+            <p>❌ Spoken grammar in essays: gonna, wanna, kind of → ✅ going to, want to, kind of.</p>
+        </div>
+    </div>
+</body>
+
+</html>

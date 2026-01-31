@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1–A2 Vocabulary - Beginner Level</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+         :root {
+            --primary-dark: #0a0e27;
+            --secondary-dark: #1a1f3a;
+            --accent-blue: #4f9dff;
+            --accent-cyan: #00d9ff;
+            --accent-green: #2ecc71;
+            --text-primary: #e8eef8;
+            --text-secondary: #a8b4c8;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #0f1433 50%, var(--secondary-dark) 100%);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+        }
+        /* Starfield */
+        
+        .stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .star {
+            position: absolute;
+            background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+            animation: float 30s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translateY(-20px);
+                opacity: 0.8;
+            }
+        }
+        
+        .star:nth-child(1) {
+            width: 2px;
+            height: 2px;
+            left: 10%;
+            top: 15%;
+            animation-delay: 0s;
+        }
+        
+        .star:nth-child(2) {
+            width: 1px;
+            height: 1px;
+            left: 80%;
+            top: 80%;
+            animation-delay: 5s;
+        }
+        
+        .star:nth-child(3) {
+            width: 3px;
+            height: 3px;
+            left: 50%;
+            top: 50%;
+            animation-delay: 10s;
+        }
+        /* Content */
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        /* Header */
+        
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(79, 157, 255, 0.2);
+        }
+        
+        .header-content h1 {
+            font-size: 2.5rem;
+            color: var(--accent-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .header-content p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        
+        .back-button {
+            padding: 0.75rem 1.5rem;
+            background: rgba(79, 157, 255, 0.1);
+            border: 1.5px solid rgba(79, 157, 255, 0.3);
+            border-radius: 8px;
+            color: var(--accent-blue);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .back-button:hover {
+            background: rgba(79, 157, 255, 0.2);
+            border-color: rgba(79, 157, 255, 0.6);
+        }
+        /* Categories Grid */
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        /* Category Card */
+        
+        .category-card {
+            position: relative;
+            padding: 2rem;
+            background: rgba(30, 35, 65, 0.4);
+            border: 1.5px solid rgba(79, 157, 255, 0.2);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            transform: translateZ(0);
+            will-change: transform, box-shadow;
+        }
+        
+        .category-card:hover {
+            border-color: rgba(79, 157, 255, 0.5);
+            box-shadow: 0 8px 32px rgba(79, 157, 255, 0.2);
+            transform: translateY(-4px) translateZ(0);
+            background: rgba(30, 35, 65, 0.6);
+        }
+        
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-blue);
+        }
+        
+        .category-card .description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .category-card .word-count {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            background: rgba(79, 157, 255, 0.1);
+            border: 1px solid rgba(79, 157, 255, 0.2);
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .page-header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .header-content h1 {
+                font-size: 2rem;
+            }
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <!-- Starfield -->
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <!-- Header -->
+        <div class="page-header">
+            <div class="header-content">
+                <h1>🌱 A1–A2 Vocabulary</h1>
+                <p>Beginner Level • <span id="levelTotal">0</span> Words • 12 Categories</p>
+            </div>
+            <a href="vocabulary-hub.html" class="back-button">← Back</a>
+        </div>
+
+        <!-- Categories Grid -->
+        <div class="categories-grid">
+            <div class="category-card" onclick="showCategory('Numbers_Quantities')" data-category="Numbers_Quantities">
+                <div class="category-icon">🔢</div>
+                <h3>Numbers & Quantities</h3>
+                <p class="description">Core counting, quantities, and numeric expressions.</p>
+                <span class="word-count" data-category="Numbers_Quantities">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Time & Dates')" data-category="Time & Dates">
+                <div class="category-icon">⏰</div>
+                <h3>Time & Dates</h3>
+                <p class="description">Days, months, seasons, and time phrases.</p>
+                <span class="word-count" data-category="Time & Dates">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Colors_Shapes')" data-category="Colors_Shapes">
+                <div class="category-icon">🎨</div>
+                <h3>Colors & Shapes</h3>
+                <p class="description">Colors, shapes, and visual descriptors.</p>
+                <span class="word-count" data-category="Colors_Shapes">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Common_Verbs')" data-category="Common_Verbs">
+                <div class="category-icon">🏃</div>
+                <h3>Common Verbs</h3>
+                <p class="description">High-frequency action words used daily.</p>
+                <span class="word-count" data-category="Common_Verbs">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Common_Adjectives')" data-category="Common_Adjectives">
+                <div class="category-icon">✨</div>
+                <h3>Common Adjectives</h3>
+                <p class="description">Everyday descriptive words.</p>
+                <span class="word-count" data-category="Common_Adjectives">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('People & Society')" data-category="People & Society">
+                <div class="category-icon">👥</div>
+                <h3>People & Society</h3>
+                <p class="description">People, roles, and social terms.</p>
+                <span class="word-count" data-category="People & Society">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Home_Family')" data-category="Home_Family">
+                <div class="category-icon">👨‍👩‍👧‍👦</div>
+                <h3>Home & Family</h3>
+                <p class="description">Family relations and home vocabulary.</p>
+                <span class="word-count" data-category="Home_Family">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Locations_Places')" data-category="Locations_Places">
+                <div class="category-icon">📍</div>
+                <h3>Locations & Places</h3>
+                <p class="description">Places, buildings, and location terms.</p>
+                <span class="word-count" data-category="Locations_Places">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Food & Cooking')" data-category="Food & Cooking">
+                <div class="category-icon">🍎</div>
+                <h3>Food & Cooking</h3>
+                <p class="description">Meals, ingredients, and kitchen words.</p>
+                <span class="word-count" data-category="Food & Cooking">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Nature & Environment')" data-category="Nature & Environment">
+                <div class="category-icon">🌿</div>
+                <h3>Nature & Environment</h3>
+                <p class="description">Natural world, plants, and animals.</p>
+                <span class="word-count" data-category="Nature & Environment">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Weather_Climate')" data-category="Weather_Climate">
+                <div class="category-icon">🌦️</div>
+                <h3>Weather & Climate</h3>
+                <p class="description">Weather conditions and climate vocabulary.</p>
+                <span class="word-count" data-category="Weather_Climate">— words</span>
+            </div>
+
+            <div class="category-card" onclick="showCategory('Travel & Transportation')" data-category="Travel & Transportation">
+                <div class="category-icon">✈️</div>
+                <h3>Travel & Transportation</h3>
+                <p class="description">Travel, transport, and movement terms.</p>
+                <span class="word-count" data-category="Travel & Transportation">— words</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCategory(categoryName) {
+            window.location.href = `vocabulary-category.html?level=a1a2&category=${encodeURIComponent(categoryName)}`;
+        }
+
+        async function loadCategoryCounts() {
+            try {
+                const response = await fetch('extracted_words.json');
+                const data = await response.json();
+
+                document.querySelectorAll('[data-category]').forEach(el => {
+                    if (el.classList.contains('word-count')) {
+                        el.textContent = '— words';
+                    }
+                });
+
+                document.getElementById('levelTotal').textContent = data.total_words.toLocaleString();
+            } catch (error) {
+                document.getElementById('levelTotal').textContent = '—';
+            }
+        }
+
+        loadCategoryCounts();
+
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, {
+            passive: true
+        });
+    </script>
+</body>
+
+</html>

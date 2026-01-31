@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Vocabulary Learning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-dark: #0a0e27;
+            --secondary-dark: #1a1f3a;
+            --tertiary-dark: #2a3050;
+            --accent-cyan: #00d9ff;
+            --accent-purple: #9d4fea;
+            --accent-orange: #ff9d4f;
+            --text-primary: #e8eef8;
+            --text-secondary: #a8b4c8;
+            --border-glow: rgba(0, 217, 255, 0.3);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #0f1535 50%, var(--primary-dark) 100%);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* STARS BACKGROUND SYSTEM */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .star:nth-child(1) {
+            top: 15%;
+            left: 10%;
+            opacity: 0.5;
+            animation-delay: 0s;
+        }
+        
+        .star:nth-child(2) {
+            top: 45%;
+            left: 85%;
+            opacity: 0.7;
+            animation-delay: 2s;
+        }
+        
+        .star:nth-child(3) {
+            top: 70%;
+            left: 20%;
+            opacity: 0.4;
+            animation-delay: 4s;
+        }
+        
+        .star:nth-child(4) {
+            top: 25%;
+            left: 75%;
+            opacity: 0.6;
+            animation-delay: 1s;
+        }
+        
+        .star:nth-child(5) {
+            top: 60%;
+            left: 60%;
+            opacity: 0.5;
+            animation-delay: 3s;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-20px);
+                opacity: 0.9;
+            }
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* MAIN LAYOUT             */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* HEADER WITH BACK BUTTON */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.1);
+        }
+        
+        .header-content h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .header-content p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        .back-button {
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid var(--border-glow);
+            color: var(--accent-cyan);
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        
+        .back-button:hover {
+            background: rgba(0, 217, 255, 0.1);
+            border-color: var(--accent-cyan);
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* WORD LIST               */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .words-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            border: 1px solid var(--border-glow);
+            border-radius: 12px;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            background: rgba(26, 31, 58, 0.4);
+        }
+        
+        .word-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px 25px;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.05);
+            transition: var(--transition);
+            align-items: center;
+        }
+        
+        .word-row:last-child {
+            border-bottom: none;
+        }
+        
+        .word-row:hover {
+            background: rgba(0, 217, 255, 0.05);
+        }
+        
+        .word-english {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .word-english .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-cyan);
+            font-weight: 600;
+        }
+        
+        .word-english .text {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        
+        .word-example {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+        
+        .word-arabic {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            text-align: right;
+            direction: rtl;
+        }
+        
+        .word-arabic .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent-purple);
+            font-weight: 600;
+        }
+        
+        .word-arabic .text {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* STATS                   */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .stats-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(157, 79, 234, 0.05);
+            border: 1px solid rgba(157, 79, 234, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* ANIMATIONS              */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .word-row {
+            animation: fadeIn 0.5s ease-out backwards;
+        }
+        
+        .word-row:nth-child(n) {
+            animation-delay: calc(0.05s * var(--row-index));
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* RESPONSIVE              */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .page-header {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+            .header-content h1 {
+                font-size: 1.6rem;
+            }
+            .word-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 15px;
+            }
+            .word-arabic {
+                text-align: left;
+                direction: ltr;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header -->
+        <div class="page-header">
+            <div class="header-content">
+                <h1 id="categoryTitle">Category Title</h1>
+                <p id="categoryDesc">Category description goes here.</p>
+            </div>
+            <a href="#" id="backLink" class="back-button">← Back</a>
+        </div>
+
+        <!-- Words List -->
+        <div class="words-container" id="wordsContainer">
+            <!-- Words will be populated here -->
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-section">
+            <p>Total words in this category: <strong id="wordCount">0</strong></p>
+        </div>
+    </div>
+
+    <script>
+        const categoryMeta = {
+            a1_a2: {
+                everyday_objects: {
+                    title: "Everyday Objects",
+                    description: "Common items you see daily"
+                },
+                family: {
+                    title: "Family Members",
+                    description: "Relations and loved ones"
+                },
+                colors: {
+                    title: "Colors & Shades",
+                    description: "Visual spectrum vocabulary"
+                },
+                numbers: {
+                    title: "Numbers & Counting",
+                    description: "Numerals and quantities"
+                },
+                food: {
+                    title: "Food & Beverages",
+                    description: "Meals and drinks"
+                },
+                time: {
+                    title: "Time & Seasons",
+                    description: "Days, months, and times"
+                },
+                greetings: {
+                    title: "Greetings & Phrases",
+                    description: "Common expressions"
+                },
+                actions: {
+                    title: "Basic Actions & Verbs",
+                    description: "Simple everyday activities"
+                }
+            },
+            b1: {
+                business_economy: {
+                    title: "Business & Economy",
+                    description: "Core vocabulary for work and markets"
+                },
+                science_research: {
+                    title: "Science & Research",
+                    description: "Academic terms for investigation"
+                },
+                politics_society: {
+                    title: "Politics & Society",
+                    description: "Civic terms and public life"
+                },
+                technology_innovation: {
+                    title: "Technology & Innovation",
+                    description: "Modern tools and systems"
+                },
+                environment_climate: {
+                    title: "Environment & Climate",
+                    description: "Nature, ecology, and change"
+                },
+                communication_media: {
+                    title: "Communication & Media",
+                    description: "News, messaging, and media"
+                },
+                education_learning: {
+                    title: "Education & Learning",
+                    description: "School and study language"
+                },
+                health_fitness: {
+                    title: "Health & Fitness",
+                    description: "Body, wellness, and routines"
+                },
+                travel_geography: {
+                    title: "Travel & Geography",
+                    description: "Places, routes, and regions"
+                },
+                culture_arts: {
+                    title: "Culture & Arts",
+                    description: "Creative and cultural vocabulary"
+                },
+                law_justice: {
+                    title: "Law & Justice",
+                    description: "Rights, rules, and systems"
+                },
+                emotions_character: {
+                    title: "Emotions & Character",
+                    description: "Feelings and personality"
+                },
+                abstract_concepts: {
+                    title: "Abstract Concepts",
+                    description: "Ideas and thinking words"
+                },
+                academic_verbs: {
+                    title: "Academic Verbs",
+                    description: "Actions for explanation and analysis"
+                },
+                academic_adjectives: {
+                    title: "Academic Adjectives",
+                    description: "Precision for descriptions"
+                },
+                mathematics_data: {
+                    title: "Mathematics & Data",
+                    description: "Quantities and analysis"
+                },
+                engineering_basics: {
+                    title: "Engineering Basics",
+                    description: "Core STEM processes"
+                },
+                computers_internet: {
+                    title: "Computers & Internet",
+                    description: "Digital tools and networks"
+                },
+                history_civilization: {
+                    title: "History & Civilization",
+                    description: "Past events and societies"
+                },
+                daily_systems: {
+                    title: "Daily Systems",
+                    description: "Services and infrastructure"
+                }
+            },
+            b2: {
+                advanced_business: {
+                    title: "Advanced Business",
+                    description: "Strategy and professional language"
+                },
+                technology: {
+                    title: "Technology & AI",
+                    description: "Advanced digital vocabulary"
+                },
+                global_issues: {
+                    title: "Global Issues",
+                    description: "International challenges and trends"
+                },
+                science: {
+                    title: "Science",
+                    description: "Advanced scientific terminology"
+                },
+                arts: {
+                    title: "Arts & Literature",
+                    description: "Critical and creative vocabulary"
+                },
+                philosophy: {
+                    title: "Philosophy",
+                    description: "Abstract reasoning and ethics"
+                },
+                medicine: {
+                    title: "Medicine",
+                    description: "Health systems and terminology"
+                },
+                legal: {
+                    title: "Legal",
+                    description: "Formal legal vocabulary"
+                },
+                economics: {
+                    title: "Economics",
+                    description: "Markets and financial systems"
+                },
+                environment: {
+                    title: "Environment",
+                    description: "Sustainability and ecology"
+                }
+            }
+        };
+
+        const fallbackData = {
+            title: "Category",
+            description: "Concept-based vocabulary group",
+            level: "a1_a2",
+            words: []
+        };
+
+        const formatTitle = (value) => value
+            .replace(/_/g, ' ')
+            .replace(/\b\w/g, (m) => m.toUpperCase());
+
+        async function loadVocabularyData() {
+            const sources = ["vocabulary-data.json", "vocabulary-complete.json"];
+            for (const source of sources) {
+                try {
+                    const response = await fetch(source);
+                    if (!response.ok) continue;
+                    return await response.json();
+                } catch (error) {
+                    continue;
+                }
+            }
+            return null;
+        }
+
+        async function initializePage() {
+            const params = new URLSearchParams(window.location.search);
+            const levelParam = params.get("level") || "a1_a2";
+            const categoryParam = params.get("category") || "everyday_objects";
+            const levelKey = levelParam === "a1-a2" ? "a1_a2" : levelParam;
+
+            const data = await loadVocabularyData();
+            const words = data ? .[levelKey] ? .[categoryParam] || [];
+            const meta = categoryMeta[levelKey] ? .[categoryParam] || {
+                title: formatTitle(categoryParam),
+                description: "Concept-based vocabulary group"
+            };
+
+            const categoryData = {
+                title: meta.title,
+                description: meta.description,
+                level: levelKey,
+                words
+            };
+
+            document.getElementById("categoryTitle").textContent = categoryData.title || fallbackData.title;
+            document.getElementById("categoryDesc").textContent = categoryData.description || fallbackData.description;
+
+            const levelPath = categoryData.level === "a1_a2" ? "vocabulary-a1-a2.html" :
+                categoryData.level === "b1" ? "vocabulary-b1.html" : "vocabulary-b2.html";
+            document.getElementById("backLink").href = levelPath;
+
+            const container = document.getElementById("wordsContainer");
+            container.innerHTML = "";
+
+            const wordList = categoryData.words.length ? categoryData.words : fallbackData.words;
+
+            wordList.forEach((word, index) => {
+                const exampleLine = word.example ? `<div class="word-example">${word.example}</div>` : "";
+                const row = document.createElement("div");
+                row.className = "word-row";
+                row.style.setProperty("--row-index", index);
+                row.innerHTML = `
+                    <div class="word-english">
+                        <span class="label">English</span>
+                        <span class="text">${word.english || ''}</span>
+                        ${exampleLine}
+                    </div>
+                    <div class="word-arabic">
+                        <span class="label">العربية</span>
+                        <span class="text">${word.arabic || ''}</span>
+                    </div>
+                `;
+                container.appendChild(row);
+            });
+
+            document.getElementById("wordCount").textContent = wordList.length;
+        }
+
+        initializePage();
+    </script>
+</body>
+
+</html>

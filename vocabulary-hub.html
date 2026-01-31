@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --primary-dark: #0a0e27;
+            --secondary-dark: #1a1f3a;
+            --tertiary-dark: #2a3050;
+            --accent-cyan: #00d9ff;
+            --accent-purple: #9d4fea;
+            --accent-orange: #ff9d4f;
+            --text-primary: #e8eef8;
+            --text-secondary: #a8b4c8;
+            --border-glow: rgba(0, 217, 255, 0.3);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #0f1535 50%, var(--primary-dark) 100%);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* STARS BACKGROUND SYSTEM */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .star:nth-child(1) {
+            top: 15%;
+            left: 10%;
+            opacity: 0.5;
+            animation-delay: 0s;
+        }
+        
+        .star:nth-child(2) {
+            top: 45%;
+            left: 85%;
+            opacity: 0.7;
+            animation-delay: 2s;
+        }
+        
+        .star:nth-child(3) {
+            top: 70%;
+            left: 20%;
+            opacity: 0.4;
+            animation-delay: 4s;
+        }
+        
+        .star:nth-child(4) {
+            top: 25%;
+            left: 75%;
+            opacity: 0.6;
+            animation-delay: 1s;
+        }
+        
+        .star:nth-child(5) {
+            top: 60%;
+            left: 60%;
+            opacity: 0.5;
+            animation-delay: 3s;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(-20px);
+                opacity: 0.9;
+            }
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* MAIN LAYOUT             */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* HEADER / INTRO SECTION  */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .header-section {
+            text-align: center;
+            margin-bottom: 80px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        .header-section h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        
+        .header-section p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* LEVEL CARDS GRID        */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .levels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .level-card {
+            background: rgba(26, 31, 58, 0.6);
+            border: 1px solid var(--border-glow);
+            border-radius: 16px;
+            padding: 40px 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 380px;
+            backdrop-filter: blur(10px);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .level-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(157, 79, 234, 0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 0;
+        }
+        
+        .level-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: var(--bg-image);
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px) saturate(0.8);
+            opacity: 0.15;
+            z-index: 0;
+        }
+        
+        .level-card:hover::before {
+            opacity: 1;
+        }
+        
+        .level-card:hover {
+            border-color: var(--accent-cyan);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 217, 255, 0.15);
+        }
+        
+        .level-card-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .level-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+        
+        .level-icon svg {
+            width: 100%;
+            height: 100%;
+            stroke: var(--accent-cyan);
+            stroke-width: 1.5;
+            fill: none;
+        }
+        
+        .level-card:nth-child(2) .level-icon svg {
+            stroke: var(--accent-purple);
+        }
+        
+        .level-card:nth-child(3) .level-icon svg {
+            stroke: var(--accent-orange);
+        }
+        
+        .level-card h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .level-card .description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+        
+        .level-card .stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            color: var(--accent-cyan);
+            padding-top: 15px;
+            border-top: 1px solid rgba(0, 217, 255, 0.2);
+        }
+        
+        .level-card:nth-child(2) .stats {
+            color: var(--accent-purple);
+            border-top-color: rgba(157, 79, 234, 0.2);
+        }
+        
+        .level-card:nth-child(3) .stats {
+            color: var(--accent-orange);
+            border-top-color: rgba(255, 157, 79, 0.2);
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .stat-item::before {
+            content: '●';
+            opacity: 0.6;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* BUTTON STYLES           */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        .button-explore {
+            align-self: flex-start;
+            background: transparent;
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: auto;
+        }
+        
+        .level-card:nth-child(2) .button-explore {
+            border-color: var(--accent-purple);
+            color: var(--accent-purple);
+        }
+        
+        .level-card:nth-child(3) .button-explore {
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+        }
+        
+        .button-explore:hover {
+            background: var(--accent-cyan);
+            color: var(--primary-dark);
+        }
+        
+        .level-card:nth-child(2) .button-explore:hover {
+            background: var(--accent-purple);
+        }
+        
+        .level-card:nth-child(3) .button-explore:hover {
+            background: var(--accent-orange);
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* ANIMATIONS              */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .level-card {
+            animation: fadeIn 0.8s ease-out backwards;
+        }
+        
+        .level-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+        
+        .level-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        
+        .level-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        /* RESPONSIVE              */
+        /* ━━━━━━━━━━━━━━━━━━━━━━ */
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+            .header-section h1 {
+                font-size: 2.2rem;
+            }
+            .header-section p {
+                font-size: 1rem;
+            }
+            .levels-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .level-card {
+                padding: 30px 20px;
+                min-height: 320px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Header / Intro -->
+        <div class="header-section">
+            <h1>English Vocabulary</h1>
+            <p>Precision in language shapes precision in thought.<br>Choose your level and explore meaning-driven vocabulary designed for academic growth.</p>
+        </div>
+
+        <!-- Level Cards Grid -->
+        <div class="levels-grid">
+            <!-- A1-A2 Level Card -->
+            <a href="vocabulary-a1-a2.html" class="level-card" style="--bg-image: url('https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?w=900&h=700&fit=crop&auto=format&q=80');">
+                <div class="level-card-content">
+                    <div class="level-icon">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="35"/>
+                            <path d="M 50 20 L 55 35 L 70 35 L 58 45 L 63 60 L 50 50 L 37 60 L 42 45 L 30 35 L 45 35 Z"/>
+                        </svg>
+                    </div>
+                    <h2>A1–A2 Vocabulary</h2>
+                    <p class="description">
+                        Essential words for daily communication. Perfect for beginners building foundational language skills.
+                    </p>
+                    <div class="stats">
+                        <span class="stat-item">Elementary Level</span>
+                        <span class="stat-item">200+ words</span>
+                    </div>
+                </div>
+                <button class="button-explore">Explore →</button>
+            </a>
+
+            <!-- B1 Level Card -->
+            <a href="vocabulary-b1.html" class="level-card" style="--bg-image: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900&h=700&fit=crop&auto=format&q=80');">
+                <div class="level-card-content">
+                    <div class="level-icon">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="35"/>
+                            <path d="M 30 50 L 50 30 L 70 50 M 50 30 L 50 70"/>
+                            <circle cx="50" cy="70" r="5"/>
+                        </svg>
+                    </div>
+                    <h2>B1 Vocabulary</h2>
+                    <p class="description">
+                        Intermediate words for complex conversations. Ideal for advanced learners tackling academic topics.
+                    </p>
+                    <div class="stats">
+                        <span class="stat-item">Intermediate Level</span>
+                        <span class="stat-item">600+ words</span>
+                    </div>
+                </div>
+                <button class="button-explore">Explore →</button>
+            </a>
+
+            <!-- B2 Level Card -->
+            <a href="vocabulary-b2.html" class="level-card" style="--bg-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&h=700&fit=crop&auto=format&q=80');">
+                <div class="level-card-content">
+                    <div class="level-icon">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="35"/>
+                            <path d="M 50 20 L 70 45 L 60 45 L 70 70 L 50 55 L 30 70 L 40 45 L 30 45 Z"/>
+                            <circle cx="50" cy="50" r="8" fill="none"/>
+                        </svg>
+                    </div>
+                    <h2>B2 Vocabulary</h2>
+                    <p class="description">
+                        Advanced vocabulary for sophisticated expression. For learners mastering professional and academic contexts.
+                    </p>
+                    <div class="stats">
+                        <span class="stat-item">Advanced Level</span>
+                        <span class="stat-item">500+ words</span>
+                    </div>
+                </div>
+                <button class="button-explore">Explore →</button>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

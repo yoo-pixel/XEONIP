@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay References - English Mastery</title>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.5), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.4), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            font-size: 0.95rem;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #7c9dd6;
+        }
+        
+        h1 {
+            font-size: 34px;
+            margin: 10px 0 16px;
+        }
+        
+        .subtitle {
+            color: #c9d4eb;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin: 28px 0;
+            padding: 20px 22px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(124, 157, 214, 0.2);
+            border-radius: 14px;
+        }
+        
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .section p {
+            color: #c9d4eb;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .section ul {
+            margin-left: 18px;
+            color: #c9d4eb;
+        }
+        
+        a.link {
+            color: #8fb7ff;
+            text-decoration: none;
+        }
+        
+        a.link:hover {
+            text-decoration: underline;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+        
+        .note {
+            margin-top: 12px;
+            font-size: 0.95rem;
+            color: #b9c6e6;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="essays.html" class="back-btn">← Back to Essays</a>
+        <nav>
+            <a href="english.html">English</a>
+            <a href="essay-tips.html">Essay Tips</a>
+        </nav>
+
+        <h1>Essay References</h1>
+        <p class="subtitle">Use these sources to learn structure and style. Study them to improve your writing, not to copy.</p>
+
+        <section class="section">
+            <h2>Books</h2>
+            <ul>
+                <li><strong>College Essay Essentials</strong> — Ethan Sawyer. Clear frameworks and real examples for admissions essays.</li>
+                <li><strong>On Writing Well</strong> — William Zinsser. Simple, powerful advice on clarity and style.</li>
+                <li><strong>They Say / I Say</strong> — Gerald Graff & Cathy Birkenstein. How to build strong academic arguments.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Websites & Guides</h2>
+            <ul>
+                <li><a class="link" href="https://owl.purdue.edu/" target="_blank" rel="noreferrer">Purdue OWL</a> — writing basics and grammar guidance.</li>
+                <li><a class="link" href="https://writingcenter.fas.harvard.edu/" target="_blank" rel="noreferrer">Harvard College Writing Center</a> — planning, drafting, and revision tips.</li>
+                <li><a class="link" href="https://mitadmissions.org/blogs/" target="_blank" rel="noreferrer">MIT Admissions Blog</a> — real advice from admissions readers.</li>
+                <li><a class="link" href="https://admission.stanford.edu/apply/essay.html" target="_blank" rel="noreferrer">Stanford Admissions Essay Examples</a> — examples and guidance.</li>
+            </ul>
+            <p class="note"><strong>Ethical use:</strong> Read examples to learn structure and tone. Never copy sentences or ideas.</p>
+        </section>
+
+        <section class="section">
+            <h2>Video & Online Resources</h2>
+            <ul>
+                <li>University writing center YouTube channels (search your target universities).</li>
+                <li>Reputable education channels that explain essay structure with examples.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

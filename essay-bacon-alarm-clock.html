@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Example: The Alarm Clock & Bacon - Ivy League Essay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.5), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.6), transparent), radial-gradient(1px 1px at 70% 70%, rgba(200, 220, 240, 0.4), transparent), radial-gradient(0.5px 0.5px at 55% 85%, rgba(190, 210, 235, 0.5), transparent), radial-gradient(1px 1px at 90% 45%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(0.5px 0.5px at 20% 80%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 65% 25%, rgba(200, 220, 240, 0.5), transparent);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.25;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem 0 2rem;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #00d9ff;
+        }
+        
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #e8edf7;
+            text-align: center;
+        }
+        
+        .essay-meta {
+            text-align: center;
+            color: #a9b9d3;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .divider {
+            height: 1px;
+            margin: 2rem auto 2.5rem;
+            width: 70%;
+            background: linear-gradient(90deg, transparent 0%, rgba(0, 217, 255, 0.35) 50%, transparent 100%);
+            box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+        }
+        
+        .essay-card {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+        }
+        
+        .essay-content {
+            color: #c7d2e7;
+            line-height: 2;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+        
+        .essay-content p {
+            margin-bottom: 1.5rem;
+            text-indent: 2rem;
+        }
+        
+        .essay-content p:first-of-type {
+            text-indent: 0;
+        }
+        
+        .essay-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #e0e6f5;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .analysis-section {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+        }
+        
+        .analysis-section h2 {
+            font-size: 1.8rem;
+            color: #e0e6f5;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+            padding-bottom: 1rem;
+        }
+        
+        .analysis-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .analysis-item h3 {
+            color: #00d9ff;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .analysis-item p {
+            color: #c7d2e7;
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .point-box {
+            background: rgba(10, 14, 32, 0.5);
+            border-left: 3px solid #00d9ff;
+            padding: 1.2rem;
+            border-radius: 8px;
+        }
+        
+        .point-box strong {
+            color: #00d9ff;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .point-box p {
+            color: #c7d2e7;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .writing-tips {
+            background: rgba(76, 255, 0, 0.08);
+            border-left: 4px solid #4cff00;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border-radius: 8px;
+        }
+        
+        .writing-tips h3 {
+            color: #4cff00;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .writing-tips ul {
+            color: #c7d2e7;
+            line-height: 1.8;
+            padding-left: 1.5rem;
+        }
+        
+        .writing-tips li {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .essay-card {
+                padding: 1.5rem;
+            }
+            .essay-content {
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+            nav {
+                gap: 1rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="essays.html" class="back-btn">← Back to Essays</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="english.html">English</a>
+            <a href="education.html">Education</a>
+            <a href="university-tips.html">University Tips</a>
+        </nav>
+
+        <h1>Essay Example Summary</h1>
+        <p class="essay-meta">Original summary and analysis (non-copyrighted)</p>
+
+        <div class="divider"></div>
+
+        <div class="essay-card">
+            <div class="essay-title">Summary: Alarm Clock & Motivation</div>
+
+            <div class="essay-content">
+                <p><strong>Summary (original):</strong> The writer reframes an annoying alarm clock as a signal that something exciting is about to happen. While many students dread early mornings, the narrator argues that enthusiasm changes everything.</p>
+                <p>The essay uses a breakfast metaphor to show how love of learning can be as motivating as a favorite meal. The student chooses challenging courses, appreciates advanced classes, and seeks intellectual variety, showing a pattern of curiosity
+                    and drive.</p>
+                <p>In the final turn, the narrator explains that high school is no longer enough and expresses readiness for the deeper opportunities of university study. The piece ends with momentum, showing hunger for future learning.</p>
+                <p class="note"><strong>Note:</strong> This page provides a summary and analysis only, not the original text.</p>
+            </div>
+        </div>
+
+        <div class="analysis-section">
+            <h2>Why This Essay Works</h2>
+
+            <div class="key-points">
+                <div class="point-box">
+                    <strong>✓ Engaging Hook</strong>
+                    <p>Starts with a relatable moment and flips it into a surprising, positive perspective.</p>
+                </div>
+
+                <div class="point-box">
+                    <strong>✓ Consistent Metaphor</strong>
+                    <p>Uses one central image throughout to keep the essay cohesive and memorable.</p>
+                </div>
+
+                <div class="point-box">
+                    <strong>✓ Academic Specificity</strong>
+                    <p>Highlights rigorous classes and active choices that demonstrate genuine intellectual appetite.</p>
+                </div>
+
+                <div class="point-box">
+                    <strong>✓ Clear Motivation</strong>
+                    <p>Shows love of learning as a habit, not just a statement.</p>
+                </div>
+
+                <div class="point-box">
+                    <strong>✓ Distinct Voice</strong>
+                    <p>Maintains energy, confidence, and personality without sounding scripted.</p>
+                </div>
+
+                <div class="point-box">
+                    <strong>✓ Forward Motion</strong>
+                    <p>Ends by looking ahead to university-level challenges and growth.</p>
+                </div>
+            </div>
+
+            <div class="analysis-item" style="margin-top: 2rem;">
+                <h3>Core Message</h3>
+                <p>The essay answers: “How do you approach learning?” The response is energetic, curious, and growth-oriented.</p>
+            </div>
+
+            <div class="analysis-item">
+                <h3>Tone & Style</h3>
+                <p>The tone is upbeat and confident. It balances humor with maturity while keeping the focus on academics.</p>
+            </div>
+
+            <div class="analysis-item">
+                <h3>What Admissions Officers See</h3>
+                <p>✓ Intellectual curiosity<br>✓ Creative thinking<br>✓ Strong writing control<br>✓ Consistent motivation<br>✓ Readiness for advanced academic work</p>
+            </div>
+        </div>
+
+        <div class="writing-tips">
+            <h3>📝 Key Writing Lessons from This Essay</h3>
+            <ul>
+                <li><strong>Use a unique hook:</strong> Start with a specific, memorable moment.</li>
+                <li><strong>Build a through-line:</strong> One central metaphor makes the piece cohesive.</li>
+                <li><strong>Show evidence:</strong> Prove your interest with concrete academic choices.</li>
+                <li><strong>Keep your voice:</strong> Natural energy reads stronger than forced formality.</li>
+                <li><strong>Connect details:</strong> Each example should support the main idea.</li>
+                <li><strong>Vary rhythm:</strong> Mix short and long sentences for impact.</li>
+                <li><strong>End forward:</strong> Close with readiness for the next challenge.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

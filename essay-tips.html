@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Tips - English Mastery</title>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.5), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.4), transparent);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        
+        nav {
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            font-size: 0.95rem;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            color: #7c9dd6;
+        }
+        
+        h1 {
+            font-size: 34px;
+            margin: 10px 0 16px;
+        }
+        
+        .subtitle {
+            color: #c9d4eb;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin: 28px 0;
+            padding: 20px 22px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(124, 157, 214, 0.2);
+            border-radius: 14px;
+        }
+        
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .section p {
+            color: #c9d4eb;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .section ul {
+            margin: 10px 0 0 18px;
+            color: #c9d4eb;
+        }
+        
+        .example {
+            margin-top: 10px;
+            padding: 12px 14px;
+            border-left: 3px solid rgba(124, 157, 214, 0.5);
+            background: rgba(12, 18, 40, 0.4);
+            border-radius: 8px;
+        }
+        
+        .label {
+            font-weight: 600;
+            color: #8fb7ff;
+        }
+        
+        .grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="essays.html" class="back-btn">← Back to Essays</a>
+        <nav>
+            <a href="english.html">English</a>
+            <a href="essay-references.html">References</a>
+        </nav>
+
+        <h1>Essay Tips (Complete Guide)</h1>
+        <p class="subtitle">Clear, honest writing is the strongest strategy. This guide explains what to write, why it works, and how to do it step by step.</p>
+
+        <section class="section">
+            <h2>1) What an essay really is</h2>
+            <p>An essay is a short story about your thinking. Readers want to see how you solve problems, not how many big words you know.</p>
+            <p><strong>Admissions readers look for:</strong> clarity, honesty, and proof of growth.</p>
+            <div class="example"><span class="label">Why honesty matters:</span> “I failed my first robotics test, then redesigned the sensor and improved accuracy.” This shows learning, not perfection.</div>
+        </section>
+
+        <section class="section">
+            <h2>2) Types of essays</h2>
+            <div class="grid">
+                <div>
+                    <p><strong>Personal statement</strong> — Purpose: your identity and growth. Used for universities. Example: “How building a water filter changed my view of engineering.”</p>
+                </div>
+                <div>
+                    <p><strong>Motivation essay</strong> — Purpose: why you want the opportunity. Used for scholarships/programs. Example: “Why I want this AI summer program.”</p>
+                </div>
+                <div>
+                    <p><strong>Why this program</strong> — Purpose: fit and goals. Example: “How your lab aligns with my bioelectronics project.”</p>
+                </div>
+                <div>
+                    <p><strong>Academic interest</strong> — Purpose: show subject passion. Example: “My curiosity about climate data.”</p>
+                </div>
+                <div>
+                    <p><strong>Leadership / impact</strong> — Purpose: influence on others. Example: “Leading a STEM club to tutor younger students.”</p>
+                </div>
+                <div>
+                    <p><strong>Short-answer</strong> — Purpose: quick clarity. Example: “Describe one challenge you solved.”</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>3) Essay structure</h2>
+            <p><strong>Introduction:</strong> One focused idea. <em>Mistake:</em> vague or very general. <em>Better:</em> a specific moment.</p>
+            <div class="example"><span class="label">Example:</span> “At 2 a.m., our sensor failed, and I had 12 hours to fix it.”</div>
+            <p><strong>Body:</strong> Explain actions and results. <em>Mistake:</em> listing achievements. <em>Better:</em> show decisions and evidence.</p>
+            <div class="example"><span class="label">Example:</span> “I tested three materials, recorded the error rate, and chose the best one.”</div>
+            <p><strong>Conclusion:</strong> Reflect and connect to your goal. <em>Mistake:</em> repeat the intro. <em>Better:</em> show next step.</p>
+            <div class="example"><span class="label">Example:</span> “This project made me want to study biomedical engineering to build affordable tools.”</div>
+        </section>
+
+        <section class="section">
+            <h2>4) How to start strong</h2>
+            <p><strong>Good openings:</strong> short story, specific moment, observation, or question.</p>
+            <div class="example"><span class="label">Good:</span> “When the power went out during our experiment, I learned how fragile data can be.”</div>
+            <p><strong>Bad openings:</strong> dictionary definitions, very general sentences, “Since I was young…”.</p>
+            <div class="example"><span class="label">Bad:</span> “Science is very important in the world.” (Too general, no story.)</div>
+        </section>
+
+        <section class="section">
+            <h2>5) Body paragraphs (depth)</h2>
+            <p><strong>One idea per paragraph.</strong> Explain it with evidence.</p>
+            <p><strong>Show, don’t tell.</strong> Use actions and results.</p>
+            <div class="example"><span class="label">Bad:</span> “I am a leader.”</div>
+            <div class="example"><span class="label">Good:</span> “I organized weekly sessions, assigned roles, and tracked progress.”</div>
+            <p><strong>Link paragraphs smoothly:</strong> Use short connectors like “Because of this…” or “This led me to…”.</p>
+        </section>
+
+        <section class="section">
+            <h2>6) Conclusions</h2>
+            <p>Do not repeat. Add a final insight and connect to your future.</p>
+            <div class="example"><span class="label">Example:</span> “Now I want to study data science to predict floods, not just analyze them.”</div>
+        </section>
+
+        <section class="section">
+            <h2>7) Language & style</h2>
+            <ul>
+                <li>Clear sentences beat fancy words.</li>
+                <li>Use active voice: “I built” not “was built.”</li>
+                <li>Vary sentence length to keep flow.</li>
+                <li>Formal but human tone — be direct.</li>
+                <li>Avoid repetition by using precise verbs.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>8) Common essay mistakes</h2>
+            <p><strong>Listing achievements</strong> — Example: “I won X, Y, Z.” <em>Fix:</em> choose one story and explain impact.</p>
+            <p><strong>Rewriting the CV</strong> — Example: long lists of activities. <em>Fix:</em> show one decision and result.</p>
+            <p><strong>Big vocabulary</strong> — Example: “I endeavored to…” <em>Fix:</em> “I tried to…”</p>
+            <p><strong>Weak grammar</strong> — Example: “I do experiment.” <em>Fix:</em> “I ran an experiment.”</p>
+            <p><strong>No clear message</strong> — Example: many topics. <em>Fix:</em> one main idea in every paragraph.</p>
+        </section>
+
+        <section class="section">
+            <h2>9) Step-by-step process</h2>
+            <ol style="margin-left: 18px; color: #c9d4eb;">
+                <li><strong>Brainstorming:</strong> list 5 moments where you learned something real.</li>
+                <li><strong>Choose ONE idea:</strong> pick the story with the strongest result.</li>
+                <li><strong>Outline:</strong> intro → 2–3 body paragraphs → conclusion.</li>
+                <li><strong>First draft:</strong> write freely; fix later.</li>
+                <li><strong>Editing:</strong> cut weak sentences and add clear evidence.</li>
+                <li><strong>Final review:</strong> read aloud for clarity.</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>10) Final checklist</h2>
+            <ul>
+                <li>Is the main idea clear in the first paragraph?</li>
+                <li>Does each paragraph support that idea?</li>
+                <li>Is the language clear and correct?</li>
+                <li>Does it sound like me, not a template?</li>
+                <li>Can I show one strong example?</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

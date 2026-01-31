@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category - Vocabulary Learning</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+         :root {
+            --primary-dark: #0a0e27;
+            --secondary-dark: #1a1f3a;
+            --accent-blue: #4f9dff;
+            --accent-cyan: #00d9ff;
+            --accent-green: #2ecc71;
+            --accent-orange: #ff9d4f;
+            --text-primary: #e8eef8;
+            --text-secondary: #a8b4c8;
+            --success-color: #2ecc71;
+            --warning-color: #f39c12;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #0f1433 50%, var(--secondary-dark) 100%);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+        }
+        
+        .stars-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .star {
+            position: absolute;
+            background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            animation: float 30s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%,
+            100% {
+                transform: translateY(0px);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translateY(-20px);
+                opacity: 0.8;
+            }
+        }
+        
+        .star:nth-child(1) {
+            width: 2px;
+            height: 2px;
+            left: 10%;
+            top: 15%;
+            animation-delay: 0s;
+        }
+        
+        .star:nth-child(2) {
+            width: 1px;
+            height: 1px;
+            left: 80%;
+            top: 80%;
+            animation-delay: 5s;
+        }
+        
+        .star:nth-child(3) {
+            width: 3px;
+            height: 3px;
+            left: 50%;
+            top: 50%;
+            animation-delay: 10s;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .page-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(79, 157, 255, 0.2);
+        }
+        
+        .header-content h1 {
+            font-size: 2rem;
+            color: var(--accent-cyan);
+            margin-bottom: 0.3rem;
+        }
+        
+        .header-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .back-button {
+            padding: 0.6rem 1.2rem;
+            background: rgba(79, 157, 255, 0.1);
+            border: 1.5px solid rgba(79, 157, 255, 0.3);
+            border-radius: 8px;
+            color: var(--accent-blue);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .back-button:hover {
+            background: rgba(79, 157, 255, 0.2);
+            border-color: rgba(79, 157, 255, 0.6);
+        }
+        
+        .filter-section {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            background: rgba(30, 35, 65, 0.4);
+            border: 1px solid rgba(79, 157, 255, 0.2);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+        }
+        
+        .search-box::placeholder {
+            color: var(--text-secondary);
+        }
+        
+        .search-box:focus {
+            outline: none;
+            border-color: rgba(79, 157, 255, 0.6);
+            background: rgba(30, 35, 65, 0.6);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+        
+        .filter-btn {
+            padding: 0.6rem 1rem;
+            background: rgba(79, 157, 255, 0.1);
+            border: 1px solid rgba(79, 157, 255, 0.2);
+            border-radius: 6px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active {
+            background: rgba(79, 157, 255, 0.3);
+            border-color: rgba(79, 157, 255, 0.6);
+            color: var(--accent-blue);
+        }
+        
+        .words-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .word-item {
+            padding: 1.5rem;
+            background: rgba(30, 35, 65, 0.3);
+            border: 1px solid rgba(79, 157, 255, 0.15);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            animation: slideIn 0.3s ease forwards;
+            opacity: 0;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .word-item:hover {
+            border-color: rgba(79, 157, 255, 0.4);
+            background: rgba(30, 35, 65, 0.5);
+            box-shadow: 0 4px 12px rgba(79, 157, 255, 0.1);
+        }
+        
+        .word-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.8rem;
+        }
+        
+        .word-english {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            word-break: break-word;
+        }
+        
+        .word-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            padding: 0.4rem 0.8rem;
+            background: rgba(46, 204, 113, 0.1);
+            border: 1px solid rgba(46, 204, 113, 0.2);
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--success-color);
+        }
+        
+        .word-status.untranslated {
+            background: rgba(243, 156, 18, 0.1);
+            border-color: rgba(243, 156, 18, 0.2);
+            color: var(--warning-color);
+        }
+        
+        .word-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .word-arabic {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .word-arabic label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+        
+        .word-arabic-text {
+            font-size: 1.2rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            direction: rtl;
+            padding: 0.6rem;
+            background: rgba(79, 157, 255, 0.05);
+            border-radius: 6px;
+        }
+        
+        .word-example {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .word-example label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+        
+        .word-example-text {
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            font-style: italic;
+            padding: 0.6rem;
+            background: rgba(79, 157, 255, 0.05);
+            border-left: 3px solid var(--accent-blue);
+            border-radius: 4px;
+        }
+        
+        .word-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.8rem;
+        }
+        
+        .tag {
+            padding: 0.3rem 0.7rem;
+            background: rgba(79, 157, 255, 0.1);
+            border: 1px solid rgba(79, 157, 255, 0.2);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: var(--accent-cyan);
+            font-weight: 500;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        
+        .empty-state h2 {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .empty-state p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .stats-bar {
+            padding: 1rem;
+            background: rgba(79, 157, 255, 0.1);
+            border: 1px solid rgba(79, 157, 255, 0.2);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            margin-top: 0.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+            .header-content h1 {
+                font-size: 1.5rem;
+            }
+            .filter-section {
+                flex-direction: column;
+            }
+            .search-box {
+                min-width: 100%;
+            }
+            .word-content {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 2rem 1rem;
+            }
+            .stats-bar {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="stars-container">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="header-content">
+                <h1 id="categoryTitle">Category</h1>
+                <p id="categorySubtitle">Loading...</p>
+            </div>
+            <a href="#" class="back-button" id="backBtn">← Back</a>
+        </div>
+
+        <div class="stats-bar">
+            <div class="stat-item">
+                <div class="stat-value" id="totalWords">0</div>
+                <div class="stat-label">Total Words</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="translatedWords">0</div>
+                <div class="stat-label">Translated</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="percentageTranslated">0%</div>
+                <div class="stat-label">Complete</div>
+            </div>
+        </div>
+
+        <div class="filter-section">
+            <input type="text" class="search-box" id="searchBox" placeholder="Search English or Arabic...">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="translated">✓ Translated</button>
+                <button class="filter-btn" data-filter="untranslated">✗ Untranslated</button>
+            </div>
+        </div>
+
+        <div class="words-list" id="wordsList">
+            <div class="empty-state">
+                <h2>Loading words...</h2>
+                <p>Please wait while we fetch the vocabulary data.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const dataSource = 'extracted_words.json';
+
+        let currentLevel = 'a1a2';
+        let currentCategory = '';
+        let currentFilter = 'all';
+        let currentWords = [];
+        let categoriesMap = {};
+
+        function getURLParams() {
+            const params = new URLSearchParams(window.location.search);
+            currentLevel = params.get('level') || 'a1a2';
+            currentCategory = params.get('category') || '';
+        }
+
+        function getCategoryDisplayName(category) {
+            if (category === 'complete_vocabulary') return 'Complete Vocabulary';
+            return category.replace(/_/g, ' ');
+        }
+
+        function getLevelDisplayName(level) {
+            const names = {
+                'a1a2': 'A1–A2 Beginner',
+                'a1': 'A1 Beginner',
+                'a2': 'A2 Beginner',
+                'b1': 'B1 Intermediate',
+                'b2': 'B2 Advanced'
+            };
+            return names[level] || level;
+        }
+
+        async function loadWords() {
+            getURLParams();
+            const data = await fetch(dataSource).then(res => res.json());
+            categoriesMap = {
+                complete_vocabulary: data.words || []
+            };
+
+            const categoryNames = Object.keys(categoriesMap);
+            if (!categoryNames.length) {
+                renderEmptyState('No categories found', 'The vocabulary data could not be loaded.');
+                return;
+            }
+
+            if (!currentCategory || !categoriesMap[currentCategory]) {
+                currentCategory = 'complete_vocabulary';
+            }
+
+            currentWords = categoriesMap[currentCategory] || [];
+            updateUI();
+        }
+
+        function parseVocabulary(html) {
+            const doc = new DOMParser().parseFromString(html, 'text/html');
+            const sections = doc.querySelectorAll('.category-section');
+            const map = {};
+
+            sections.forEach(section => {
+                const title = section.querySelector('.category-info h2') ? .textContent ? .trim();
+                if (!title) return;
+
+                const words = [];
+                section.querySelectorAll('.words-grid .word-card').forEach(card => {
+                    const english = card.querySelector('.word-english') ? .textContent ? .trim() || '';
+                    const arabic = card.querySelector('.word-arabic') ? .textContent ? .trim() || '';
+                    if (!english) return;
+                    words.push({
+                        english,
+                        arabic,
+                        translated: Boolean(arabic && arabic !== english),
+                        example: ''
+                    });
+                });
+
+                map[title] = words;
+            });
+
+            return map;
+        }
+
+        function updateUI() {
+            // Update header
+            document.getElementById('categoryTitle').textContent = getCategoryDisplayName(currentCategory);
+            document.getElementById('categorySubtitle').textContent = `${getLevelDisplayName(currentLevel)} • ${currentWords.length} words`;
+
+            // Update back button
+            const levelFile = currentLevel === 'a1a2' ? 'vocabulary-a1a2.html' :
+                currentLevel === 'b1' ? 'vocabulary-b1.html' :
+                currentLevel === 'b2' ? 'vocabulary-b2.html' : 'vocabulary-hub.html';
+            document.getElementById('backBtn').href = levelFile;
+
+            updateStats();
+            renderWords();
+        }
+
+        function updateStats() {
+            const total = currentWords.length;
+            const translated = currentWords.filter(w => w.translated && w.arabic).length;
+            const percentage = total > 0 ? Math.round((translated / total) * 100) : 0;
+
+            document.getElementById('totalWords').textContent = total;
+            document.getElementById('translatedWords').textContent = translated;
+            document.getElementById('percentageTranslated').textContent = percentage + '%';
+        }
+
+        function renderWords() {
+            const wordsList = document.getElementById('wordsList');
+            const searchTerm = document.getElementById('searchBox').value.toLowerCase();
+
+            let filteredWords = currentWords.filter(word => {
+                const english = word.english.toLowerCase();
+                const arabic = (word.arabic || '').toLowerCase();
+                if (searchTerm && !english.includes(searchTerm) && !arabic.includes(searchTerm)) {
+                    return false;
+                }
+
+                if (currentFilter === 'translated') {
+                    return word.translated && word.arabic;
+                } else if (currentFilter === 'untranslated') {
+                    return !word.translated || !word.arabic;
+                }
+
+                return true;
+            });
+
+            if (filteredWords.length === 0) {
+                renderEmptyState('No words found', 'Try adjusting your search or filter criteria.');
+                return;
+            }
+
+            wordsList.innerHTML = filteredWords.map((word, index) => `
+                <div class="word-item" style="animation-delay: ${index * 0.05}s">
+                    <div class="word-header">
+                        <div class="word-english">${word.english}</div>
+                        <div class="word-status ${!word.translated || !word.arabic ? 'untranslated' : ''}">
+                            ${word.translated && word.arabic ? '✓ Translated' : '⚠ Needs Translation'}
+                        </div>
+                    </div>
+                    <div class="word-content">
+                        <div class="word-arabic">
+                            <label>Arabic Translation</label>
+                            <div class="word-arabic-text">${word.arabic || '—'}</div>
+                        </div>
+                        <div class="word-example">
+                            <label>Example Sentence</label>
+                            <div class="word-example-text">${word.example ? `"${word.example}"` : '—'}</div>
+                        </div>
+                    </div>
+                    <div class="word-tags">
+                        <span class="tag">CEFR Level: ${currentLevel.toUpperCase()}</span>
+                        <span class="tag">Category: ${getCategoryDisplayName(currentCategory)}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderEmptyState(title, message) {
+            const wordsList = document.getElementById('wordsList');
+            wordsList.innerHTML = `
+                <div class="empty-state">
+                    <h2>${title}</h2>
+                    <p>${message}</p>
+                </div>
+            `;
+        }
+
+        // Event listeners
+        document.getElementById('searchBox').addEventListener('input', renderWords);
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                renderWords();
+            });
+        });
+
+        // Initialize
+        loadWords();
+
+        // Throttled scroll listener for performance
+        let ticking = false;
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        }, {
+            passive: true
+        });
+    </script>
+</body>
+
+</html>

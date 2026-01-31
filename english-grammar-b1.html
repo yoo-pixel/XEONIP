@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar B1 & B1+ Control</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 20% 22%, rgba(200, 220, 240, 0.5), transparent), radial-gradient(1px 1px at 75% 15%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 35% 68%, rgba(190, 210, 235, 0.45), transparent), radial-gradient(1px 1px at 70% 78%, rgba(200, 220, 240, 0.35), transparent);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.2;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 3rem 2rem 5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem 0 2.5rem;
+            border-bottom: 1px solid rgba(124, 157, 214, 0.2);
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #7c9dd6;
+        }
+        
+        .intro {
+            text-align: center;
+            margin: 2.5rem 0 2rem;
+        }
+        
+        .intro h1 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: #e8edf7;
+        }
+        
+        .intro p {
+            max-width: 900px;
+            margin: 0.5rem auto;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #c7d2e7;
+        }
+        
+        .hero-image {
+            width: 100%;
+            border-radius: 16px;
+            border: 1px solid rgba(124, 157, 214, 0.2);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+            margin: 1.5rem 0 2.5rem;
+            height: 280px;
+            object-fit: cover;
+        }
+        
+        .divider {
+            height: 1px;
+            margin: 2rem auto 2.5rem;
+            width: 70%;
+            background: linear-gradient(90deg, transparent 0%, rgba(124, 157, 214, 0.35) 50%, transparent 100%);
+            box-shadow: 0 0 12px rgba(124, 157, 214, 0.2);
+        }
+        
+        .section-title {
+            font-size: 1.6rem;
+            color: #e0e6f5;
+            margin: 2rem 0 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .topic-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.4rem;
+        }
+        
+        .topic-card {
+            background: rgba(17, 22, 44, 0.68);
+            border: 1px solid rgba(124, 157, 214, 0.18);
+            border-radius: 14px;
+            padding: 1.4rem;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+        }
+        
+        .topic-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.7rem;
+            color: #d7e1f5;
+        }
+        
+        .topic-card p {
+            font-size: 0.98rem;
+            line-height: 1.6;
+            color: #c3cee0;
+            margin: 0.3rem 0;
+        }
+        
+        .tip {
+            color: #a9b9d3;
+            font-size: 0.95rem;
+        }
+        
+        .photo-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        .photo-row img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid rgba(124, 157, 214, 0.18);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="english-grammar.html" class="back-btn">← Back to Grammar Hub</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="english.html">English</a>
+            <a href="english-grammar-a1a2.html">A1–A2</a>
+            <a href="english-grammar-b2.html">B2</a>
+        </nav>
+
+        <section class="intro">
+            <h1>B1 & B1+ Grammar: Control and Clarity</h1>
+            <p>At B1, you control tense, conditionals, and academic structure.</p>
+            <p>B1+ adds stronger logic, careful tone, and more accurate details.</p>
+            <p>Each topic gives a rule, mistake, correction, example, tip, and warning.</p>
+        </section>
+
+        <img class="hero-image" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&h=900&fit=crop&auto=format&q=80" alt="Team discussion" />
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">B1: Tenses & Narrative</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>Past simple vs present perfect</h3>
+                <p>Past simple = finished time; present perfect = recent or unfinished time.</p>
+                <p>❌ Common mistake: I have finished the essay yesterday.</p>
+                <p>✅ Correct: I finished the essay yesterday.</p>
+                <p>🧠 Academic example: I have improved my introduction this week.</p>
+                <p class="tip">Tip: If you say “yesterday,” use past simple.</p>
+                <p class="tip">When not to use: Don’t mix “have” with a finished time.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Present perfect simple vs continuous</h3>
+                <p>Simple focuses on result; continuous focuses on duration.</p>
+                <p>❌ Common mistake: I have been write for two hours.</p>
+                <p>✅ Correct: I have been writing for two hours.</p>
+                <p>🧠 Academic example: We have written three drafts.</p>
+                <p class="tip">Tip: Use continuous with “for/since”.</p>
+                <p class="tip">When not to use: Don’t use continuous for finished results.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Narrative past tenses</h3>
+                <p>Use past simple, past continuous, and past perfect to tell a story.</p>
+                <p>❌ Common mistake: I was went to the lab when it was closed.</p>
+                <p>✅ Correct: I went to the lab when it was closed.</p>
+                <p>🧠 Academic example: We had tested the sample before the teacher arrived.</p>
+                <p class="tip">Tip: Use past perfect for the earlier past.</p>
+                <p class="tip">When not to use: Don’t mix “was/were” with a past verb.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Used to / would</h3>
+                <p>Use both for habits; use “used to” for past states.</p>
+                <p>❌ Common mistake: I would be shy at school.</p>
+                <p>✅ Correct: I used to be shy at school.</p>
+                <p>🧠 Academic example: We would meet every Friday to code.</p>
+                <p class="tip">Tip: “Would” does not describe states.</p>
+                <p class="tip">When not to use: Avoid “would” with “be, know, like”.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">B1: Future & Modals</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>Future forms overview</h3>
+                <p>Choose forms by plan, decision, or schedule.</p>
+                <p>❌ Common mistake: I am going to to apply.</p>
+                <p>✅ Correct: I am going to apply.</p>
+                <p>🧠 Academic example: The workshop starts at 3 p.m. tomorrow.</p>
+                <p class="tip">Tip: Use present simple for timetables.</p>
+                <p class="tip">When not to use: Don’t use “will” for fixed schedules.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Obligation, prohibition, advice</h3>
+                <p>Must/have to = obligation; mustn’t = prohibition; should = advice.</p>
+                <p>❌ Common mistake: You must to wear goggles.</p>
+                <p>✅ Correct: You must wear goggles.</p>
+                <p>🧠 Academic example: You should explain your method clearly.</p>
+                <p class="tip">Tip: “Don’t have to” = no obligation.</p>
+                <p class="tip">When not to use: Don’t use “mustn’t” for no obligation.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Ability: can / could / be able to</h3>
+                <p>Could = past ability; be able to = specific success.</p>
+                <p>❌ Common mistake: Yesterday I can finish early.</p>
+                <p>✅ Correct: Yesterday I was able to finish early.</p>
+                <p>🧠 Academic example: She could solve complex equations.</p>
+                <p class="tip">Tip: Use “was able to” for one-time success.</p>
+                <p class="tip">When not to use: Don’t use “could” for a single result.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Modal deduction</h3>
+                <p>Use must/might/can’t for logical guesses.</p>
+                <p>❌ Common mistake: He must be tired; he slept early.</p>
+                <p>✅ Correct: He must be tired because he slept late.</p>
+                <p>🧠 Academic example: The sample can’t be pure; the color is wrong.</p>
+                <p class="tip">Tip: Give a reason after the modal.</p>
+                <p class="tip">When not to use: Don’t use for facts you know.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Had better / it’s time</h3>
+                <p>Had better = strong advice; it’s time = expectation.</p>
+                <p>❌ Common mistake: You had better to start now.</p>
+                <p>✅ Correct: You had better start now.</p>
+                <p>🧠 Academic example: It’s time we updated the bibliography.</p>
+                <p class="tip">Tip: Use base verb after “had better”.</p>
+                <p class="tip">When not to use: Avoid in very polite emails.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Would rather / would sooner</h3>
+                <p>Use to show preference.</p>
+                <p>❌ Common mistake: I would rather to study alone.</p>
+                <p>✅ Correct: I would rather study alone.</p>
+                <p>🧠 Academic example: We would sooner submit a clean draft.</p>
+                <p class="tip">Tip: Use base verb after “would rather”.</p>
+                <p class="tip">When not to use: Don’t add “to”.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">B1: Conditionals, Passive, Grammar Control</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>First & second conditionals</h3>
+                <p>First = real future; second = unreal.</p>
+                <p>❌ Common mistake: If I will have time, I will help.</p>
+                <p>✅ Correct: If I have time, I will help.</p>
+                <p>🧠 Academic example: If I had more data, I would improve the model.</p>
+                <p class="tip">Tip: No “will” in if-clause.</p>
+                <p class="tip">When not to use: Don’t use second for real plans.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Third conditional</h3>
+                <p>If + had + past participle for past unreal results.</p>
+                <p>❌ Common mistake: If I studied, I would have passed.</p>
+                <p>✅ Correct: If I had studied, I would have passed.</p>
+                <p>🧠 Academic example: If we had tested earlier, we would have fixed the error.</p>
+                <p class="tip">Tip: Past perfect in the if-clause.</p>
+                <p class="tip">When not to use: Don’t use for present situations.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Wishes & regrets</h3>
+                <p>Wish + past for present regrets; wish + past perfect for past regrets.</p>
+                <p>❌ Common mistake: I wish I will understand it.</p>
+                <p>✅ Correct: I wish I understood it.</p>
+                <p>🧠 Academic example: I wish I had saved more time for revision.</p>
+                <p class="tip">Tip: Use “were” after wish in formal style.</p>
+                <p class="tip">When not to use: Don’t use “will” after wish.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Active vs passive</h3>
+                <p>Use passive when the action matters more than the doer.</p>
+                <p>❌ Common mistake: The samples were took yesterday.</p>
+                <p>✅ Correct: The samples were taken yesterday.</p>
+                <p>🧠 Academic example: The survey was completed by 200 students.</p>
+                <p class="tip">Tip: Passive is common in lab reports.</p>
+                <p class="tip">When not to use: Don’t overuse passive in personal essays.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Passive verb forms</h3>
+                <p>Form: be + past participle in any tense.</p>
+                <p>❌ Common mistake: The results are showed in the chart.</p>
+                <p>✅ Correct: The results are shown in the chart.</p>
+                <p>🧠 Academic example: The device is calibrated every week.</p>
+                <p class="tip">Tip: Choose the right “be” tense.</p>
+                <p class="tip">When not to use: Don’t use passive without a clear reason.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Defining & non-defining relative clauses</h3>
+                <p>Defining = essential; non-defining = extra info.</p>
+                <p>❌ Common mistake: The student which won is my friend.</p>
+                <p>✅ Correct: The student who won is my friend.</p>
+                <p>🧠 Academic example: The lab, which opened last year, has new equipment.</p>
+                <p class="tip">Tip: Use commas for non-defining.</p>
+                <p class="tip">When not to use: Don’t use “that” in non-defining clauses.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Question tags</h3>
+                <p>Add a short question to check or confirm.</p>
+                <p>❌ Common mistake: You are ready, aren’t it?</p>
+                <p>✅ Correct: You are ready, aren’t you?</p>
+                <p>🧠 Academic example: You finished the analysis, didn’t you?</p>
+                <p class="tip">Tip: Positive statement → negative tag.</p>
+                <p class="tip">When not to use: Avoid in formal essays.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Reflexive pronouns</h3>
+                <p>Use myself/yourself when subject = object.</p>
+                <p>❌ Common mistake: I prepared the slides by me.</p>
+                <p>✅ Correct: I prepared the slides by myself.</p>
+                <p>🧠 Academic example: She taught herself basic coding.</p>
+                <p class="tip">Tip: “By myself” = alone.</p>
+                <p class="tip">When not to use: Don’t use for normal objects.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Another / other / others</h3>
+                <p>Another = one more; other/others = the rest.</p>
+                <p>❌ Common mistake: I need other one example.</p>
+                <p>✅ Correct: I need another example.</p>
+                <p>🧠 Academic example: Some results are clear; others need review.</p>
+                <p class="tip">Tip: “Others” is a pronoun, no noun after it.</p>
+                <p class="tip">When not to use: Don’t use “another” with plural nouns.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Verb + preposition</h3>
+                <p>Some verbs require a preposition.</p>
+                <p>❌ Common mistake: We discussed about the method.</p>
+                <p>✅ Correct: We discussed the method.</p>
+                <p>🧠 Academic example: She applied for the scholarship.</p>
+                <p class="tip">Tip: Learn common verb + preposition pairs.</p>
+                <p class="tip">When not to use: Don’t add extra prepositions.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Adjective + preposition</h3>
+                <p>Some adjectives take specific prepositions.</p>
+                <p>❌ Common mistake: I am interested for robotics.</p>
+                <p>✅ Correct: I am interested in robotics.</p>
+                <p>🧠 Academic example: They are responsible for data collection.</p>
+                <p class="tip">Tip: Keep a list of common adjective + preposition pairs.</p>
+                <p class="tip">When not to use: Don’t change the preposition.</p>
+            </div>
+            <div class="topic-card">
+                <h3>So / such</h3>
+                <p>So + adjective; such + noun phrase.</p>
+                <p>❌ Common mistake: It was so a good result.</p>
+                <p>✅ Correct: It was such a good result.</p>
+                <p>🧠 Academic example: The experiment was so successful.</p>
+                <p class="tip">Tip: Such + a/an + adjective + noun.</p>
+                <p class="tip">When not to use: Don’t use “so” before a noun.</p>
+            </div>
+        </div>
+
+        <div class="photo-row">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&h=800&fit=crop&auto=format&q=80" alt="Research work" />
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200&h=800&fit=crop&auto=format&q=80" alt="Study group" />
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=800&fit=crop&auto=format&q=80" alt="Team collaboration" />
+        </div>
+
+        <div class="divider"></div>
+
+        <h2 class="section-title">B1+ Advanced Control</h2>
+        <div class="topic-grid">
+            <div class="topic-card">
+                <h3>All narrative tenses</h3>
+                <p>Combine past simple, continuous, and perfect in one story.</p>
+                <p>❌ Common mistake: I was finish my report when he came.</p>
+                <p>✅ Correct: I had finished my report when he came.</p>
+                <p>🧠 Academic example: We were testing when the power failed, but we had saved the data.</p>
+                <p class="tip">Tip: Past perfect shows the earlier action.</p>
+                <p class="tip">When not to use: Don’t overuse past perfect.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Past modals of deduction</h3>
+                <p>Must have / might have / can’t have for past guesses.</p>
+                <p>❌ Common mistake: He must have went home.</p>
+                <p>✅ Correct: He must have gone home.</p>
+                <p>🧠 Academic example: The results can’t have been random.</p>
+                <p class="tip">Tip: Use past participle after have.</p>
+                <p class="tip">When not to use: Don’t use for proven facts.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Needn’t / didn’t need to / needn’t have</h3>
+                <p>Didn’t need to = no necessity; needn’t have = unnecessary action done.</p>
+                <p>❌ Common mistake: We needn’t to submit early.</p>
+                <p>✅ Correct: We didn’t need to submit early.</p>
+                <p>🧠 Academic example: You needn’t have printed the report.</p>
+                <p class="tip">Tip: “Needn’t have” = you did it but it was not necessary.</p>
+                <p class="tip">When not to use: Don’t use “needn’t” with “to”.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Probability expressions</h3>
+                <p>Likely, unlikely, probably, bound to show chance.</p>
+                <p>❌ Common mistake: It is probably to rain.</p>
+                <p>✅ Correct: It will probably rain.</p>
+                <p>🧠 Academic example: The results are likely to improve.</p>
+                <p class="tip">Tip: “Likely to” + verb.</p>
+                <p class="tip">When not to use: Don’t use “probably” before “to”.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Zero, first, second, third conditionals</h3>
+                <p>Zero = facts; first = real future; second/third = unreal.</p>
+                <p>❌ Common mistake: If water will boil, it becomes steam.</p>
+                <p>✅ Correct: If water boils, it becomes steam.</p>
+                <p>🧠 Academic example: If we had used a larger sample, results might be clearer.</p>
+                <p class="tip">Tip: Zero conditional uses present simple in both clauses.</p>
+                <p class="tip">When not to use: Don’t use “will” in zero conditional.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Mixed conditionals</h3>
+                <p>Mix past and present for complex meaning.</p>
+                <p>❌ Common mistake: If I studied harder, I would have a higher GPA now.</p>
+                <p>✅ Correct: If I had studied harder, I would have a higher GPA now.</p>
+                <p>🧠 Academic example: If we had built it earlier, we would be ready now.</p>
+                <p class="tip">Tip: Past condition → present result is common.</p>
+                <p class="tip">When not to use: Don’t mix tenses without a reason.</p>
+            </div>
+            <div class="topic-card">
+                <h3>When I do vs when I have done</h3>
+                <p>Present simple for next action; present perfect for completion first.</p>
+                <p>❌ Common mistake: When I have finish, I will send it.</p>
+                <p>✅ Correct: When I finish, I will send it.</p>
+                <p>🧠 Academic example: When I have finished the draft, I will ask for feedback.</p>
+                <p class="tip">Tip: Use present perfect when one action finishes before another.</p>
+                <p class="tip">When not to use: Don’t use “will” after “when”.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Reporting verbs</h3>
+                <p>Use report, claim, suggest, explain in formal writing.</p>
+                <p>❌ Common mistake: The study told that the method works.</p>
+                <p>✅ Correct: The study reported that the method works.</p>
+                <p>🧠 Academic example: The author suggests that more data is needed.</p>
+                <p class="tip">Tip: Choose a precise reporting verb.</p>
+                <p class="tip">When not to use: Avoid “say” in formal reports.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Reduced relative clauses</h3>
+                <p>Shorten relative clauses to make writing tighter.</p>
+                <p>❌ Common mistake: The data that was collected was small.</p>
+                <p>✅ Correct: The data collected was small.</p>
+                <p>🧠 Academic example: Students applying for scholarships must show impact.</p>
+                <p class="tip">Tip: Use -ing or past participle.</p>
+                <p class="tip">When not to use: Don’t reduce if meaning becomes unclear.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Verbs of the senses</h3>
+                <p>Use look/sound/feel + adjective.</p>
+                <p>❌ Common mistake: The result looks clearly.</p>
+                <p>✅ Correct: The result looks clear.</p>
+                <p>🧠 Academic example: The solution sounds reasonable.</p>
+                <p class="tip">Tip: Use adjectives after sense verbs.</p>
+                <p class="tip">When not to use: Don’t use adverbs after “look/sound/feel”.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Adjective order</h3>
+                <p>Opinion → size → age → color → noun.</p>
+                <p>❌ Common mistake: A metal small old box.</p>
+                <p>✅ Correct: A small old metal box.</p>
+                <p>🧠 Academic example: A detailed modern research paper.</p>
+                <p class="tip">Tip: Do not use too many adjectives.</p>
+                <p class="tip">When not to use: Avoid long adjective chains in essays.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Already / still / yet</h3>
+                <p>Already = completed; still = ongoing; yet = not finished.</p>
+                <p>❌ Common mistake: I didn’t finish already.</p>
+                <p>✅ Correct: I haven’t finished yet.</p>
+                <p>🧠 Academic example: We are still revising the conclusion.</p>
+                <p class="tip">Tip: “Yet” is common in negatives and questions.</p>
+                <p class="tip">When not to use: Don’t use “already” with negatives.</p>
+            </div>
+            <div class="topic-card">
+                <h3>Pretty / rather / quite / fairly</h3>
+                <p>Use them to show degree in a polite way.</p>
+                <p>❌ Common mistake: The task is very fairly difficult.</p>
+                <p>✅ Correct: The task is fairly difficult.</p>
+                <p>🧠 Academic example: The results were quite consistent.</p>
+                <p class="tip">Tip: These words soften your tone.</p>
+                <p class="tip">When not to use: Don’t combine “very” with them.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

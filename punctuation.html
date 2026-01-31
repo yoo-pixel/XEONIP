@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punctuation Guide - English Mastery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+        
+        body {
+            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
+            color: #e0e6f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.5), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.6), transparent), radial-gradient(1px 1px at 70% 70%, rgba(200, 220, 240, 0.4), transparent), radial-gradient(0.5px 0.5px at 55% 85%, rgba(190, 210, 235, 0.5), transparent), radial-gradient(1px 1px at 90% 45%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(0.5px 0.5px at 20% 80%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 65% 25%, rgba(200, 220, 240, 0.5), transparent);
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.25;
+        }
+        
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 2rem 5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-bottom: 20px;
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            text-decoration: none;
+            border: 1px solid #00d9ff;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(0, 217, 255, 0.2);
+            transform: translateX(-4px);
+        }
+        
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #e8edf7;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #a9b9d3;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .divider {
+            height: 1px;
+            margin: 2rem auto 3rem;
+            width: 70%;
+            background: linear-gradient(90deg, transparent 0%, rgba(0, 217, 255, 0.35) 50%, transparent 100%);
+            box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
+        }
+        
+        .punctuation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .punctuation-card {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(6px);
+            transition: all 0.3s ease;
+        }
+        
+        .punctuation-card:hover {
+            border-color: rgba(0, 217, 255, 0.5);
+            box-shadow: 0 12px 40px rgba(0, 217, 255, 0.2);
+            transform: translateY(-4px);
+        }
+        
+        .mark-symbol {
+            font-size: 3.5rem;
+            text-align: center;
+            color: #00d9ff;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #e0e6f5;
+            margin-bottom: 0.8rem;
+            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+            padding-bottom: 0.8rem;
+        }
+        
+        .card-content {
+            color: #c7d2e7;
+            line-height: 1.8;
+        }
+        
+        .usage {
+            background: rgba(10, 14, 32, 0.5);
+            border-left: 3px solid #00d9ff;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        
+        .usage strong {
+            color: #00d9ff;
+        }
+        
+        .example {
+            margin: 0.8rem 0;
+            padding: 0.8rem;
+            background: rgba(0, 217, 255, 0.05);
+            border-radius: 6px;
+            font-style: italic;
+            color: #d0dde8;
+        }
+        
+        .wrong {
+            color: #ff6b6b;
+        }
+        
+        .correct {
+            color: #51cf66;
+        }
+        
+        .image-container {
+            margin: 2rem auto;
+            text-align: center;
+        }
+        
+        .example-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid rgba(0, 217, 255, 0.3);
+            margin: 1rem 0;
+            max-width: 500px;
+        }
+        
+        .visual-guide {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .visual-guide h2 {
+            font-size: 1.8rem;
+            color: #e0e6f5;
+            margin-bottom: 1.5rem;
+        }
+        
+        .punctuation-chart {
+            background: rgba(10, 14, 32, 0.5);
+            padding: 1.5rem;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #c7d2e7;
+        }
+        
+        th,
+        td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+        }
+        
+        th {
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            font-weight: 600;
+        }
+        
+        tr:hover {
+            background: rgba(0, 217, 255, 0.05);
+        }
+        
+        .tip-box {
+            background: rgba(76, 255, 0, 0.08);
+            border-left: 4px solid #4cff00;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+        
+        .tip-box strong {
+            color: #4cff00;
+        }
+        
+        .tip-box p {
+            color: #c7d2e7;
+            margin: 0.5rem 0;
+        }
+        
+        .practice-section {
+            background: rgba(17, 22, 44, 0.65);
+            border: 1px solid rgba(0, 217, 255, 0.2);
+            border-radius: 14px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .practice-section h2 {
+            font-size: 1.6rem;
+            color: #e0e6f5;
+            margin-bottom: 1.5rem;
+        }
+        
+        .practice-item {
+            background: rgba(10, 14, 32, 0.5);
+            padding: 1.2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border-left: 3px solid rgba(0, 217, 255, 0.4);
+        }
+        
+        .practice-item p {
+            color: #c7d2e7;
+            margin: 0.5rem 0;
+        }
+        
+        .answer {
+            display: none;
+            color: #00d9ff;
+            margin-top: 0.8rem;
+            padding-top: 0.8rem;
+            border-top: 1px solid rgba(0, 217, 255, 0.2);
+        }
+        
+        .practice-item:hover .answer {
+            display: block;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 1.5rem 0 2rem;
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            margin-bottom: 2rem;
+        }
+        
+        nav a {
+            color: #b8c1d6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #00d9ff;
+        }
+        
+        @media (max-width: 768px) {
+            .punctuation-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .mark-symbol {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="starfield.css">
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <a href="english.html" class="back-btn">← Back to English</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="english.html">English</a>
+            <a href="education.html">Education</a>
+        </nav>
+
+        <h1>Complete Punctuation Guide</h1>
+        <p class="subtitle">Master all punctuation marks with 50+ real examples</p>
+
+        <div class="divider"></div>
+
+        <div class="punctuation-grid">
+            <!-- Period -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">.</div>
+                <div class="card-title">Period (Full Stop)</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Ending complete sentences
+                    </div>
+                    <div class="example">✓ The experiment was successful.</div>
+                    <div class="example">✓ She studies engineering.</div>
+                    <div class="example">✓ We presented our findings.</div>
+                    <div class="example">✓ The research took two years.</div>
+                    <div class="example">✓ Always use a period at sentence end.</div>
+                </div>
+            </div>
+
+            <!-- Comma -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">,</div>
+                <div class="card-title">Comma</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Separating items, ideas, and phrases
+                    </div>
+                    <div class="example">✓ I like math, physics, and chemistry.</div>
+                    <div class="example">✓ When I finished the project, I felt proud.</div>
+                    <div class="example">✓ The lab, which opened last year, is modern.</div>
+                    <div class="example">✓ However, more research is needed.</div>
+                    <div class="example">✓ Sarah, our team leader, is excellent.</div>
+                </div>
+            </div>
+
+            <!-- Question Mark -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">?</div>
+                <div class="card-title">Question Mark</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Ending questions
+                    </div>
+                    <div class="example">✓ What is your research about?</div>
+                    <div class="example">✓ Did you complete the assignment?</div>
+                    <div class="example">✓ How many samples did you test?</div>
+                    <div class="example">✓ When is the presentation?</div>
+                    <div class="example">✓ Can you explain this concept?</div>
+                </div>
+            </div>
+
+            <!-- Exclamation Mark -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">!</div>
+                <div class="card-title">Exclamation Mark</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Strong emotion or emphasis (use sparingly in academic writing)
+                    </div>
+                    <div class="example">✓ What a breakthrough discovery!</div>
+                    <div class="example">✓ This is incredible!</div>
+                    <div class="example">✓ Never ignore safety rules!</div>
+                    <div class="example">✓ The results were amazing!</div>
+                    <div class="example">⚠️ Rarely use in formal academic papers.</div>
+                </div>
+            </div>
+
+            <!-- Semicolon -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">;</div>
+                <div class="card-title">Semicolon</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Connecting related independent clauses
+                    </div>
+                    <div class="example">✓ The data shows growth; profits increased by 20%.</div>
+                    <div class="example">✓ She finished her thesis; it was excellent work.</div>
+                    <div class="example">✓ Testing was complete; results were negative.</div>
+                    <div class="example">✓ The experiment failed; we learned valuable lessons.</div>
+                    <div class="example">✓ Funding is limited; costs are high.</div>
+                </div>
+            </div>
+
+            <!-- Colon -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">:</div>
+                <div class="card-title">Colon</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Introducing lists, explanations, or definitions
+                    </div>
+                    <div class="example">✓ Three steps are needed: plan, execute, analyze.</div>
+                    <div class="example">✓ Equipment required: microscopes, slides, chemicals.</div>
+                    <div class="example">✓ Conclusion: the hypothesis was correct.</div>
+                    <div class="example">✓ Key findings: 85% success rate.</div>
+                    <div class="example">✓ Note the following: timing is critical.</div>
+                </div>
+            </div>
+
+            <!-- Apostrophe -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">'</div>
+                <div class="card-title">Apostrophe</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Possession and contractions
+                    </div>
+                    <div class="example">✓ John's experiment was successful.</div>
+                    <div class="example">✓ The team's results were published.</div>
+                    <div class="example">✓ It's important to verify data. (It is)</div>
+                    <div class="example">✓ We're confident in this approach. (We are)</div>
+                    <div class="example">✓ The scientists' findings changed everything.</div>
+                </div>
+            </div>
+
+            <!-- Quotation Marks -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">" "</div>
+                <div class="card-title">Quotation Marks</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Direct speech and quotes
+                    </div>
+                    <div class="example">✓ She said, "Results show improvement."</div>
+                    <div class="example">✓ "The research is ongoing," he replied.</div>
+                    <div class="example">✓ According to Smith, "Data matters most."</div>
+                    <div class="example">✓ The study proved "consistent results."</div>
+                    <div class="example">✓ "Innovation drives progress," writes Johnson.</div>
+                </div>
+            </div>
+
+            <!-- Hyphen -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">-</div>
+                <div class="card-title">Hyphen</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Joining words or breaking lines
+                    </div>
+                    <div class="example">✓ This is a well-known fact.</div>
+                    <div class="example">✓ The up-to-date report is ready.</div>
+                    <div class="example">✓ Twenty-five samples were tested.</div>
+                    <div class="example">✓ Pre-existing conditions were noted.</div>
+                    <div class="example">✓ X-ray analysis showed abnormalities.</div>
+                </div>
+            </div>
+
+            <!-- Em Dash -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">—</div>
+                <div class="card-title">Em Dash</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Strong pause or interruption
+                    </div>
+                    <div class="example">✓ The findings—which were surprising—changed everything.</div>
+                    <div class="example">✓ We discovered the answer—finally!</div>
+                    <div class="example">✓ Three factors matter most—time, cost, and quality.</div>
+                    <div class="example">✓ The project succeeded—against all odds.</div>
+                    <div class="example">✓ Results showed growth—particularly in Q3.</div>
+                </div>
+            </div>
+
+            <!-- Parentheses -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">( )</div>
+                <div class="card-title">Parentheses</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Extra information
+                    </div>
+                    <div class="example">✓ The lab (built in 2020) is new.</div>
+                    <div class="example">✓ Results improved significantly (by 40%).</div>
+                    <div class="example">✓ She completed her PhD (in physics).</div>
+                    <div class="example">✓ The data supports this (see Table 3).</div>
+                    <div class="example">✓ Key metrics (performance indicators) were tracked.</div>
+                </div>
+            </div>
+
+            <!-- Ellipsis -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">…</div>
+                <div class="card-title">Ellipsis</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Omitted text or trailing thought
+                    </div>
+                    <div class="example">✓ "The results showed…" he paused.</div>
+                    <div class="example">✓ First came testing, then validation…</div>
+                    <div class="example">✓ She wondered what would happen next…</div>
+                    <div class="example">✓ The data indicated growth… at least temporarily.</div>
+                    <div class="example">✓ Multiple variables affected the outcome…</div>
+                </div>
+            </div>
+
+            <!-- Brackets -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">[ ]</div>
+                <div class="card-title">Brackets</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Inserting your own words in quotes
+                    </div>
+                    <div class="example">✓ "This [research] changed everything," said Dr. Lee.</div>
+                    <div class="example">✓ "The results [shown above] are significant."</div>
+                    <div class="example">✓ "She [the researcher] discovered this."</div>
+                    <div class="example">✓ "During [that period], growth was rapid."</div>
+                    <div class="example">✓ "The team [consisting of 5 people] worked hard."</div>
+                </div>
+            </div>
+
+            <!-- Forward Slash -->
+            <div class="punctuation-card">
+                <div class="mark-symbol">/</div>
+                <div class="card-title">Forward Slash</div>
+                <div class="card-content">
+                    <div class="usage">
+                        <strong>Use for:</strong> Alternatives or ratios
+                    </div>
+                    <div class="example">✓ Pass/fail results were recorded.</div>
+                    <div class="example">✓ Student/teacher ratio improved.</div>
+                    <div class="example">✓ The on/off switch is located here.</div>
+                    <div class="example">✓ Years 2021/2022 showed growth.</div>
+                    <div class="example">✓ Male/female distribution was equal.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Punctuation Chart -->
+        <div class="visual-guide">
+            <h2>Quick Reference Chart</h2>
+            <div class="punctuation-chart">
+                <table>
+                    <tr>
+                        <th>Mark</th>
+                        <th>Name</th>
+                        <th>Main Use</th>
+                        <th>Example</th>
+                    </tr>
+                    <tr>
+                        <td><strong>.</strong></td>
+                        <td>Period</td>
+                        <td>End of sentence</td>
+                        <td>The work is complete.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>,</strong></td>
+                        <td>Comma</td>
+                        <td>Separate items</td>
+                        <td>I like A, B, and C.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>?</strong></td>
+                        <td>Question Mark</td>
+                        <td>End of question</td>
+                        <td>What is this?</td>
+                    </tr>
+                    <tr>
+                        <td><strong>!</strong></td>
+                        <td>Exclamation</td>
+                        <td>Strong emotion</td>
+                        <td>What a surprise!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>;</strong></td>
+                        <td>Semicolon</td>
+                        <td>Join clauses</td>
+                        <td>It finished; we celebrated.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>:</strong></td>
+                        <td>Colon</td>
+                        <td>Introduce list</td>
+                        <td>Items: A, B, C.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>'</strong></td>
+                        <td>Apostrophe</td>
+                        <td>Possession</td>
+                        <td>John's book.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>" "</strong></td>
+                        <td>Quotes</td>
+                        <td>Direct speech</td>
+                        <td>"Hello," she said.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>-</strong></td>
+                        <td>Hyphen</td>
+                        <td>Join words</td>
+                        <td>Well-known fact.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>—</strong></td>
+                        <td>Em Dash</td>
+                        <td>Strong pause</td>
+                        <td>Results—finally!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>( )</strong></td>
+                        <td>Parentheses</td>
+                        <td>Extra info</td>
+                        <td>She studied (2 years).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>…</strong></td>
+                        <td>Ellipsis</td>
+                        <td>Omitted text</td>
+                        <td>The story began…</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Practice Section -->
+        <div class="practice-section">
+            <h2>Practice & Exercises</h2>
+            <p style="color: #c7d2e7; margin-bottom: 1.5rem;">Hover over each sentence to reveal the correct punctuation.</p>
+
+            <div class="practice-item">
+                <p><strong>Exercise 1:</strong> <span class="wrong">what time is the meeting</span></p>
+                <div class="answer">✓ Correction: What time is the meeting?</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 2:</strong> <span class="wrong">She studied math physics and chemistry</span></p>
+                <div class="answer">✓ Correction: She studied math, physics, and chemistry.</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 3:</strong> <span class="wrong">The project finished however results were poor</span></p>
+                <div class="answer">✓ Correction: The project finished; however, results were poor.</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 4:</strong> <span class="wrong">Johns experiment was successful</span></p>
+                <div class="answer">✓ Correction: John's experiment was successful.</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 5:</strong> <span class="wrong">The team which had 5 members worked hard</span></p>
+                <div class="answer">✓ Correction: The team, which had 5 members, worked hard.</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 6:</strong> <span class="wrong">She said im ready to start</span></p>
+                <div class="answer">✓ Correction: She said, "I'm ready to start."</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 7:</strong> <span class="wrong">Results improved significantly by 50 percent</span></p>
+                <div class="answer">✓ Correction: Results improved significantly (by 50 percent).</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 8:</strong> <span class="wrong">Three things matter time cost and quality</span></p>
+                <div class="answer">✓ Correction: Three things matter: time, cost, and quality.</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 9:</strong> <span class="wrong">Its important to complete the assignment</span></p>
+                <div class="answer">✓ Correction: It's important to complete the assignment. (It is)</div>
+            </div>
+
+            <div class="practice-item">
+                <p><strong>Exercise 10:</strong> <span class="wrong">The well known scientist discovered this</span></p>
+                <div class="answer">✓ Correction: The well-known scientist discovered this.</div>
+            </div>
+        </div>
+
+        <!-- Tips Box -->
+        <div class="tip-box">
+            <p><strong>💡 Pro Tip 1:</strong> In formal academic writing, avoid exclamation marks. Use periods and semicolons instead.</p>
+            <p><strong>💡 Pro Tip 2:</strong> Commas after conjunctions (however, therefore, moreover) are often needed: "However, results improved."</p>
+            <p><strong>💡 Pro Tip 3:</strong> Use semicolons to connect closely related independent clauses. Don't overuse them.</p>
+            <p><strong>💡 Pro Tip 4:</strong> Apostrophes show possession (Mary's book) or contractions (it's = it is). Never use with "its" (possessive).</p>
+            <p><strong>💡 Pro Tip 5:</strong> Em dashes create emphasis. Use them sparingly in academic work—they can distract readers.</p>
+        </div>
+
+        <!-- Visual Examples -->
+        <div class="visual-guide">
+            <h2>Visual Punctuation Examples</h2>
+            <p style="color: #c7d2e7; margin-bottom: 2rem;">Here are visual representations of punctuation in context:</p>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
+                <h3 style="color: #e0e6f5; margin-bottom: 1rem;">Sentence Structure with Commas</h3>
+                <svg viewBox="0 0 600 100" style="width: 100%; max-width: 600px; margin: 0 auto;">
+                    <text x="10" y="30" fill="#e0e6f5" font-size="14" font-family="monospace">The team, which started in 2020, completed the project.</text>
+                    <text x="10" y="60" fill="#00d9ff" font-size="12">   ↑ comma                  ↑ comma</text>
+                    <text x="10" y="80" fill="#a9b9d3" font-size="12">    Extra information in between</text>
+                </svg>
+            </div>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
+                <h3 style="color: #e0e6f5; margin-bottom: 1rem;">Colon Introducing a List</h3>
+                <svg viewBox="0 0 600 120" style="width: 100%; max-width: 600px; margin: 0 auto;">
+                    <text x="10" y="30" fill="#e0e6f5" font-size="14" font-family="monospace">Equipment needed: microscope, slides, chemicals</text>
+                    <text x="10" y="60" fill="#00d9ff" font-size="12">                ↑ colon</text>
+                    <text x="10" y="85" fill="#a9b9d3" font-size="12">             Introduces the list of items</text>
+                </svg>
+            </div>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1rem 0;">
+                <h3 style="color: #e0e6f5; margin-bottom: 1rem;">Semicolon Joining Related Ideas</h3>
+                <svg viewBox="0 0 600 120" style="width: 100%; max-width: 600px; margin: 0 auto;">
+                    <text x="10" y="30" fill="#e0e6f5" font-size="14" font-family="monospace">Testing completed; results were positive.</text>
+                    <text x="10" y="60" fill="#00d9ff" font-size="12">               ↑ semicolon</text>
+                    <text x="10" y="85" fill="#a9b9d3" font-size="12">         Connects two complete sentences</text>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Common Mistakes -->
+        <div class="practice-section">
+            <h2>Common Punctuation Mistakes</h2>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                <p style="color: #c7d2e7; margin-bottom: 0.8rem;"><strong>Mistake 1: Run-on Sentence</strong></p>
+                <p class="wrong" style="margin: 0.5rem 0;">❌ Wrong: She finished the work she went home.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: She finished the work; she went home.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: She finished the work. She went home.</p>
+            </div>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                <p style="color: #c7d2e7; margin-bottom: 0.8rem;"><strong>Mistake 2: Its vs. It's</strong></p>
+                <p class="wrong" style="margin: 0.5rem 0;">❌ Wrong: The cat licked it's paws.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: The cat licked its paws. (possessive)</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: It's a beautiful day. (It is)</p>
+            </div>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                <p style="color: #c7d2e7; margin-bottom: 0.8rem;"><strong>Mistake 3: Comma Splice</strong></p>
+                <p class="wrong" style="margin: 0.5rem 0;">❌ Wrong: The project succeeded, we celebrated.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: The project succeeded; we celebrated.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: The project succeeded, and we celebrated.</p>
+            </div>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                <p style="color: #c7d2e7; margin-bottom: 0.8rem;"><strong>Mistake 4: Incorrect Apostrophe Use</strong></p>
+                <p class="wrong" style="margin: 0.5rem 0;">❌ Wrong: The book's are on the shelf.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: The books are on the shelf. (plural, no apostrophe)</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: The book's cover is blue. (possessive)</p>
+            </div>
+
+            <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; margin: 1.5rem 0;">
+                <p style="color: #c7d2e7; margin-bottom: 0.8rem;"><strong>Mistake 5: Missing Commas in Lists</strong></p>
+                <p class="wrong" style="margin: 0.5rem 0;">❌ Wrong: I like apples oranges and bananas.</p>
+                <p class="correct" style="margin: 0.5rem 0;">✓ Correct: I like apples, oranges, and bananas.</p>
+            </div>
+        </div>
+
+        <!-- Summary Tips -->
+        <div class="visual-guide">
+            <h2>Key Punctuation Takeaways</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; text-align: left;">
+                    <p style="color: #00d9ff; font-weight: bold; margin-bottom: 0.8rem;">✓ Periods & Questions</p>
+                    <p style="color: #c7d2e7; line-height: 1.6; font-size: 0.95rem;">Every sentence must end with . ? or ! One sentence = one punctuation mark at the end.</p>
+                </div>
+
+                <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; text-align: left;">
+                    <p style="color: #00d9ff; font-weight: bold; margin-bottom: 0.8rem;">✓ Commas for Clarity</p>
+                    <p style="color: #c7d2e7; line-height: 1.6; font-size: 0.95rem;">Use commas to separate items, clauses, and extra information. Don't use commas to connect two complete sentences.</p>
+                </div>
+
+                <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; text-align: left;">
+                    <p style="color: #00d9ff; font-weight: bold; margin-bottom: 0.8rem;">✓ Semicolons & Colons</p>
+                    <p style="color: #c7d2e7; line-height: 1.6; font-size: 0.95rem;">Semicolons connect ideas; colons introduce what follows. Both are stronger than commas.</p>
+                </div>
+
+                <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; text-align: left;">
+                    <p style="color: #00d9ff; font-weight: bold; margin-bottom: 0.8rem;">✓ Apostrophes Matter</p>
+                    <p style="color: #c7d2e7; line-height: 1.6; font-size: 0.95rem;">Apostrophes show possession (Mary's) or contractions (it's). Never pluralize with an apostrophe.</p>
+                </div>
+
+                <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; text-align: left;">
+                    <p style="color: #00d9ff; font-weight: bold; margin-bottom: 0.8rem;">✓ Less is More</p>
+                    <p style="color: #c7d2e7; line-height: 1.6; font-size: 0.95rem;">In academic writing, use periods and semicolons. Avoid excessive em dashes and exclamation marks.</p>
+                </div>
+
+                <div style="background: rgba(10, 14, 32, 0.5); padding: 1.5rem; border-radius: 10px; text-align: left;">
+                    <p style="color: #00d9ff; font-weight: bold; margin-bottom: 0.8rem;">✓ Read Aloud</p>
+                    <p style="color: #c7d2e7; line-height: 1.6; font-size: 0.95rem;">Read your writing aloud. Punctuation marks usually mark where you naturally pause.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

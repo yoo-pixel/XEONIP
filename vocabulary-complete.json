@@ -1,0 +1,86 @@
+{
+    "a1_a2": {
+        "everyday_objects": [
+            { "english": "book", "arabic": "كتاب" }, { "english": "pen", "arabic": "قلم" }, { "english": "pencil", "arabic": "قلم رصاص" }, { "english": "paper", "arabic": "ورقة" }, { "english": "notebook", "arabic": "دفتر" },
+            { "english": "chair", "arabic": "كرسي" }, { "english": "table", "arabic": "طاولة" }, { "english": "desk", "arabic": "مكتب" }, { "english": "bed", "arabic": "سرير" }, { "english": "sofa", "arabic": "أريكة" },
+            { "english": "door", "arabic": "باب" }, { "english": "window", "arabic": "نافذة" }, { "english": "wall", "arabic": "جدار" }, { "english": "floor", "arabic": "أرضية" }, { "english": "ceiling", "arabic": "سقف" },
+            { "english": "computer", "arabic": "حاسوب" }, { "english": "phone", "arabic": "هاتف" }, { "english": "keyboard", "arabic": "لوحة مفاتيح" }, { "english": "mouse", "arabic": "فأرة" }, { "english": "screen", "arabic": "شاشة" },
+            { "english": "cup", "arabic": "كوب" }, { "english": "plate", "arabic": "طبق" }, { "english": "bowl", "arabic": "وعاء" }, { "english": "spoon", "arabic": "ملعقة" }, { "english": "fork", "arabic": "شوكة" },
+            { "english": "knife", "arabic": "سكين" }, { "english": "bottle", "arabic": "زجاجة" }, { "english": "glass", "arabic": "زجاج" }, { "english": "lamp", "arabic": "مصباح" }, { "english": "light", "arabic": "ضوء" },
+            { "english": "bag", "arabic": "حقيبة" }, { "english": "box", "arabic": "صندوق" }, { "english": "case", "arabic": "حالة" }, { "english": "basket", "arabic": "سلة" }, { "english": "bucket", "arabic": "دلو" },
+            { "english": "key", "arabic": "مفتاح" }, { "english": "lock", "arabic": "قفل" }, { "english": "watch", "arabic": "ساعة يد" }, { "english": "clock", "arabic": "ساعة حائط" }, { "english": "mirror", "arabic": "مرآة" },
+            { "english": "picture", "arabic": "صورة" }, { "english": "frame", "arabic": "إطار" }, { "english": "camera", "arabic": "كاميرا" }, { "english": "radio", "arabic": "راديو" }, { "english": "television", "arabic": "تلفاز" }
+        ],
+        "family": [
+            { "english": "family", "arabic": "عائلة" }, { "english": "father", "arabic": "والد" }, { "english": "mother", "arabic": "والدة" }, { "english": "parent", "arabic": "ولي" }, { "english": "brother", "arabic": "أخ" },
+            { "english": "sister", "arabic": "أخت" }, { "english": "sibling", "arabic": "أخ أو أخت" }, { "english": "son", "arabic": "ابن" }, { "english": "daughter", "arabic": "ابنة" }, { "english": "child", "arabic": "طفل" },
+            { "english": "grandfather", "arabic": "جد" }, { "english": "grandmother", "arabic": "جدة" }, { "english": "grandchild", "arabic": "حفيد" }, { "english": "uncle", "arabic": "عم" }, { "english": "aunt", "arabic": "عمة" },
+            { "english": "cousin", "arabic": "ابن عم" }, { "english": "nephew", "arabic": "ابن أخ" }, { "english": "niece", "arabic": "بنت أخ" }, { "english": "wife", "arabic": "زوجة" }, { "english": "husband", "arabic": "زوج" },
+            { "english": "baby", "arabic": "رضيع" }, { "english": "girl", "arabic": "فتاة" }, { "english": "boy", "arabic": "ولد" }, { "english": "man", "arabic": "رجل" }, { "english": "woman", "arabic": "امرأة" }
+        ],
+        "colors": [
+            { "english": "red", "arabic": "أحمر" }, { "english": "blue", "arabic": "أزرق" }, { "english": "green", "arabic": "أخضر" }, { "english": "yellow", "arabic": "أصفر" }, { "english": "black", "arabic": "أسود" },
+            { "english": "white", "arabic": "أبيض" }, { "english": "orange", "arabic": "برتقالي" }, { "english": "purple", "arabic": "أرجواني" }, { "english": "pink", "arabic": "وردي" }, { "english": "gray", "arabic": "رمادي" },
+            { "english": "brown", "arabic": "بني" }, { "english": "gold", "arabic": "ذهبي" }, { "english": "silver", "arabic": "فضي" }, { "english": "light", "arabic": "فاتح" }, { "english": "dark", "arabic": "غامق" },
+            { "english": "bright", "arabic": "ساطع" }, { "english": "pale", "arabic": "شاحب" }, { "english": "vivid", "arabic": "زاهي" }, { "english": "dull", "arabic": "كاتم" }, { "english": "transparent", "arabic": "شفاف" }
+        ],
+        "numbers": [
+            { "english": "zero", "arabic": "صفر" }, { "english": "one", "arabic": "واحد" }, { "english": "two", "arabic": "اثنان" }, { "english": "three", "arabic": "ثلاثة" }, { "english": "four", "arabic": "أربعة" },
+            { "english": "five", "arabic": "خمسة" }, { "english": "six", "arabic": "ستة" }, { "english": "seven", "arabic": "سبعة" }, { "english": "eight", "arabic": "ثمانية" }, { "english": "nine", "arabic": "تسعة" },
+            { "english": "ten", "arabic": "عشرة" }, { "english": "eleven", "arabic": "احدى عشر" }, { "english": "twelve", "arabic": "اثنا عشر" }, { "english": "thirteen", "arabic": "ثلاثة عشر" }, { "english": "fourteen", "arabic": "أربعة عشر" },
+            { "english": "fifteen", "arabic": "خمسة عشر" }, { "english": "sixteen", "arabic": "ستة عشر" }, { "english": "seventeen", "arabic": "سبعة عشر" }, { "english": "eighteen", "arabic": "ثمانية عشر" }, { "english": "nineteen", "arabic": "تسعة عشر" },
+            { "english": "twenty", "arabic": "عشرون" }, { "english": "thirty", "arabic": "ثلاثون" }, { "english": "forty", "arabic": "أربعون" }, { "english": "fifty", "arabic": "خمسون" }, { "english": "sixty", "arabic": "ستون" },
+            { "english": "seventy", "arabic": "سبعون" }, { "english": "eighty", "arabic": "ثمانون" }, { "english": "ninety", "arabic": "تسعون" }, { "english": "hundred", "arabic": "مائة" }, { "english": "thousand", "arabic": "ألف" }
+        ],
+        "food": [
+            { "english": "food", "arabic": "طعام" }, { "english": "apple", "arabic": "تفاح" }, { "english": "banana", "arabic": "موز" }, { "english": "orange", "arabic": "برتقال" }, { "english": "lemon", "arabic": "ليمون" },
+            { "english": "strawberry", "arabic": "فراولة" }, { "english": "grape", "arabic": "عنب" }, { "english": "watermelon", "arabic": "بطيخ" }, { "english": "bread", "arabic": "خبز" }, { "english": "rice", "arabic": "أرز" },
+            { "english": "potato", "arabic": "بطاطس" }, { "english": "tomato", "arabic": "طماطم" }, { "english": "carrot", "arabic": "جزرة" }, { "english": "onion", "arabic": "بصل" }, { "english": "cucumber", "arabic": "خيار" },
+            { "english": "lettuce", "arabic": "خس" }, { "english": "egg", "arabic": "بيضة" }, { "english": "chicken", "arabic": "دجاج" }, { "english": "beef", "arabic": "لحم البقر" }, { "english": "fish", "arabic": "سمك" },
+            { "english": "milk", "arabic": "حليب" }, { "english": "cheese", "arabic": "جبن" }, { "english": "butter", "arabic": "زبدة" }, { "english": "yogurt", "arabic": "زبادي" }, { "english": "sugar", "arabic": "سكر" },
+            { "english": "salt", "arabic": "ملح" }, { "english": "tea", "arabic": "شاي" }, { "english": "coffee", "arabic": "قهوة" }, { "english": "juice", "arabic": "عصير" }, { "english": "water", "arabic": "ماء" }
+        ],
+        "time": [
+            { "english": "time", "arabic": "وقت" }, { "english": "Monday", "arabic": "الاثنين" }, { "english": "Tuesday", "arabic": "الثلاثاء" }, { "english": "Wednesday", "arabic": "الأربعاء" }, { "english": "Thursday", "arabic": "الخميس" },
+            { "english": "Friday", "arabic": "الجمعة" }, { "english": "Saturday", "arabic": "السبت" }, { "english": "Sunday", "arabic": "الأحد" }, { "english": "January", "arabic": "يناير" }, { "english": "February", "arabic": "فبراير" },
+            { "english": "March", "arabic": "مارس" }, { "english": "April", "arabic": "أبريل" }, { "english": "May", "arabic": "مايو" }, { "english": "June", "arabic": "يونيو" }, { "english": "July", "arabic": "يوليو" },
+            { "english": "August", "arabic": "أغسطس" }, { "english": "September", "arabic": "سبتمبر" }, { "english": "October", "arabic": "أكتوبر" }, { "english": "November", "arabic": "نوفمبر" }, { "english": "December", "arabic": "ديسمبر" },
+            { "english": "morning", "arabic": "صباح" }, { "english": "afternoon", "arabic": "بعد الظهر" }, { "english": "evening", "arabic": "مساء" }, { "english": "night", "arabic": "ليل" }, { "english": "hour", "arabic": "ساعة" },
+            { "english": "minute", "arabic": "دقيقة" }, { "english": "second", "arabic": "ثانية" }, { "english": "year", "arabic": "سنة" }, { "english": "month", "arabic": "شهر" }, { "english": "week", "arabic": "أسبوع" }
+        ],
+        "greetings": [
+            { "english": "hello", "arabic": "مرحبا" }, { "english": "goodbye", "arabic": "وداعا" }, { "english": "good morning", "arabic": "صباح الخير" }, { "english": "good afternoon", "arabic": "مساء الخير" }, { "english": "good evening", "arabic": "مساء الخير" },
+            { "english": "good night", "arabic": "تصبح على خير" }, { "english": "thank you", "arabic": "شكرا لك" }, { "english": "thank you very much", "arabic": "شكرا جزيلا لك" }, { "english": "please", "arabic": "من فضلك" }, { "english": "sorry", "arabic": "آسف" },
+            { "english": "I am sorry", "arabic": "أنا آسف" }, { "english": "excuse me", "arabic": "اسمح لي" }, { "english": "yes", "arabic": "نعم" }, { "english": "no", "arabic": "لا" }, { "english": "ok", "arabic": "حسنا" },
+            { "english": "welcome", "arabic": "أهلا وسهلا" }, { "english": "nice to meet you", "arabic": "يسعدني التعرف عليك" }, { "english": "how are you", "arabic": "كيف حالك" }, { "english": "what is your name", "arabic": "ما اسمك" }, { "english": "my name is", "arabic": "اسمي" }
+        ],
+        "actions": [
+            { "english": "run", "arabic": "يركض" }, { "english": "walk", "arabic": "يمشي" }, { "english": "sit", "arabic": "يجلس" }, { "english": "stand", "arabic": "يقف" }, { "english": "jump", "arabic": "يقفز" },
+            { "english": "eat", "arabic": "يأكل" }, { "english": "drink", "arabic": "يشرب" }, { "english": "sleep", "arabic": "ينام" }, { "english": "wake", "arabic": "يستيقظ" }, { "english": "work", "arabic": "يعمل" },
+            { "english": "play", "arabic": "يلعب" }, { "english": "read", "arabic": "يقرأ" }, { "english": "write", "arabic": "يكتب" }, { "english": "speak", "arabic": "يتكلم" }, { "english": "listen", "arabic": "يستمع" },
+            { "english": "look", "arabic": "ينظر" }, { "english": "see", "arabic": "يرى" }, { "english": "hear", "arabic": "يسمع" }, { "english": "open", "arabic": "يفتح" }, { "english": "close", "arabic": "يغلق" },
+            { "english": "give", "arabic": "يعطي" }, { "english": "take", "arabic": "يأخذ" }, { "english": "go", "arabic": "يذهب" }, { "english": "come", "arabic": "يأتي" }, { "english": "buy", "arabic": "يشتري" }
+        ]
+    },
+    "b1": {
+        "business_economy": [
+            { "english": "business", "arabic": "عمل تجاري" }, { "english": "company", "arabic": "شركة" }, { "english": "economy", "arabic": "اقتصاد" }, { "english": "market", "arabic": "سوق" }, { "english": "trade", "arabic": "تجارة" },
+            { "english": "import", "arabic": "استيراد" }, { "english": "export", "arabic": "تصدير" }, { "english": "profit", "arabic": "ربح" }, { "english": "loss", "arabic": "خسارة" }, { "english": "investment", "arabic": "استثمار" },
+            { "english": "customer", "arabic": "عميل" }, { "english": "supplier", "arabic": "مورد" }, { "english": "employee", "arabic": "موظف" }, { "english": "manager", "arabic": "مدير" }, { "english": "salary", "arabic": "راتب" },
+            { "english": "budget", "arabic": "ميزانية" }, { "english": "cost", "arabic": "تكلفة" }, { "english": "price", "arabic": "سعر" }, { "english": "discount", "arabic": "خصم" }, { "english": "quality", "arabic": "جودة" }
+        ],
+        "science_research": [
+            { "english": "science", "arabic": "علم" }, { "english": "research", "arabic": "بحث" }, { "english": "experiment", "arabic": "تجربة" }, { "english": "theory", "arabic": "نظرية" }, { "english": "data", "arabic": "بيانات" },
+            { "english": "analysis", "arabic": "تحليل" }, { "english": "biology", "arabic": "علم الأحياء" }, { "english": "chemistry", "arabic": "كيمياء" }, { "english": "physics", "arabic": "فيزياء" }, { "english": "mathematics", "arabic": "رياضيات" },
+            { "english": "atom", "arabic": "ذرة" }, { "english": "molecule", "arabic": "جزيء" }, { "english": "element", "arabic": "عنصر" }, { "english": "compound", "arabic": "مركب" }, { "english": "reaction", "arabic": "تفاعل" },
+            { "english": "energy", "arabic": "طاقة" }, { "english": "force", "arabic": "قوة" }, { "english": "motion", "arabic": "حركة" }, { "english": "speed", "arabic": "سرعة" }, { "english": "acceleration", "arabic": "تسارع" }
+        ]
+    },
+    "b2": {
+        "advanced_business": [
+            { "english": "corporate", "arabic": "الشركات" }, { "english": "commerce", "arabic": "التجارة" }, { "english": "enterprise", "arabic": "مشروع" }, { "english": "venture", "arabic": "مشروع استثماري" }, { "english": "stakeholder", "arabic": "صاحب مصلحة" },
+            { "english": "portfolio", "arabic": "محفظة استثمارات" }, { "english": "dividend", "arabic": "توزيعات أرباح" }, { "english": "merger", "arabic": "دمج" }, { "english": "acquisition", "arabic": "استحواذ" }, { "english": "valuation", "arabic": "التقييم" },
+            { "english": "revenue", "arabic": "الإيرادات" }, { "english": "expenditure", "arabic": "المصروفات" }, { "english": "equity", "arabic": "حقوق الملكية" }, { "english": "liability", "arabic": "المسؤولية" }, { "english": "asset", "arabic": "أصل" }
+        ]
+    }
+}
