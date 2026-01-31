@@ -1,0 +1,35 @@
+name: Security Checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check for secrets
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+          extra_args: --debug --only-verified
+      
+      - name: Validate HTML files
+        run: |
+          echo "Validating HTML security headers..."
+          for file in *.html; do
+            if [ -f "$file" ]; then
+              if ! grep -q "Content-Security-Policy" "$file"; then
+                echo "WARNING: $file missing CSP header"
+              fi
+              if ! grep -q "referrer" "$file"; then
+                echo "WARNING: $file missing referrer policy"
+              fi
+            fi
+          done
