@@ -536,8 +536,8 @@
             const levelKey = levelParam === "a1-a2" ? "a1_a2" : levelParam;
 
             const data = await loadVocabularyData();
-            const words = data ? .[levelKey] ? .[categoryParam] || [];
-            const meta = categoryMeta[levelKey] ? .[categoryParam] || {
+            const words = data?.[levelKey]?.[categoryParam] || [];
+            const meta = categoryMeta[levelKey]?.[categoryParam] || {
                 title: formatTitle(categoryParam),
                 description: "Concept-based vocabulary group"
             };

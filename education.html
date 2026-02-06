@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Resources - STEM Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #1a1a1a;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: #2c5282;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            height: 70vh;
+            background: linear-gradient(rgba(44, 82, 130, 0.3), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&h=900&fit=crop') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-family: 'Libre Baskerville', serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: white;
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #2c5282;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .feature-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            border: 2px solid #e8eef5;
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(44, 82, 130, 0.15);
+            border-color: #2c5282;
+        }
+        
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: block;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+        }
+        
+        .feature-card h3 {
+            font-size: 1.6rem;
+            color: #2c5282;
+            margin-bottom: 1rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .feature-card p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .gallery-item {
+            position: relative;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(44, 82, 130, 0.95));
+            padding: 1.5rem;
+            color: white;
+        }
+        
+        .gallery-overlay h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gallery-overlay p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 3rem 2rem 2rem;
+            margin-top: 5rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .footer-brand p {
+            color: #999;
+            font-size: 1rem;
+        }
+        
+        .footer-links h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #00d9ff;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .features-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="english.html">English</a></li>
+                <li><a href="university-tips.html">Universities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Education Resources</h1>
+            <p>Your comprehensive library for STEM success</p>
+            <a href="https://drive.google.com/drive/folders/1Q4gdy7cKvk5Rt9CGRacQutXX9EF4jPL-?usp=drive_link" target="_blank" class="cta-button">📂 Access Study Materials</a>
+        </div>
+    </section>
+    <div class="container">
+        <h2 class="section-title">What You'll Find</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=400&h=250&fit=crop" alt="Library Books" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; margin: -2.5rem -2.5rem 1.5rem -2.5rem;">
+                <h3>Textbooks & Guides</h3>
+                <p>Complete collection of STEM textbooks, study guides, and reference materials for all levels from Grade 10 to university preparation.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=250&fit=crop" alt="Science Lab" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; margin: -2.5rem -2.5rem 1.5rem -2.5rem;">
+                <h3>Science Resources</h3>
+                <p>Physics, Chemistry, and Biology materials including lab manuals, experiments, and practice problems with detailed solutions.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&h=250&fit=crop" alt="Mathematics" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; margin: -2.5rem -2.5rem 1.5rem -2.5rem;">
+                <h3>Math Materials</h3>
+                <p>Mathematics resources from algebra to calculus, including problem sets, theory explanations, and exam preparation materials.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="Programming" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; margin: -2.5rem -2.5rem 1.5rem -2.5rem;">
+                <h3>Programming & Tech</h3>
+                <p>Computer science materials, coding tutorials, and technology resources to build your technical skills for university applications.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="Study Materials" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; margin: -2.5rem -2.5rem 1.5rem -2.5rem;">
+                <h3>Practice Tests</h3>
+                <p>SAT, ACT, and other standardized test materials with practice exams, study strategies, and score improvement tips.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=400&h=250&fit=crop" alt="University Campus" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; margin: -2.5rem -2.5rem 1.5rem -2.5rem;">
+                <h3>University Prep</h3>
+                <p>Application essays, recommendation letter guides, and resources specifically designed for Egyptian students applying abroad.</p>
+            </div>
+        </div>
+        <h2 class="section-title">Study Areas</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&h=600&fit=crop" alt="Study materials">
+                <div class="gallery-overlay">
+                    <h3>Grade 10 Resources</h3>
+                    <p>Foundation materials for starting your STEM journey</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop" alt="Advanced studies">
+                <div class="gallery-overlay">
+                    <h3>Grade 11 Materials</h3>
+                    <p>Intermediate level with advanced topics</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=600&fit=crop" alt="University prep">
+                <div class="gallery-overlay">
+                    <h3>Grade 12 & University Prep</h3>
+                    <p>Advanced materials and application resources</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand"><h3>ScholarForge</h3>
+                    <p>Directed by Mostafa ELgendy</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="english.html">English</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="university-tips.html">Universities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ScholarForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

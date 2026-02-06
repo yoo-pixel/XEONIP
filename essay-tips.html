@@ -80,10 +80,15 @@
         
         .section {
             margin: 28px 0;
-            padding: 20px 22px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(124, 157, 214, 0.2);
-            border-radius: 14px;
+            padding: 20px 22px 20px 26px;
+            background: transparent;
+            border-left: 3px solid rgba(124, 157, 214, 0.6);
+            border-radius: 10px;
+        }
+        
+        .section+.section {
+            border-top: 1px solid rgba(124, 157, 214, 0.18);
+            padding-top: 26px;
         }
         
         .section h2 {
@@ -121,6 +126,46 @@
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         }
         
+        .toc {
+            margin: 20px 0 30px;
+            padding: 16px 18px;
+            border: 1px solid rgba(124, 157, 214, 0.2);
+            border-radius: 12px;
+            background: rgba(12, 18, 40, 0.35);
+        }
+        
+        .toc h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #dbe7f9;
+        }
+        
+        .toc ol {
+            padding-left: 18px;
+            color: #c9d4eb;
+            line-height: 1.7;
+        }
+        
+        .toc a {
+            color: #7c9dd6;
+            text-decoration: none;
+        }
+        
+        .cta-link {
+            display: inline-flex;
+            margin-top: 10px;
+            padding: 10px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(124, 157, 214, 0.4);
+            color: #dbe7f9;
+            text-decoration: none;
+            background: rgba(20, 28, 56, 0.6);
+        }
+        
+        .cta-link:hover {
+            border-color: rgba(124, 157, 214, 0.8);
+        }
+        
         .back-btn {
             display: inline-block;
             padding: 12px 24px;
@@ -149,113 +194,137 @@
             <a href="essay-references.html">References</a>
         </nav>
 
-        <h1>Essay Tips (Complete Guide)</h1>
-        <p class="subtitle">Clear, honest writing is the strongest strategy. This guide explains what to write, why it works, and how to do it step by step.</p>
+        <h1>Essay Tips (Trusted, Clear, Effective)</h1>
+        <p class="subtitle">Reliable essays are built on clarity, evidence, and honest reflection. This guide organizes the process so your writing feels professional and trustworthy.</p>
 
-        <section class="section">
-            <h2>1) What an essay really is</h2>
-            <p>An essay is a short story about your thinking. Readers want to see how you solve problems, not how many big words you know.</p>
-            <p><strong>Admissions readers look for:</strong> clarity, honesty, and proof of growth.</p>
-            <div class="example"><span class="label">Why honesty matters:</span> “I failed my first robotics test, then redesigned the sensor and improved accuracy.” This shows learning, not perfection.</div>
+        <div class="toc">
+            <h2>Contents</h2>
+            <ol>
+                <li><a href="#trust">Trusted principles</a></li>
+                <li><a href="#story">Choose the right story</a></li>
+                <li><a href="#structure">Structure that works</a></li>
+                <li><a href="#evidence">Evidence & specificity</a></li>
+                <li><a href="#voice">Voice & style</a></li>
+                <li><a href="#editing">Editing process</a></li>
+                <li><a href="#mistakes">Common mistakes</a></li>
+                <li><a href="#integrity">Integrity & trust</a></li>
+                <li><a href="#sample">Sample essay</a></li>
+                <li><a href="#checklist">Final checklist</a></li>
+            </ol>
+        </div>
+
+        <section class="section" id="trust">
+            <h2>1) Trusted principles (what readers trust)</h2>
+            <p>Great essays are not about big words; they are about clear thinking and real evidence.</p>
+            <ul>
+                <li><strong>Clarity:</strong> one main idea per paragraph.</li>
+                <li><strong>Evidence:</strong> actions, results, and details.</li>
+                <li><strong>Honesty:</strong> real challenges and real growth.</li>
+                <li><strong>Coherence:</strong> the story flows logically.</li>
+                <li><strong>Reflection:</strong> what you learned and why it matters.</li>
+            </ul>
+            <div class="example"><span class="label">Trusted example:</span> “My first design failed, so I ran three tests, logged errors, and rebuilt the circuit.”</div>
+            <p><strong>Need verified sources?</strong> Use the official references page: <a class="link" href="./essay-references.html">Essay References</a>.</p>
         </section>
 
-        <section class="section">
-            <h2>2) Types of essays</h2>
+        <section class="section" id="story">
+            <h2>2) Choose the right story</h2>
             <div class="grid">
                 <div>
-                    <p><strong>Personal statement</strong> — Purpose: your identity and growth. Used for universities. Example: “How building a water filter changed my view of engineering.”</p>
+                    <p><strong>Specific moment</strong> — A clear scene: lab failure, leadership decision, personal challenge.</p>
                 </div>
                 <div>
-                    <p><strong>Motivation essay</strong> — Purpose: why you want the opportunity. Used for scholarships/programs. Example: “Why I want this AI summer program.”</p>
+                    <p><strong>Real change</strong> — Show how your thinking or behavior improved.</p>
                 </div>
                 <div>
-                    <p><strong>Why this program</strong> — Purpose: fit and goals. Example: “How your lab aligns with my bioelectronics project.”</p>
+                    <p><strong>Evidence</strong> — Include results, measurements, feedback, or impact.</p>
                 </div>
                 <div>
-                    <p><strong>Academic interest</strong> — Purpose: show subject passion. Example: “My curiosity about climate data.”</p>
-                </div>
-                <div>
-                    <p><strong>Leadership / impact</strong> — Purpose: influence on others. Example: “Leading a STEM club to tutor younger students.”</p>
-                </div>
-                <div>
-                    <p><strong>Short-answer</strong> — Purpose: quick clarity. Example: “Describe one challenge you solved.”</p>
+                    <p><strong>Alignment</strong> — Connect the story to your academic goals.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section">
-            <h2>3) Essay structure</h2>
-            <p><strong>Introduction:</strong> One focused idea. <em>Mistake:</em> vague or very general. <em>Better:</em> a specific moment.</p>
+        <section class="section" id="structure">
+            <h2>3) Structure that works</h2>
+            <p><strong>Introduction:</strong> one focused moment or insight.</p>
             <div class="example"><span class="label">Example:</span> “At 2 a.m., our sensor failed, and I had 12 hours to fix it.”</div>
-            <p><strong>Body:</strong> Explain actions and results. <em>Mistake:</em> listing achievements. <em>Better:</em> show decisions and evidence.</p>
-            <div class="example"><span class="label">Example:</span> “I tested three materials, recorded the error rate, and chose the best one.”</div>
-            <p><strong>Conclusion:</strong> Reflect and connect to your goal. <em>Mistake:</em> repeat the intro. <em>Better:</em> show next step.</p>
-            <div class="example"><span class="label">Example:</span> “This project made me want to study biomedical engineering to build affordable tools.”</div>
+            <p><strong>Body:</strong> actions, decisions, and outcomes.</p>
+            <div class="example"><span class="label">Example:</span> “I tested three materials, measured error rates, and chose the best one.”</div>
+            <p><strong>Conclusion:</strong> reflection + forward goal.</p>
+            <div class="example"><span class="label">Example:</span> “This project pushed me toward biomedical engineering.”</div>
         </section>
 
-        <section class="section">
-            <h2>4) How to start strong</h2>
-            <p><strong>Good openings:</strong> short story, specific moment, observation, or question.</p>
-            <div class="example"><span class="label">Good:</span> “When the power went out during our experiment, I learned how fragile data can be.”</div>
-            <p><strong>Bad openings:</strong> dictionary definitions, very general sentences, “Since I was young…”.</p>
-            <div class="example"><span class="label">Bad:</span> “Science is very important in the world.” (Too general, no story.)</div>
+        <section class="section" id="evidence">
+            <h2>4) Evidence & specificity (what makes it credible)</h2>
+            <p><strong>Show, don’t tell.</strong> Replace labels with evidence.</p>
+            <div class="example"><span class="label">Weak:</span> “I am a leader.”</div>
+            <div class="example"><span class="label">Strong:</span> “I organized weekly sessions, assigned roles, and tracked progress.”</div>
+            <p><strong>Use the A → R → L rule:</strong> Action → Result → Lesson.</p>
         </section>
 
-        <section class="section">
-            <h2>5) Body paragraphs (depth)</h2>
-            <p><strong>One idea per paragraph.</strong> Explain it with evidence.</p>
-            <p><strong>Show, don’t tell.</strong> Use actions and results.</p>
-            <div class="example"><span class="label">Bad:</span> “I am a leader.”</div>
-            <div class="example"><span class="label">Good:</span> “I organized weekly sessions, assigned roles, and tracked progress.”</div>
-            <p><strong>Link paragraphs smoothly:</strong> Use short connectors like “Because of this…” or “This led me to…”.</p>
-        </section>
-
-        <section class="section">
-            <h2>6) Conclusions</h2>
-            <p>Do not repeat. Add a final insight and connect to your future.</p>
-            <div class="example"><span class="label">Example:</span> “Now I want to study data science to predict floods, not just analyze them.”</div>
-        </section>
-
-        <section class="section">
-            <h2>7) Language & style</h2>
+        <section class="section" id="voice">
+            <h2>5) Voice & style (sound real, not robotic)</h2>
             <ul>
-                <li>Clear sentences beat fancy words.</li>
-                <li>Use active voice: “I built” not “was built.”</li>
-                <li>Vary sentence length to keep flow.</li>
-                <li>Formal but human tone — be direct.</li>
-                <li>Avoid repetition by using precise verbs.</li>
+                <li>Use active voice: “I built,” not “was built.”</li>
+                <li>Prefer clear verbs over complex vocabulary.</li>
+                <li>Keep tone formal but human.</li>
+                <li>Vary sentence length for flow.</li>
+                <li>Avoid exaggeration; let evidence speak.</li>
             </ul>
         </section>
 
-        <section class="section">
-            <h2>8) Common essay mistakes</h2>
-            <p><strong>Listing achievements</strong> — Example: “I won X, Y, Z.” <em>Fix:</em> choose one story and explain impact.</p>
-            <p><strong>Rewriting the CV</strong> — Example: long lists of activities. <em>Fix:</em> show one decision and result.</p>
-            <p><strong>Big vocabulary</strong> — Example: “I endeavored to…” <em>Fix:</em> “I tried to…”</p>
-            <p><strong>Weak grammar</strong> — Example: “I do experiment.” <em>Fix:</em> “I ran an experiment.”</p>
-            <p><strong>No clear message</strong> — Example: many topics. <em>Fix:</em> one main idea in every paragraph.</p>
+        <section class="section" id="editing">
+            <h2>6) Editing process (two clean passes)</h2>
+            <div class="grid">
+                <div>
+                    <p><strong>Pass 1: Content</strong></p>
+                    <ul>
+                        <li>Is the main idea clear?</li>
+                        <li>Does every paragraph support it?</li>
+                        <li>Is evidence specific?</li>
+                    </ul>
+                </div>
+                <div>
+                    <p><strong>Pass 2: Language</strong></p>
+                    <ul>
+                        <li>Remove wordiness.</li>
+                        <li>Fix grammar and tense issues.</li>
+                        <li>Read aloud for flow.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>9) Step-by-step process</h2>
-            <ol style="margin-left: 18px; color: #c9d4eb;">
-                <li><strong>Brainstorming:</strong> list 5 moments where you learned something real.</li>
-                <li><strong>Choose ONE idea:</strong> pick the story with the strongest result.</li>
-                <li><strong>Outline:</strong> intro → 2–3 body paragraphs → conclusion.</li>
-                <li><strong>First draft:</strong> write freely; fix later.</li>
-                <li><strong>Editing:</strong> cut weak sentences and add clear evidence.</li>
-                <li><strong>Final review:</strong> read aloud for clarity.</li>
-            </ol>
+        <section class="section" id="mistakes">
+            <h2>7) Common mistakes (and fixes)</h2>
+            <p><strong>Listing achievements</strong> — Fix: choose one story and show impact.</p>
+            <p><strong>CV repetition</strong> — Fix: show decisions, not lists.</p>
+            <p><strong>Overly fancy words</strong> — Fix: use precise, simple verbs.</p>
+            <p><strong>Weak grammar</strong> — Fix: short, clean sentences first.</p>
+            <p><strong>No clear message</strong> — Fix: one idea per paragraph.</p>
         </section>
 
-        <section class="section">
+        <section class="section" id="integrity">
+            <h2>8) Integrity & trust</h2>
+            <p>Write in your own words, with your real story. Readers trust authenticity more than perfection.</p>
+            <p>If you get feedback, use it to clarify your ideas, not to replace your voice.</p>
+        </section>
+
+        <section class="section" id="sample">
+            <h2>9) Sample essay (open here)</h2>
+            <p>See a full sample narrative to learn structure, clarity, and evidence in context.</p>
+            <a class="cta-link" href="./essays.html">Open sample here</a>
+        </section>
+
+        <section class="section" id="checklist">
             <h2>10) Final checklist</h2>
             <ul>
                 <li>Is the main idea clear in the first paragraph?</li>
-                <li>Does each paragraph support that idea?</li>
-                <li>Is the language clear and correct?</li>
-                <li>Does it sound like me, not a template?</li>
-                <li>Can I show one strong example?</li>
+                <li>Does every paragraph support that idea?</li>
+                <li>Is the evidence concrete and specific?</li>
+                <li>Does the tone sound human and honest?</li>
+                <li>Can I point to one strong moment of growth?</li>
             </ul>
         </section>
     </div>

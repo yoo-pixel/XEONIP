@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:; connect-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; object-src 'none'">
-    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Tips - STEM Education Platform</title>
+    <title>University Application Guide - STEM Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,665 +13,451 @@
             box-sizing: border-box;
         }
         
-        html,
         body {
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
+            font-family: 'Open Sans', sans-serif;
+            color: #1a1a1a;
+            background: #ffffff;
+            line-height: 1.6;
         }
         
-        body {
-            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
-            color: #e0e6f5;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            min-height: 100vh;
-            position: relative;
+        .header {
+            background: #7c3aed;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(1px 1px at 15% 20%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(1px 1px at 85% 15%, rgba(210, 225, 245, 0.5), transparent), radial-gradient(1px 1px at 25% 60%, rgba(190, 210, 235, 0.6), transparent), radial-gradient(1px 1px at 70% 70%, rgba(200, 220, 240, 0.4), transparent), radial-gradient(0.5px 0.5px at 55% 85%, rgba(190, 210, 235, 0.5), transparent), radial-gradient(1px 1px at 90% 45%, rgba(200, 220, 240, 0.6), transparent), radial-gradient(0.5px 0.5px at 20% 80%, rgba(210, 225, 245, 0.4), transparent), radial-gradient(1px 1px at 65% 25%, rgba(200, 220, 240, 0.5), transparent);
-            pointer-events: none;
-            z-index: 0;
-            opacity: 0.25;
-        }
-        
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.45) 100%);
-            pointer-events: none;
-            z-index: 0;
-        }
-        
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 2rem 2rem 5rem;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .back-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin-bottom: 20px;
-            background: rgba(0, 217, 255, 0.1);
-            color: #00d9ff;
-            text-decoration: none;
-            border: 1px solid #00d9ff;
-            border-radius: 6px;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-        
-        .back-btn:hover {
-            background: rgba(0, 217, 255, 0.2);
-            transform: translateX(-4px);
-        }
-        
-        nav {
+        .nav-container {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            padding: 1.5rem 0 2rem;
-            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
-        nav a {
-            color: #b8c1d6;
-            text-decoration: none;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
-        }
-        
-        nav a:hover {
-            color: #00d9ff;
-        }
-        
-        .link {
-            color: #00d9ff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .link:hover {
-            text-decoration: underline;
-        }
-        
-        h1 {
-            font-size: 2.4rem;
+        .logo {
+            font-size: 1.3rem;
             font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: #e8edf7;
-            text-align: center;
+            color: white;
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
         }
         
-        .subtitle {
-            text-align: center;
-            color: #a9b9d3;
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
         }
         
         .hero {
-            margin: 1.5rem 0 2.5rem;
-            border-radius: 18px;
-            overflow: hidden;
-            border: 1px solid rgba(0, 217, 255, 0.25);
-            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+            height: 70vh;
+            background: linear-gradient(rgba(124, 58, 237, 0.4), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&h=900&fit=crop') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
         }
         
-        .hero img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-            display: block;
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
         }
         
-        .hero-caption {
-            padding: 0.9rem 1.2rem;
-            background: rgba(10, 14, 32, 0.7);
-            color: #a9b9d3;
-            font-size: 0.95rem;
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-family: 'Libre Baskerville', serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
         
-        .image-row {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.2rem;
-            margin: 0 0 2.5rem;
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
         }
         
-        .image-card {
-            background: rgba(10, 14, 32, 0.6);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 14px;
-            overflow: hidden;
-            box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
         }
         
-        .image-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            display: block;
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 3rem;
+            color: #7c3aed;
+            font-family: 'Libre Baskerville', serif;
         }
         
-        .image-card p {
-            padding: 0.8rem 1rem 1rem;
-            color: #c7d2e7;
-            font-size: 0.95rem;
-        }
-        
-        .divider {
-            height: 1px;
-            margin: 2rem auto 3rem;
-            width: 70%;
-            background: linear-gradient(90deg, transparent 0%, rgba(0, 217, 255, 0.35) 50%, transparent 100%);
-            box-shadow: 0 0 12px rgba(0, 217, 255, 0.2);
-        }
-        
-        .grid {
+        .uni-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
-            margin-bottom: 3rem;
+            margin: 3rem 0;
         }
         
-        .ivy-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1.5rem;
-            margin: 1.5rem 0 3rem;
+        .uni-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
         }
         
-        .ivy-card {
-            background: rgba(10, 14, 32, 0.55);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 12px;
+        .uni-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .uni-card-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .uni-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .uni-card:hover .uni-card-image img {
+            transform: scale(1.1);
+        }
+        
+        .uni-card-content {
             padding: 1.5rem;
         }
         
-        .ivy-card h3 {
-            color: #e0e6f5;
-            margin-bottom: 0.6rem;
-            font-size: 1.1rem;
-        }
-        
-        .ivy-card p,
-        .ivy-card li {
-            color: #c7d2e7;
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-        
-        .card {
-            background: rgba(17, 22, 44, 0.65);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 14px;
-            padding: 2rem;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-            backdrop-filter: blur(6px);
-        }
-        
-        .card h2 {
+        .uni-card h3 {
             font-size: 1.4rem;
-            color: #e0e6f5;
+            color: #7c3aed;
+            margin-bottom: 0.5rem;
+        }
+        
+        .uni-card p {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+        
+        .tip-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .tip-icon {
+            font-size: 2.5rem;
             margin-bottom: 1rem;
         }
         
-        .card p,
-        .card li {
-            color: #c7d2e7;
-            line-height: 1.7;
+        .tip-card h3 {
+            font-size: 1.5rem;
+            color: #7c3aed;
+            margin-bottom: 1rem;
+        }
+        
+        .tip-card ul {
+            padding-left: 1.5rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .tip-card li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 3rem 2rem 2rem;
+            margin-top: 5rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .footer-brand p {
+            color: #999;
             font-size: 1rem;
         }
         
-        .card ul {
-            padding-left: 1.2rem;
-            margin-top: 0.6rem;
-        }
-        
-        .section {
-            background: rgba(17, 22, 44, 0.65);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 14px;
-            padding: 2rem;
-            margin-bottom: 3rem;
-        }
-        
-        .section h2 {
-            font-size: 1.6rem;
-            color: #e0e6f5;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
-            padding-bottom: 0.8rem;
-        }
-        
-        .section p {
-            color: #c7d2e7;
-            line-height: 1.7;
+        .footer-links h4 {
+            color: #fff;
+            font-size: 1.1rem;
             margin-bottom: 1rem;
         }
         
-        .tag-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            margin-top: 0.8rem;
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
         }
         
-        .tag {
-            padding: 0.4rem 0.7rem;
-            border-radius: 999px;
-            border: 1px solid rgba(0, 217, 255, 0.35);
-            color: #c7d2e7;
-            background: rgba(0, 217, 255, 0.08);
-            font-size: 0.85rem;
+        .footer-links li {
+            margin-bottom: 0.5rem;
         }
         
-        .cv-template,
-        .cv-example {
-            background: rgba(10, 14, 32, 0.55);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 12px;
-            padding: 1.5rem;
-            margin-top: 1rem;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            color: #c7d2e7;
-            line-height: 1.7;
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s;
         }
         
-        .cv-example {
-            border-left: 4px solid #00d9ff;
+        .footer-links a:hover {
+            color: #7c3aed;
         }
         
-        .highlight {
-            background: rgba(0, 217, 255, 0.08);
-            border-left: 4px solid #00d9ff;
-            padding: 1rem 1.2rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            color: #c7d2e7;
-        }
-        
-        .checklist {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-        
-        .check-item {
-            background: rgba(10, 14, 32, 0.5);
-            border-left: 3px solid rgba(0, 217, 255, 0.5);
-            padding: 1rem;
-            border-radius: 8px;
-            color: #c7d2e7;
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1rem;
+            color: #666;
+            font-size: 0.9rem;
         }
         
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .uni-grid,
+            .tips-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
-    <link rel="stylesheet" href="starfield.css">
-    <script src="starfield.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <a href="index.html" class="back-btn">← Back to Home</a>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="programs.html">Programs</a>
-            <a href="english.html">English</a>
-            <a href="education.html">Education</a>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="english.html">English</a></li>
+                <li><a href="education.html">Education</a></li>
+            </ul>
         </nav>
-
-        <h1>University Tips</h1>
-        <p class="subtitle">What top universities look for, how to build your CV, and the main goals of a strong application.</p>
-
-        <div class="divider"></div>
-
-        <div class="hero">
-            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80" alt="Students preparing university applications">
-            <div class="hero-caption">Build a focused academic story with evidence, impact, and purpose.</div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>University Application Guide</h1>
+            <p>Your pathway to the world's top universities</p>
         </div>
-
-        <div class="image-row">
-            <div class="image-card">
-                <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1200&q=80" alt="Campus library">
-                <p>Academic depth and curiosity are central to Ivy League review.</p>
-            </div>
-            <div class="image-card">
-                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Students collaborating">
-                <p>Leadership and collaboration signal real impact and initiative.</p>
-            </div>
-            <div class="image-card">
-                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80" alt="Student studying">
-                <p>Consistency in academics and activities builds a strong application.</p>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>All Ivy League Universities</h2>
-            <p>The Ivy League includes eight U.S. universities. Admissions are holistic and extremely competitive.</p>
-            <div class="tag-list">
-                <span class="tag">Brown University</span>
-                <span class="tag">Columbia University</span>
-                <span class="tag">Cornell University</span>
-                <span class="tag">Dartmouth College</span>
-                <span class="tag">Harvard University</span>
-                <span class="tag">Princeton University</span>
-                <span class="tag">University of Pennsylvania</span>
-                <span class="tag">Yale University</span>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Ivy League “Minimum Requirements” (Important)</h2>
-            <p><strong>There are no official minimum GPA or test scores</strong> for Ivy League schools. Each uses holistic review, and policies change yearly. The safest approach is to meet all required application components and present the strongest possible
-                academic record.</p>
-            <div class="highlight">Always confirm current requirements on each university’s official admissions website.</div>
-            <div class="ivy-grid">
-                <div class="ivy-card">
-                    <h3>Brown University</h3>
-                    <ul>
-                        <li>Common App + Brown supplement</li>
-                        <li>Transcript with rigorous coursework</li>
-                        <li>Teacher recommendations</li>
-                        <li>Test policy varies by year</li>
-                        <li>Open Curriculum fit matters</li>
-                    </ul>
+    </section>
+    <div class="container">
+        <h2 class="section-title">Top Universities</h2>
+        <div class="uni-grid">
+            <a href="ivy-harvard.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop" alt="Harvard">
                 </div>
-                <div class="ivy-card">
-                    <h3>Columbia University</h3>
-                    <ul>
-                        <li>Common App + Columbia supplement</li>
-                        <li>Strong academics; core course rigor</li>
-                        <li>Recommendations + counselor report</li>
-                        <li>Test policy varies by year</li>
-                        <li>Interest in Core Curriculum is key</li>
-                    </ul>
-                </div>
-                <div class="ivy-card">
-                    <h3>Cornell University</h3>
-                    <ul>
-                        <li>Common App + Cornell school-specific supplement</li>
-                        <li>Major fit and college-specific requirements</li>
-                        <li>Strong STEM/subject preparation</li>
-                        <li>Recommendations (some colleges require specific subjects)</li>
-                        <li>Test policy varies by year</li>
-                    </ul>
-                </div>
-                <div class="ivy-card">
-                    <h3>Dartmouth College</h3>
-                    <ul>
-                        <li>Common App + Dartmouth supplement</li>
-                        <li>Rigorous academics + teacher recommendations</li>
-                        <li>Test policy varies by year</li>
-                        <li>Focus on character, community, fit</li>
-                    </ul>
-                </div>
-                <div class="ivy-card">
+                <div class="uni-card-content">
                     <h3>Harvard University</h3>
-                    <ul>
-                        <li>Common App + Harvard supplement</li>
-                        <li>Top academic performance in hardest courses</li>
-                        <li>Strong recommendations</li>
-                        <li>Test policy varies by year</li>
-                        <li>Distinctive impact/achievement is typical</li>
-                    </ul>
+                    <p>America's oldest university, known for academic excellence and global leadership</p>
                 </div>
-                <div class="ivy-card">
-                    <h3>Princeton University</h3>
-                    <ul>
-                        <li>Common App + Princeton supplement</li>
-                        <li>Strong academics + teacher recommendations</li>
-                        <li>Test policy varies by year</li>
-                        <li>Emphasis on intellectual depth and fit</li>
-                    </ul>
+            </a>
+            <a href="ivy-yale.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop" alt="Yale">
                 </div>
-                <div class="ivy-card">
-                    <h3>University of Pennsylvania</h3>
-                    <ul>
-                        <li>Common App + Penn supplement</li>
-                        <li>College-specific requirements (Wharton, Engineering, etc.)</li>
-                        <li>Strong academics + recommendations</li>
-                        <li>Test policy varies by year</li>
-                        <li>Clear program fit is important</li>
-                    </ul>
-                </div>
-                <div class="ivy-card">
+                <div class="uni-card-content">
                     <h3>Yale University</h3>
-                    <ul>
-                        <li>Common App + Yale supplement</li>
-                        <li>Rigorous academics + recommendations</li>
-                        <li>Test policy varies by year</li>
-                        <li>Emphasis on curiosity and contribution</li>
-                    </ul>
+                    <p>Renowned for liberal arts education and residential college system</p>
                 </div>
-            </div>
-            <div class="highlight">Open each university for details, focus areas, and example honors/medals.</div>
-            <div class="grid">
-                <div class="card">
-                    <h2>Brown University</h2>
-                    <p><a class="link" href="ivy-brown.html">Open Brown details →</a></p>
+            </a>
+            <a href="ivy-princeton.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=600&h=400&fit=crop" alt="Princeton">
                 </div>
-                <div class="card">
-                    <h2>Columbia University</h2>
-                    <p><a class="link" href="ivy-columbia.html">Open Columbia details →</a></p>
+                <div class="uni-card-content">
+                    <h3>Princeton University</h3>
+                    <p>Focus on undergraduate education with world-leading research</p>
                 </div>
-                <div class="card">
-                    <h2>Cornell University</h2>
-                    <p><a class="link" href="ivy-cornell.html">Open Cornell details →</a></p>
+            </a>
+            <a href="ivy-columbia.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?w=600&h=400&fit=crop" alt="Columbia">
                 </div>
-                <div class="card">
-                    <h2>Dartmouth College</h2>
-                    <p><a class="link" href="ivy-dartmouth.html">Open Dartmouth details →</a></p>
+                <div class="uni-card-content">
+                    <h3>Columbia University</h3>
+                    <p>Urban Ivy League with Core Curriculum in New York City</p>
                 </div>
-                <div class="card">
-                    <h2>Harvard University</h2>
-                    <p><a class="link" href="ivy-harvard.html">Open Harvard details →</a></p>
+            </a>
+            <a href="ivy-upenn.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&h=400&fit=crop" alt="Penn">
                 </div>
-                <div class="card">
-                    <h2>Princeton University</h2>
-                    <p><a class="link" href="ivy-princeton.html">Open Princeton details →</a></p>
+                <div class="uni-card-content">
+                    <h3>University of Pennsylvania</h3>
+                    <p>Pre-professional focus with liberal arts foundation</p>
                 </div>
-                <div class="card">
-                    <h2>University of Pennsylvania</h2>
-                    <p><a class="link" href="ivy-upenn.html">Open Penn details →</a></p>
+            </a>
+            <a href="ivy-brown.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&h=400&fit=crop" alt="Brown">
                 </div>
-                <div class="card">
-                    <h2>Yale University</h2>
-                    <p><a class="link" href="ivy-yale.html">Open Yale details →</a></p>
+                <div class="uni-card-content">
+                    <h3>Brown University</h3>
+                    <p>Open Curriculum for independent, creative learners</p>
                 </div>
-            </div>
+            </a>
+            <a href="ivy-cornell.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1576495199011-eb94736d05d6?w=600&h=400&fit=crop" alt="Cornell">
+                </div>
+                <div class="uni-card-content">
+                    <h3>Cornell University</h3>
+                    <p>Diverse programs from liberal arts to applied sciences</p>
+                </div>
+            </a>
+            <a href="ivy-dartmouth.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?w=600&h=400&fit=crop" alt="Dartmouth">
+                </div>
+                <div class="uni-card-content">
+                    <h3>Dartmouth College</h3>
+                    <p>Intimate liberal arts college with strong community</p>
+                </div>
+            </a>
+            <a href="stanford.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=600&h=400&fit=crop" alt="Stanford">
+                </div>
+                <div class="uni-card-content">
+                    <h3>Stanford University</h3>
+                    <p>Silicon Valley innovation meets academic excellence</p>
+                </div>
+            </a>
+            <a href="oxford.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1567690187548-f07b1d7bf5a9?w=600&h=400&fit=crop" alt="Oxford">
+                </div>
+                <div class="uni-card-content">
+                    <h3>Oxford University</h3>
+                    <p>World's oldest English-speaking university with tutorial system</p>
+                </div>
+            </a>
+            <a href="cambridge.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop" alt="Cambridge">
+                </div>
+                <div class="uni-card-content">
+                    <h3>Cambridge University</h3>
+                    <p>Historic excellence with supervision system and Nobel tradition</p>
+                </div>
+            </a>
+            <a href="mit.html" class="uni-card">
+                <div class="uni-card-image">
+                    <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&h=400&fit=crop" alt="MIT">
+                </div>
+                <div class="uni-card-content">
+                    <h3>MIT</h3>
+                    <p>World leader in STEM education, innovation, and hands-on learning</p>
+                </div>
+            </a>
         </div>
-
-        <div class="grid">
-            <div class="card">
-                <h2>What Top Universities Ask For</h2>
+        <h2 class="section-title">Application Success Tips</h2>
+        <div class="tips-grid">
+            <div class="tip-card">
+                <div class="tip-icon">🎓</div>
+                <h3>What Universities Look For</h3>
                 <ul>
-                    <li><strong>Academic rigor:</strong> challenging courses and strong grades.</li>
-                    <li><strong>Standardized tests:</strong> if required, show readiness (policies vary by year).</li>
-                    <li><strong>Strong essays:</strong> clear motivation, growth, and fit.</li>
-                    <li><strong>Recommendations:</strong> teachers who can speak to your work and character.</li>
-                    <li><strong>Activities:</strong> depth, leadership, and impact over quantity.</li>
-                    <li><strong>Projects or research:</strong> proof of curiosity and initiative.</li>
-                    <li><strong>Community impact:</strong> service or contribution to others.</li>
+                    <li>Strong academic performance</li>
+                    <li>Passionate about learning</li>
+                    <li>Active in your community</li>
+                    <li>Leadership who help others</li>
+                    <li>Creative problem solvers</li>
                 </ul>
             </div>
-
-            <div class="card">
-                <h2>Main Goals of Your Application</h2>
+            <div class="tip-card">
+                <div class="tip-icon">📝</div>
+                <h3>Building Your CV</h3>
                 <ul>
-                    <li><strong>Show growth:</strong> how you improved or overcame challenges.</li>
-                    <li><strong>Show fit:</strong> why the university is right for you.</li>
-                    <li><strong>Show impact:</strong> what you changed or built.</li>
-                    <li><strong>Show direction:</strong> what you want to study and why.</li>
-                    <li><strong>Show character:</strong> responsibility, curiosity, resilience.</li>
+                    <li>Your education and grades</li>
+                    <li>Activities you participate in</li>
+                    <li>Awards you have won</li>
+                    <li>Projects you have worked on</li>
+                    <li>Skills you have developed</li>
                 </ul>
             </div>
-
-            <div class="card">
-                <h2>How a Strong CV Should Look</h2>
+            <div class="tip-card">
+                <div class="tip-icon">✍️</div>
+                <h3>Writing Your Essays</h3>
                 <ul>
-                    <li><strong>One page (most students):</strong> clean, simple layout.</li>
-                    <li><strong>Clear sections:</strong> Education, Activities, Awards, Projects, Skills.</li>
-                    <li><strong>Action verbs:</strong> Led, built, researched, organized.</li>
-                    <li><strong>Quantified impact:</strong> numbers, hours, results.</li>
-                    <li><strong>Consistency:</strong> dates, formatting, and grammar.</li>
+                    <li>Tell your personal story</li>
+                    <li>Show what makes you unique</li>
+                    <li>Explain your goals and dreams</li>
+                    <li>Be honest and genuine</li>
+                    <li>Use clear, simple language</li>
                 </ul>
             </div>
-        </div>
-
-        <div class="section">
-            <h2>What Ivy League Schools Typically Look For</h2>
-            <div class="highlight">Holistic review: academics + character + impact + fit.</div>
-            <ul>
-                <li><strong>Academic excellence:</strong> top grades in the hardest courses you can take.</li>
-                <li><strong>Depth over breadth:</strong> sustained commitment in 1–3 activities.</li>
-                <li><strong>Leadership & initiative:</strong> start or lead something meaningful.</li>
-                <li><strong>Distinctive strength:</strong> a clear area where you stand out (research, Olympiads, art, entrepreneurship, service).</li>
-                <li><strong>Strong recommendations:</strong> teachers who know your work deeply.</li>
-                <li><strong>Compelling essays:</strong> authentic voice, growth, and intellectual curiosity.</li>
-                <li><strong>Context awareness:</strong> achievements understood in your school and country context.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>What You Should Focus On</h2>
-            <div class="checklist">
-                <div class="check-item">☑ 1 clear academic direction (major interest + reasons)</div>
-                <div class="check-item">☑ 1 signature project or research experience</div>
-                <div class="check-item">☑ 1 leadership role with measurable impact</div>
-                <div class="check-item">☑ Evidence of intellectual curiosity outside class</div>
-                <div class="check-item">☑ Strong teacher relationships (for recommendations)</div>
-                <div class="check-item">☑ Essays that show identity, growth, and purpose</div>
-                <div class="check-item">☑ A clean, honest CV with results and dates</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Recommended CV Structure</h2>
-            <div class="highlight"><strong>Header:</strong> Name, email, phone, city, LinkedIn (optional)</div>
-            <div class="highlight"><strong>Education:</strong> School, GPA (if strong), graduation date, top courses</div>
-            <div class="highlight"><strong>Activities & Leadership:</strong> Role, organization, impact, dates</div>
-            <div class="highlight"><strong>Awards & Honors:</strong> Scholarships, competitions, recognitions</div>
-            <div class="highlight"><strong>Projects & Research:</strong> Title, tools used, results</div>
-            <div class="highlight"><strong>Skills:</strong> Programming, lab tools, languages</div>
-            <div class="cv-template">
-                <strong>CV Template (copy & fill):</strong><br>
-                <br>
-                <strong>FULL NAME</strong> — City, Country • email@example.com • +000 000 0000 • (LinkedIn optional)
-                <br><br>
-                <strong>Education</strong><br> School Name, Graduation Year<br> GPA (if strong), Top Courses (AP/IB/A-Level or local equivalents)
-                <br><br>
-                <strong>Projects & Research</strong><br> Project Title — 1–2 bullet lines on what you built, tools, results<br> Research Topic — 1–2 bullet lines on question, method, outcome
-                <br><br>
-                <strong>Activities & Leadership</strong><br> Role, Organization — 1–2 bullet lines on impact and scale<br> Role, Club — 1–2 bullet lines on leadership and results
-                <br><br>
-                <strong>Awards & Honors</strong><br> Award Name — Year — brief significance (top %, national, regional)
-                <br><br>
-                <strong>Skills</strong><br> Programming languages, tools, lab skills, spoken languages
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>CV Example (Fictional)</h2>
-            <p>This is a fictional example to show layout and clarity. Replace with your real information.</p>
-            <div class="cv-example">
-                <strong>AYA MOSTAFA</strong> — Cairo, Egypt • aya.mostafa@email.com • +20 100 000 0000<br><br>
-                <strong>Education</strong><br> STEM High School for Girls, 2026<br> GPA: 3.9/4.0 • Top courses: AP Calculus AB, Physics, Computer Science, Research Methods<br><br>
-                <strong>Projects & Research</strong><br> Solar Irrigation Prototype — Built a low-cost system using Arduino; reduced water use by 28% in a test plot.<br> Air Quality Study — Collected PM2.5 data across 6 neighborhoods; visualized trends
-                and presented findings.<br><br>
-                <strong>Activities & Leadership</strong><br> Founder, STEM Robotics Club — Trained 30 students; team won 2nd place in regional competition.<br> Volunteer Tutor — 120+ hours teaching math to middle school students; average test scores rose
-                by 15%.<br><br>
-                <strong>Awards & Honors</strong><br> National Math Olympiad Finalist (Top 5%) — 2025<br> Research Fair Gold Medal — 2024<br><br>
-                <strong>Skills</strong><br> Python, Arduino, MATLAB • Data analysis • English (fluent), Arabic (native)
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Honors vs Medals vs Awards (What’s the Difference?)</h2>
-            <ul>
-                <li><strong>Honors:</strong> Recognition for achievement or ranking (e.g., “Top 5% National Exam,” “Honor Roll,” “Dean’s List”).</li>
-                <li><strong>Medals:</strong> Awards tied to competitions or contests (e.g., “Gold Medal — National Science Fair”).</li>
-                <li><strong>Awards:</strong> Broad term that includes honors, medals, scholarships, or special recognitions.</li>
-            </ul>
-            <div class="highlight"><strong>Tip:</strong> Always add level + rank + year (e.g., “Silver Medal — Regional Math Olympiad, 2024 (Top 3/180)”).</div>
-            <div class="grid">
-                <div class="card">
-                    <h2>Examples: Honors</h2>
-                    <ul>
-                        <li>Honor Roll (Grades 9–11)</li>
-                        <li>Top 10% in National Exams</li>
-                        <li>School Excellence Certificate</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h2>Examples: Medals</h2>
-                    <ul>
-                        <li>Gold Medal — Regional Science Fair</li>
-                        <li>Silver Medal — Math Olympiad</li>
-                        <li>Bronze Medal — Robotics Competition</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h2>Examples: Awards</h2>
-                    <ul>
-                        <li>Research Scholarship Winner</li>
-                        <li>Best Project Award</li>
-                        <li>Leadership Recognition</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Top University Checklist</h2>
-            <p>Use this checklist to make sure your application tells a complete, focused story.</p>
-            <div class="checklist">
-                <div class="check-item">☑ Challenging classes with strong grades</div>
-                <div class="check-item">☑ 1–2 deep activities with leadership</div>
-                <div class="check-item">☑ Essays with a clear personal story</div>
-                <div class="check-item">☑ Strong recommendations (2–3 teachers)</div>
-                <div class="check-item">☑ Projects or research that show initiative</div>
-                <div class="check-item">☑ Clear academic direction or major interest</div>
-                <div class="check-item">☑ Proof of impact (numbers, outcomes)</div>
-                <div class="check-item">☑ Clean, concise CV</div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Quick Writing Tips for Top Universities</h2>
-            <ul>
-                <li>Write like a human, not a brochure.</li>
-                <li>Use specific examples, not general claims.</li>
-                <li>Connect each activity to learning or impact.</li>
-                <li>Explain why your goals make sense for your background.</li>
-                <li>Keep sentences clear and focused.</li>
-            </ul>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand"><h3>ScholarForge</h3>
+                    <p>Directed by Mostafa ELgendy</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="english.html">English</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="university-tips.html">Universities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ScholarForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

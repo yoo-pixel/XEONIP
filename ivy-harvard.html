@@ -2,155 +2,385 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:; connect-src 'self' https:; frame-ancestors 'self'; base-uri 'self'; object-src 'none'">
-    <meta name="referrer" content="no-referrer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Harvard University - Ivy League Requirements</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard University - STEM Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box
+            box-sizing: border-box;
         }
         
         body {
-            background: linear-gradient(180deg, #000000 0%, #001a1a 25%, #0a1f1f 50%, #001a1a 75%, #000000 100%);
-            color: #e0e6f5;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            min-height: 100vh
+            font-family: 'Open Sans', sans-serif;
+            color: #1a1a1a;
+            background: #ffffff;
+            line-height: 1.6;
         }
         
-        .container {
-            max-width: 900px;
+        .header {
+            background: #a51c30;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 2rem 4rem
         }
         
-        .back-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin-bottom: 20px;
-            background: rgba(0, 217, 255, 0.1);
-            color: #00d9ff;
+        .logo {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: white;
             text-decoration: none;
-            border: 1px solid #00d9ff;
-            border-radius: 6px
+            font-family: 'Libre Baskerville', serif;
         }
         
-        .back-btn:hover {
-            background: rgba(0, 217, 255, 0.2);
-            transform: translateX(-4px)
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
         }
         
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: .4rem;
-            text-align: center
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
         }
         
-        .subtitle {
-            color: #a9b9d3;
-            text-align: center;
-            margin-bottom: 1.8rem
+        .nav-links a:hover {
+            opacity: 0.8;
         }
         
         .hero {
-            margin: 1.2rem 0 2rem;
-            border-radius: 16px;
-            overflow: hidden;
-            border: 1px solid rgba(0, 217, 255, 0.25)
+            height: 70vh;
+            background: linear-gradient(rgba(165, 28, 48, 0.3), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&h=900&fit=crop') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
         }
         
-        .hero img {
-            width: 100%;
-            height: 240px;
-            object-fit: cover;
-            display: block
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
         }
         
-        .hero-caption {
-            padding: .8rem 1rem;
-            background: rgba(10, 14, 32, 0.7);
-            color: #a9b9d3;
-            font-size: .9rem
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-family: 'Libre Baskerville', serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
         
-        .section {
-            background: rgba(17, 22, 44, .65);
-            border: 1px solid rgba(0, 217, 255, 0.2);
-            border-radius: 14px;
-            padding: 1.6rem;
-            margin-bottom: 1.5rem
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
         }
         
-        .section h2 {
-            font-size: 1.4rem;
-            margin-bottom: .8rem;
-            border-bottom: 2px solid rgba(0, 217, 255, 0.3);
-            padding-bottom: .5rem
+        .back-link {
+            display: inline-block;
+            margin: 2rem 0 0 2rem;
+            color: #a51c30;
+            text-decoration: none;
+            font-weight: 600;
         }
         
-        .section ul {
-            padding-left: 1.2rem;
-            color: #c7d2e7;
-            line-height: 1.7
+        .back-link:hover {
+            text-decoration: underline;
         }
         
-        .note {
-            background: rgba(0, 217, 255, 0.08);
-            border-left: 4px solid #00d9ff;
-            padding: .9rem;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .intro-section {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .intro-section h2 {
+            font-size: 2.5rem;
+            font-family: 'Libre Baskerville', serif;
+            color: #a51c30;
+            margin-bottom: 1rem;
+        }
+        
+        .intro-section p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .content-card {
+            background: #f8f9fa;
+            padding: 2rem;
             border-radius: 8px;
-            color: #c7d2e7;
-            margin: .8rem 0
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .content-card h3 {
+            font-size: 1.8rem;
+            color: #a51c30;
+            margin-bottom: 1rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .content-card ul {
+            padding-left: 1.5rem;
+            color: #444;
+        }
+        
+        .content-card li {
+            margin-bottom: 0.7rem;
+            font-size: 1.05rem;
+        }
+        
+        .image-section {
+            margin: 4rem 0;
+        }
+        
+        .image-section img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+            padding: 3rem;
+            background: #a51c30;
+            color: white;
+            border-radius: 8px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .footer {
+            background: #1a1a1a;
+            color: #999;
+            padding: 3rem 2rem 2rem;
+            margin-top: 5rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #333;
+        }
+        
+        .footer-brand h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Libre Baskerville', serif;
+        }
+        
+        .footer-brand p {
+            color: #999;
+            font-size: 1rem;
+        }
+        
+        .footer-links h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #a51c30;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
-    <link rel="stylesheet" href="starfield.css">
 </head>
 
 <body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="english.html">English</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="university-tips.html">Universities</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Harvard University</h1>
+            <p>Excellence in Education Since 1636</p>
+        </div>
+    </section>
+    <a href="university-tips.html" class="back-link">← Back to Universities</a>
     <div class="container">
-        <a href="university-tips.html" class="back-btn">← Back to University Tips</a>
-        <h1>Harvard University</h1>
-        <p class="subtitle">Ivy League overview, requirements, focus, and example honors</p>
-        <div class="hero">
-            <img src="https://images.unsplash.com/photo-1496307653780-42ee777d4833?auto=format&fit=crop&w=1600&q=80" alt="Historic university building">
-            <div class="hero-caption">Exceptional depth, leadership, and impact.</div>
+        <section class="intro-section">
+            <h2>About Harvard</h2>
+            <p>Harvard University is the oldest institution of higher education in the United States, established in 1636. Located in Cambridge, Massachusetts, Harvard is renowned for academic excellence, groundbreaking research, and producing world leaders
+                across all fields.</p>
+            <a href="https://www.harvard.edu" target="_blank" style="display: inline-block; margin-top: 1.5rem; padding: 0.8rem 2rem; background: #a51c30; color: white; text-decoration: none; border-radius: 5px; font-weight: 600; transition: all 0.3s;">🌐 Visit Official Website</a>
+        </section>
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">1636</span>
+                <span class="stat-label">Founded</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">~7,000</span>
+                <span class="stat-label">Undergraduates</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">3.2%</span>
+                <span class="stat-label">Acceptance Rate</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">8</span>
+                <span class="stat-label">U.S. Presidents</span>
+            </div>
         </div>
-
-        <div class="section">
-            <h2>Minimum Requirements (Official)</h2>
-            <div class="note">No official minimum GPA or test score. Policies can change yearly.</div>
-            <ul>
-                <li>Common App + Harvard supplement</li>
-                <li>Most rigorous transcript possible</li>
-                <li>Strong teacher recommendations</li>
-                <li>Standardized test policy varies by year</li>
-                <li>Optional portfolio (if applicable)</li>
-            </ul>
+        <div class="content-grid">
+            <div class="content-card">
+                <h3><span style="font-size: 2.5rem; display: block; margin-bottom: 1rem;">📋</span>Application Requirements</h3>
+                <ul>
+                    <li>Common App or Coalition App</li>
+                    <li>Harvard supplement essays</li>
+                    <li>High school transcript</li>
+                    <li>Two teacher recommendations</li>
+                    <li>Counselor recommendation</li>
+                    <li>Standardized tests (check policy)</li>
+                    <li>Optional: Portfolio or research</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3><span style="font-size: 2.5rem; display: block; margin-bottom: 1rem;">💡</span>Tips for Harvard</h3>
+                <ul>
+                    <li>Show genuine intellectual curiosity in essays</li>
+                    <li>Demonstrate leadership with measurable impact</li>
+                    <li>Highlight unique perspectives from your background</li>
+                    <li>Excel in rigorous academic courses</li>
+                    <li>Engage deeply in 2-3 activities vs. many shallow ones</li>
+                    <li>Connect your interests to Harvard's resources</li>
+                    <li>Be authentic - they value character over perfection</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3><span style="font-size: 2.5rem; display: block; margin-bottom: 1rem;">🎓</span>Academic Strengths</h3>
+                <ul>
+                    <li>Liberal Arts & Sciences</li>
+                    <li>Business (Harvard Business School)</li>
+                    <li>Law & Government</li>
+                    <li>Medicine & Public Health</li>
+                    <li>Engineering & Technology</li>
+                    <li>Social Sciences</li>
+                    <li>Humanities & Arts</li>
+                </ul>
+            </div>
         </div>
-
-        <div class="section">
-            <h2>What Harvard Typically Values</h2>
-            <ul>
-                <li>Exceptional academic achievement</li>
-                <li>Leadership with measurable impact</li>
-                <li>Distinctive strength (national or international level)</li>
-                <li>Intellectual vitality and initiative</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Example Honors / Medals / Awards (Fictional)</h2>
-            <ul>
-                <li><strong>Honor:</strong> Top 1% National Exams (2025)</li>
-                <li><strong>Medal:</strong> Gold Medal — National Olympiad (2024)</li>
-                <li><strong>Award:</strong> National Research Fellowship (2024)</li>
-            </ul>
-            <div class="note">Tip: Harvard admits students with extraordinary depth and impact.</div>
-        </div>
+        <section class="image-section">
+            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1200&h=600&fit=crop" alt="Harvard Campus">
+        </section>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand"><h3>ScholarForge</h3>
+                    <p>Directed by Mostafa ELgendy</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="english.html">English</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="university-tips.html">Universities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ScholarForge. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
